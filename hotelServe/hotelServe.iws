@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34730a35-f053-4c95-8df5-fb7fafd9c81f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="204" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b1ExEOCVY7bKbrJFGCGZjWv7dO" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/demo/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/demo/controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hotelServe" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34730a35-f053-4c95-8df5-fb7fafd9c81f" name="Default Changelist" comment="" />
+      <created>1587791443893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587791443893</updated>
+      <workItem from="1587791445372" duration="1134000" />
+      <workItem from="1587792969449" duration="1620000" />
+      <workItem from="1587794800940" duration="1704000" />
+      <workItem from="1587796647978" duration="1732000" />
+      <workItem from="1587798486614" duration="1763000" />
+      <workItem from="1587800358146" duration="1707000" />
+      <workItem from="1587802906117" duration="1603000" />
+      <workItem from="1587804770483" duration="1704000" />
+      <workItem from="1587806687592" duration="1732000" />
+      <workItem from="1587808514409" duration="1706000" />
+      <workItem from="1587810376502" duration="1386000" />
+      <workItem from="1587812088099" duration="1732000" />
+      <workItem from="1587813900527" duration="496000" />
+      <workItem from="1587814608320" duration="1762000" />
+      <workItem from="1587816460609" duration="1663000" />
+      <workItem from="1587818287863" duration="453000" />
+      <workItem from="1588085016617" duration="1556000" />
+      <workItem from="1588303601723" duration="1025000" />
+      <workItem from="1588304905775" duration="1686000" />
+      <workItem from="1588306787412" duration="434000" />
+      <workItem from="1588307479712" duration="970000" />
+      <workItem from="1588308637955" duration="1515000" />
+      <workItem from="1588313708119" duration="348000" />
+      <workItem from="1588324141642" duration="386000" />
+      <workItem from="1588326072723" duration="692000" />
+      <workItem from="1588330440216" duration="1631000" />
+      <workItem from="1588332405200" duration="721000" />
+      <workItem from="1588334421670" duration="1572000" />
+      <workItem from="1588336258738" duration="1248000" />
+      <workItem from="1588338243084" duration="358000" />
+      <workItem from="1588392119428" duration="1667000" />
+      <workItem from="1588394123799" duration="60000" />
+      <workItem from="1588650789732" duration="1612000" />
+      <workItem from="1588652575842" duration="1156000" />
+      <workItem from="1588655095514" duration="763000" />
+      <workItem from="1588656450584" duration="739000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hotelServe$DemoApplication.ic" NAME="DemoApplication Coverage Results" MODIFIED="1587807373796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

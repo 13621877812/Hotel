@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grade:"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="5"></RatingBar>
+
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Write down your comments"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Submit Comment" />
+
+</LinearLayout>

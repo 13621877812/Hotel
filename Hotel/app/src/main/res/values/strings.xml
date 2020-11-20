@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Hotel</string>
+  <string name="title_home">首页</string>
+  <string name="title_mine">我的</string>
+  <string name="title_search">搜寻</string>
+  <string name="title_pay">对话</string>
+  <string name="title_comment">收藏</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="appwidget_text">EXAMPLE</string>
+  <string name="add_widget">Add widget</string>
+
+</resources>
