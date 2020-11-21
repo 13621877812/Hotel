@@ -23,11 +23,11 @@ IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[use
 GO
 CREATE TABLE [dbo].[user1] (
 	[id] int NOT NULL,
-	[name] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NOT NULL,
+	[name] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS ,
 	[account] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[password] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[gender] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[img] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NOT NULL
+	[gender] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS ,
+	[img] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS 
 )
 ON [PRIMARY]
 GO

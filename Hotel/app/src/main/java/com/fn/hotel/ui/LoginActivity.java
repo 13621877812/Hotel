@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fn.hotel.HotelListActivity;
+import com.fn.hotel.ui.MainActivity
 import com.fn.hotel.R;
 import com.fn.hotel.base.BaseActivity;
 import com.fn.hotel.utils.ACache;
@@ -144,7 +145,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                                         ACache.get(LoginActivity.this).put("userimage",userimage);
                                         ACache.get(LoginActivity.this).put("username",username);
                                         ACache.get(LoginActivity.this).put("gender",gender);
-                                        startActivity(new Intent(LoginActivity.this, HotelListActivity.class));
+                                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                                         finish();
 
 
