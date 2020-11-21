@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fn.hotel.HotelListActivity;
-import com.fn.hotel.ui.MainActivity
+import com.fn.hotel.MainActivity;
 import com.fn.hotel.R;
 import com.fn.hotel.base.BaseActivity;
 import com.fn.hotel.utils.ACache;

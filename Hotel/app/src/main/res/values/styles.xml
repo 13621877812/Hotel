@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
   <declare-styleable name="MenuItemLayout">
     <attr name="title_text" format="string" />
     <attr name="iconImgUri" format="reference" />

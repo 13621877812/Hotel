@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.fn.hotel.R;
@@ -40,7 +42,8 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
     private EditText et_pwd;
     private EditText et_pwd_once;
     private Button bt_Login;
-
+    private RadioGroup radioGroup;
+    private Integer type = 0;
 
 
     @Override
@@ -55,6 +58,14 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
         et_pwd = (EditText) findViewById(R.id.et_pwd);
         et_pwd_once = (EditText) findViewById(R.id.et_pwd_once);
         bt_Login = (Button) findViewById(R.id.bt_Login);
+        radioGroup = (RadioGroup) findViewById(R.id.typeGroup);//获取单选按钮组
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton =(RadioButton) findViewById(i);//获取被选择的单选按钮
+                type = radioButton.getText().equals("owner")?1:0;
+            }
+        });
 
         bt_Login.setOnClickListener(this);
     }
@@ -109,12 +120,10 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
                 .writeTimeout(10,TimeUnit.SECONDS)
                 .readTimeout(20, TimeUnit.SECONDS)
                 .build();
-        User user = new User();
-        user.setUsername(name);
-        user.setPassword(pwd);
         FormBody formBody = new FormBody.Builder()
-                .add("account", user.username)
-                .add("password", user.password)
+                .add("account", name)
+                .add("password", pwd)
+                .add("isowner", type.toString())
                 .build();
         final Request request = new Request.Builder()
                 .url(url)

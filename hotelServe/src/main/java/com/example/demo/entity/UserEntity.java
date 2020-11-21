@@ -4,6 +4,7 @@ public class UserEntity {
     private int id;
     private  String account;
     private  String password;
+    private  Integer isowner;
     private  String name;
     private  String gender;
     private  String img;
@@ -18,6 +19,14 @@ public class UserEntity {
 
     public String getAccount() {
         return account;
+    }
+
+    public Integer getIsowner() {
+        return isowner;
+    }
+
+    public void setIsowner(Integer isowner) {
+        this.isowner = isowner;
     }
 
     public void setAccount(String account) {

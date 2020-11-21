@@ -20,7 +20,9 @@ public class UserController {
 
     //regist
     @RequestMapping(value = "/regist",method = RequestMethod.POST)
-    public ResultEntity registUser(@RequestParam(value = "account") String account, @RequestParam(value = "password") String password){
+    public ResultEntity registUser(@RequestParam(value = "account") String account,
+                                   @RequestParam(value = "password") String password,
+                                   @RequestParam(value = "isowner") String isowner){
 
         System.out.println(account + " " +password);
         //先查看账号是否重复
@@ -37,6 +39,7 @@ public class UserController {
         UserEntity user =  new UserEntity();
         user.setAccount(account);
         user.setPassword(password);
+        user.setIsowner(Integer.parseInt(isowner));
         int insertId = userMapper.insert(user);
 
         ResultEntity result = new ResultEntity();
