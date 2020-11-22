@@ -25,25 +25,21 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     private MapView mMap;
     private GoogleMap mMap1;
     private View mView;
-    private Bundle savedInstanceState;
+
     public HomeFragment() {
 
     }
 
-  public void setSavedInstanceState(Bundle savedInstanceState) {
-      Log.i("TAG123", "initMapView1: "+ savedInstanceState);
-    this.savedInstanceState = savedInstanceState;
 
-  }
 
   @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        mView = inflater.inflate(R.layout.fragment_home, container, false);
-       initMapView();
+       initMapView(savedInstanceState);
        return mView;
     }
-    private void initMapView(){
+    private void initMapView(Bundle savedInstanceState){
       mMap = (MapView) mView.findViewById(R.id.mapview);
         Log.i("TAG123", "initMapView: "+ mMap);
         Log.i("TAG12", "initMapVi: "+ savedInstanceState);

@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
   private void addFragments() {
     fragments = new ArrayList<Fragment>();
     HomeFragment homeFragment = new HomeFragment();
-    homeFragment.setSavedInstanceState(savedInstanceState1);
     MineFragment mineFragment = new MineFragment();
     SearchFragment searchFragment = new SearchFragment();
     ChatFragment chatFragment = new ChatFragment();
