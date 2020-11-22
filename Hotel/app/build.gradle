@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.fn.tourism"
+        applicationId "com.example.roombox"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -50,6 +50,7 @@ dependencies {
     implementation 'com.github.guoxiaoxing:phoenix-compress-picture:1.0.15'
     implementation 'com.youth.banner:banner:1.4.10'
   implementation 'com.google.android.gms:play-services-maps:12.0.1'
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
 //    地图操作工具类，添加标记等
   implementation 'com.google.maps.android:android-maps-utils:0.5+'
 }

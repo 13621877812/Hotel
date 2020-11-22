@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=90:4D:C1:56:E2:DB:88:30:A4:5A:74:84:DC:FF:E1:2B:82:27:83:2D%3Bcom.example.roombox
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.roombox
+
+    SHA-1 certificate fingerprint:
+    90:4D:C1:56:E2:DB:88:30:A4:5A:74:84:DC:FF:E1:2B:82:27:83:2D
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAOQ77yaCoutVRTm8d-J6MFDihHmpWFgUQ</string>
+</resources>

@@ -12,7 +12,7 @@
 
 
 
-  <com.fn.hotel.views.MenuBottom
+  <com.example.roombox.views.MenuBottom
     android:id="@+id/menu_bottom"
     android:layout_width="match_parent"
     android:layout_height="100dp"

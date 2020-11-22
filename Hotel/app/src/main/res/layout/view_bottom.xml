@@ -6,7 +6,7 @@
   android:orientation="horizontal">
 
 
-  <com.fn.hotel.views.MenuItem
+  <com.example.roombox.views.MenuItem
     android:id="@+id/navigation_home"
     android:layout_width="match_parent"
     android:layout_weight="1"
@@ -16,7 +16,7 @@
     app:selectedIconImgUri="@drawable/home_s"
     app:isSelect="true"/>
 
-  <com.fn.hotel.views.MenuItem
+  <com.example.roombox.views.MenuItem
     android:id="@+id/navigation_mine"
     android:layout_width="match_parent"
     android:layout_weight="1"
@@ -26,7 +26,7 @@
     app:selectedIconImgUri="@drawable/mine_s"/>
 
 
-  <com.fn.hotel.views.MenuItem
+  <com.example.roombox.views.MenuItem
     android:id="@+id/navigation_search"
     android:layout_width="match_parent"
     android:layout_weight="1"
@@ -36,7 +36,7 @@
     app:selectedIconImgUri="@drawable/search_s"/>
 
 
-  <com.fn.hotel.views.MenuItem
+  <com.example.roombox.views.MenuItem
   android:id="@+id/navigation_pay"
   android:layout_width="match_parent"
   android:layout_weight="1"
@@ -45,7 +45,7 @@
     app:iconImgUri="@drawable/chat"
     app:selectedIconImgUri="@drawable/chat_s"/>
 
-  <com.fn.hotel.views.MenuItem
+  <com.example.roombox.views.MenuItem
     android:id="@+id/navigation_comment"
     android:layout_width="match_parent"
     android:layout_weight="1"

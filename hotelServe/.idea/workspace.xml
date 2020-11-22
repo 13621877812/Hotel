@@ -2,120 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad060d7f-82b8-470c-9553-fe6ec1d7e4f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_multidex_1_0_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_CymChad_BaseRecyclerViewAdapterHelper_2_9_30_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_9_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_9_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_9_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_9_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_guoxiaoxing_phoenix_1_0_15_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_guoxiaoxing_phoenix_compress_picture_1_0_15_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_github_guoxiaoxing_phoenix_core_1_0_15_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_base_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_base_license_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_license_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_license_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_license_12_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_google_maps_android_android_maps_utils_0_5_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_jakewharton_butterknife_8_8_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_9_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_9_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__com_youth_banner_banner_1_4_10_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_1_6_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_1_6_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_apache_http_legacy_android_28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_apache_http_legacy_android_28.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_2_30_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_2_30_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_30_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_30_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_30_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_30_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_2_30_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_2_30_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/Hotel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/Hotel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/ui/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/ui/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/ui/RegActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/ui/RegActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/utils/Contans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/fn/hotel/utils/Contans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/res/layout/act_reg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/res/layout/act_reg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hotel/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +93,7 @@
       <workItem from="1605939519470" duration="939000" />
       <workItem from="1605941600816" duration="790000" />
       <workItem from="1605943907901" duration="239000" />
-      <workItem from="1605944380965" duration="180000" />
+      <workItem from="1605944380965" duration="1055000" />
     </task>
     <servers />
   </component>
