@@ -9,7 +9,6 @@
     android:layout_width="35dp"
     android:layout_height="35dp"
     android:src="@drawable/mine"/>
-
   <TextView
     android:id="@+id/title"
     android:layout_marginTop="8dp"
@@ -17,7 +16,7 @@
     android:layout_height="wrap_content"
     android:text="我的"
     android:textSize="18sp"
-    android:textColor="@color/item1"/>
+    android:textColor="@color/item"/>
 
 
 </LinearLayout>

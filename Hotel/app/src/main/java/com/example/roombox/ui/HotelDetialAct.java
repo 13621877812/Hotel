@@ -70,8 +70,6 @@ public class HotelDetialAct extends BaseActivity {
     RecyclerView recyclerView;
     private SimpleAdapter adapter;
     private ArrayList<CommentBean> keyList = new ArrayList<>();
-
-
     @Override
     public int intiLayout() {
         return R.layout.act_hd;
@@ -81,8 +79,6 @@ public class HotelDetialAct extends BaseActivity {
     public void initView() {
       recyclerView = findViewById(R.id.listView);
       iint();
-
-
 //        initBanner();
     }
   private void iint() {

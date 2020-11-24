@@ -1,13 +1,33 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:layout_height="match_parent"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context="com.example.roombox.fragments.SearchFragment">
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <!-- TODO: Update blank fragment layout -->
-  <TextView
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <SearchView
+      android:id="@+id/searchView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:queryHint="@string/title_mine"
+      android:iconifiedByDefault="false"/>
+
+    <TextView
+      android:id="@+id/searchBtn"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="@mipmap/logo"/>
+  </LinearLayout>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/listView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="@string/hello_blank_fragment" />
+    android:layout_marginBottom="60dp"/>
 
-</FrameLayout>
+
+</LinearLayout>

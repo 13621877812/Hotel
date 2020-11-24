@@ -1,29 +1,30 @@
 package com.example.roombox.fragments;
 
 
-import android.content.SharedPreferences;
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.ArraySet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.SimpleAdapter;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.roombox.R;
+import com.example.roombox.ui.HotelDetialAct;
 
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
-
-
-import static android.content.Context.MODE_PRIVATE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,57 +32,69 @@ import static android.content.Context.MODE_PRIVATE;
 public class MineFragment extends Fragment {
 
 
+  Unbinder unbinder;
+  @BindView(R.id.gridView)
+  GridView gridView;
+  private double progressNum = 0.00;
 
-    Unbinder unbinder;
+  public MineFragment() {
+
+  }
 
 
-    private double progressNum = 0.00;
+  @Override
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                           Bundle savedInstanceState) {
 
-    public MineFragment() {
+    View view = inflater.inflate(R.layout.fragment_mine, container, false);
+    unbinder = ButterKnife.bind(this, view);
+    initView();
+    return view;
+  }
+  private void initView(){
+    ArrayList<HashMap<String,Object>> meumList = new ArrayList<HashMap<String, Object>>();
+    String[] datas = new String[]{"历史订单","房屋管理","客服","登出","评论"};
+    String[] datas1 = new String[]{"房屋管理","举报管理","登出"};
+    for(int i = 0; i < datas.length; i++){
+      HashMap<String,Object> map = new HashMap<String, Object>();
+      map.put("ItemImage",R.mipmap.logo);
+      map.put("ItemText",""+datas[i]);
+      meumList.add(map);
+    }
+    SimpleAdapter saItem = new SimpleAdapter(getActivity(),meumList,R.layout.item_mine_layout,
+      new String[]{"ItemText"},
+      new int[]{R.id.ItemText});
+
+    gridView.setAdapter(saItem);
+    gridView.setOnItemClickListener(new OnItemClickListener() {
+      @Override
+      public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        int index = position + 1;
+        Toast.makeText(getActivity(),"点击了选项：" + index,Toast.LENGTH_LONG).show();
+      }
+    });
+
+  }
+  @Override
+  public void onHiddenChanged(boolean hidden) {
+    super.onHiddenChanged(hidden);
+    if (hidden == false) {
+
 
     }
+  }
+
+  @Override
+  public void onResume() {
+    super.onResume();
 
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+  }
 
-        View view = inflater.inflate(R.layout.fragment_mine, container, false);
+  @Override
+  public void onDestroyView() {
+    super.onDestroyView();
+    unbinder.unbind();
+  }
 
-        unbinder = ButterKnife.bind(this, view);
-
-        return view;
-    }
-
-    @Override
-    public void onHiddenChanged(boolean hidden) {
-        super.onHiddenChanged(hidden);
-        if (hidden == false) {
-//            SharedPreferences sp = getActivity().getSharedPreferences("points", MODE_PRIVATE);
-//            Set<String> words = sp.getStringSet("words", new ArraySet<String>());
-//            progressNum = words.size() / 15.0 * 100;
-//            progress.setText(String.format("%.2f", progressNum) + "%");
-//            long points = sp.getLong("points", 0);
-//            point.setText(points + "");
-
-        }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
-    }
-
-    @OnClick(R.id.loginout)
-    public void onViewClicked() {
-        getActivity().finish();
-    }
 }

@@ -61,10 +61,10 @@ public class MenuBottom extends LinearLayout implements View.OnClickListener {
     for (int i = 0; i < views.size(); i++) {
       MenuItem menuItem = views.get(i);
       if (i == tag){//选中
-          menuItem.setSelect(true);
+          menuItem.setCurrentTab(true);
       }else {
-        if (menuItem.isSelect()) {
-          menuItem.setSelect(false);
+        if (menuItem.isCurrentTab()) {
+          menuItem.setCurrentTab(false);
         }
       }
       listener.itemClick(tag);

@@ -15,12 +15,14 @@ import com.example.roombox.R;
 import com.example.roombox.base.BaseActivity;
 import com.example.roombox.utils.ACache;
 import com.example.roombox.utils.Contans;
+import com.example.roombox.utils.HttpUtil;
 
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
@@ -77,96 +79,55 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void submit() {
-        // validate
-        String account = et_account.getText().toString().trim();
-        if (TextUtils.isEmpty(account)) {
-            Toast.makeText(this, "please enter your account", Toast.LENGTH_SHORT).show();
-            return;
-        }
+      // validate
+      String account = et_account.getText().toString().trim();
+      if (TextUtils.isEmpty(account)) {
+        Toast.makeText(this, "please enter your account", Toast.LENGTH_SHORT).show();
+        return;
+      }
 
-        String pwd = et_pwd.getText().toString().trim();
-        if (TextUtils.isEmpty(pwd)) {
-            Toast.makeText(this, "please enter your password", Toast.LENGTH_SHORT).show();
-            return;
-        }
+      String pwd = et_pwd.getText().toString().trim();
+      if (TextUtils.isEmpty(pwd)) {
+        Toast.makeText(this, "please enter your password", Toast.LENGTH_SHORT).show();
+        return;
+      }
 
-        // TODO validate success, do something
 
-        login(account,pwd);
+      login(account, pwd);
+
 
 
     }
 
 
         private void login(final String name, final String pwd) {
-            String url = Contans.URL + "user/login";
-            OkHttpClient okHttpClient  = new OkHttpClient.Builder()
-                    .connectTimeout(10, TimeUnit.SECONDS)
-                    .writeTimeout(10,TimeUnit.SECONDS)
-                    .readTimeout(20, TimeUnit.SECONDS)
-                    .build();
-            RequestBody requestBody = new FormBody.Builder().add("account",name).add("password",pwd).build();
-            final Request request = new Request.Builder()
-                    .url(url)
-                    .post(requestBody)//默认就是GET请求，可以不写
-                    .build();
-
-            Call call = okHttpClient.newCall(request);
-            call.enqueue(new Callback() {
-                @Override
-                public void onFailure(Call call, IOException e) {
-                    Log.i("TAG", "onResponse: " + e.toString());
-                }
-
-                @Override
-                public void onResponse(Call call, Response response) throws IOException {
-
-
-                    final  String result = response.body().string();
-                    if (response.body() != null) {
-
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-
-                                try {
-                                    Log.i("TAG", "run: " + result);
-                                    JSONObject jsonObject = new JSONObject(result);
-                                    String code = jsonObject.getString("code");
-
-                                    if ("0".equals(code)){
-                                        JSONObject data =  jsonObject.getJSONObject("data");
-                                        Contans.makeToast("login success!",LoginActivity.this);
-
-                                        String userimage = TextUtils.isEmpty(data.getString("userimage"))?"":data.getString("userimage");
-                                        String username = TextUtils.isEmpty(data.getString("username"))?"":data.getString("username");
-                                        String gender = TextUtils.isEmpty(data.getString("gender"))?"":data.getString("gender");
-                                        ACache.get(LoginActivity.this).put("account",name);
-                                        ACache.get(LoginActivity.this).put("userimage",userimage);
-                                        ACache.get(LoginActivity.this).put("username",username);
-                                        ACache.get(LoginActivity.this).put("gender",gender);
-                                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                                        finish();
+          String url = "user/login";
+          HashMap params = new HashMap();
+          params.put("account",name);
+          params.put("password",pwd);
+          HttpUtil.httpPost(url, params, LoginActivity.this, new HttpUtil.HttpCallBack() {
+            @Override
+            public void success(JSONObject data) {
+              Contans.makeToast("login success!",LoginActivity.this);
+              try {
+                String userimage  = TextUtils.isEmpty(data.getString("userimage"))?"":data.getString("userimage");
+                String username = TextUtils.isEmpty(data.getString("username"))?"":data.getString("username");
+                String gender = TextUtils.isEmpty(data.getString("gender"))?"":data.getString("gender");
+                ACache.get(LoginActivity.this).put("account",name);
+                ACache.get(LoginActivity.this).put("userimage",userimage);
+                ACache.get(LoginActivity.this).put("username",username);
+                ACache.get(LoginActivity.this).put("gender",gender);
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                finish();
+              } catch (JSONException e) {
+                e.printStackTrace();
+              }
 
 
-                                    }else {
-                                        Contans.makeToast(jsonObject.getString("msg"),LoginActivity.this);
-                                    }
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                }
-
-                            }
-                        });
+            }
+          });
 
 
-                        response.body().close();
-                    }
-                }
-            });
 
         }
 

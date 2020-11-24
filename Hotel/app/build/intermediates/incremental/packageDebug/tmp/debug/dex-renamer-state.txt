@@ -1,0 +1,10 @@
+#Tue Nov 24 20:55:07 CST 2020
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=/Users/fpm0259/Desktop/台湾/Task/Hotel/app/build/intermediates/transforms/dexMerger/debug/1
+base.1=/Users/fpm0259/Desktop/台湾/Task/Hotel/app/build/intermediates/transforms/dexMerger/debug/1
+base.0=/Users/fpm0259/Desktop/台湾/Task/Hotel/app/build/intermediates/transforms/dexMerger/debug/0

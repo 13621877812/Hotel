@@ -16,32 +16,40 @@ import android.widget.TextView;
 
 import com.example.roombox.R;
 
+
+
 public class MenuItem extends LinearLayout {
   private Context mContext;
   private View mView;
   private ImageView imageView;
   private TextView titleText;
-  private boolean isSelect;
+  private boolean isCurrentTab;
 
 
   private String title;//标题
   private int iconImgUri;//图片
   private int selectedIconImgUri;//选中的图片
 
-  public boolean isSelect() {
-    return isSelect;
+  public boolean isCurrentTab() {
+    return isCurrentTab;
   }
-  @SuppressLint("ResourceAsColor")
-  public void setSelect(boolean select) {
-    isSelect = select;
-    if (isSelect){
+
+
+  public void setCurrentTab(boolean currentTab) {
+    isCurrentTab = currentTab;
+    if (currentTab){
       imageView.setImageResource(selectedIconImgUri);
-      titleText.setTextColor(R.color.itemS);
+      titleText.setTextColor(mContext.getResources().getColor(R.color.itemS));
     }else {
       imageView.setImageResource(iconImgUri);
-      titleText.setTextColor(R.color.item1);
+      titleText.setTextColor(mContext.getResources().getColor(R.color.item));
     }
+
   }
+
+
+
+
 
   public void setIconImgUri(int iconImgUri) {
     this.iconImgUri = iconImgUri;
@@ -55,6 +63,7 @@ public class MenuItem extends LinearLayout {
   public void setTitle(String title) {
     this.title = title;
     titleText.setText(title);
+
   }
   public MenuItem(Context context) {
     super(context);
@@ -80,7 +89,11 @@ public class MenuItem extends LinearLayout {
     setTitle(title);
     setIconImgUri(image);
     setSelectedIconImgUri(imageS);
-    setSelect(isSelect);
+    if (isSelect){
+      setCurrentTab(isSelect);
+
+    }
+
 
   }
 

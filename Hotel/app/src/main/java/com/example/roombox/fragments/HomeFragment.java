@@ -41,20 +41,15 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     }
     private void initMapView(Bundle savedInstanceState){
       mMap = (MapView) mView.findViewById(R.id.mapview);
-        Log.i("TAG123", "initMapView: "+ mMap);
-        Log.i("TAG12", "initMapVi: "+ savedInstanceState);
       mMap.onCreate(savedInstanceState);
       mMap.onResume();
-
       try {
         MapsInitializer.initialize(getActivity());
       } catch (Exception e) {
         e.printStackTrace();
       }
-
       int errorCode = GooglePlayServicesUtil
         .isGooglePlayServicesAvailable(this.getActivity());
-
       if (ConnectionResult.SUCCESS != errorCode) {
         GooglePlayServicesUtil.getErrorDialog(errorCode,
           this.getActivity(), 0).show();

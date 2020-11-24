@@ -1,0 +1,477 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+MERGED from [com.android.support:multidex:1.0.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/fa38c0bc5417c845b80cd75b5d0050ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.guoxiaoxing:phoenix-compress-picture:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-compress-picture-1.0.15.aar/6a65a4d4a7e9ebde20a68cb645543aae/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:2:1-52:12
+MERGED from [com.github.guoxiaoxing:phoenix-core:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-core-1.0.15.aar/aaa42f60ce36ad6d36f43410ee71c476/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:design:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/850652266cc485cdce7c833de3168fcd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5e2fe43fa600a4b5b7864d3da0742f0b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f511c06aaf40bbd64b842d118276da85/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/caf515cd8aa93506ea19f397c89d439e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/f146ab8b036bde1ae5cb54d53c6a604d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/BaseRecyclerViewAdapterHelper-2.9.30.aar/6dca459fa6619857d41aeb7934b6750e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/0cbd009407922854ffb6f9cc6ee18369/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/fa3d8aef6a9ada739090fb106062d17c/AndroidManifest.xml:2:1-12:12
+MERGED from [com.youth.banner:banner:1.4.10] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/banner-1.4.10.aar/0175d28922e8bc0e3613e0a6367363de/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/dea277663f70ca0e22b682bd17589cab/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f05323882ca94640c73d6adf4fa34e78/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/170669b08234ac940ff82003be5e0e40/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/7f2b2b5c4390039849077b281b594e88/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/3b3de15afaf3257fd92df735429228d6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/bc1b2756c18174b207f6f0e77ab77ee8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/48c97dbb9f95e915f0f355ac0486baf5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/da03aaf373ff1c7f92b07ff74ed1e872/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4c91a256e373e6475e4996e5267e198d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/be92a3c3c3568af7ace48c7e20fe1aa4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/96f447e12aa1cc6ac787a98a7614102d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/73ea9c0b104de1c36e9f1fa78823e132/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/8cbba8fedce4d1b645cbe04e734f5fee/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9e852d5adbb261f61273d846bdda1a2c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/0a68660bb476d6f40b9dddabb3222da2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e99761c6772e0c87351018d3769ce6d9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/4a910c532a415450ae890e5b4ec0d973/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bd2297590751d1ca42388cf1dea4bf21/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ed3cd241a566019b59050d7eeedb72c2/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/42343a3341bf9b8952a11b817d7924d9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0038ae185ee556487844e6cc68590337/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b5e5f7d3b222a79eaab94ba7f1ddf583/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4a4f24d3ef45f43103f4a096b4255cf1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/03527ed9adb0d12e0e459fd9fee3525a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/aa0c73126c36a617224c9829365cda6c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e5dd8302273af9d92db5e149d21be543/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a1c0ddd5b1caf77ae2bb151614c6ce1e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e8ef939b87ec24de28763b11293c61f2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/36785f37f9dcd5c5ca4902881c2647b5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/c24f700d0991fcf15ff4aaf917145e39/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/07be8be5f2e809c5bb8a2f45be845b87/AndroidManifest.xml:17:1-24:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/fcc5ae6b0610c609b950a75e0c05700a/AndroidManifest.xml:15:1-21:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/88448ec37f3fb3fe09d67435316771d3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/f9d8fac0d73a146dbb5f752f87eb6c32/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/da64c714ee217df3d1e91c995ff6463c/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+	package
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:3:3-32
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:1-64:12
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:5:3-46:17
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:23:5-50:19
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:23:5-50:19
+MERGED from [com.github.guoxiaoxing:phoenix-core:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-core-1.0.15.aar/aaa42f60ce36ad6d36f43410ee71c476/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.guoxiaoxing:phoenix-core:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-core-1.0.15.aar/aaa42f60ce36ad6d36f43410ee71c476/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:design:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/850652266cc485cdce7c833de3168fcd/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/850652266cc485cdce7c833de3168fcd/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f511c06aaf40bbd64b842d118276da85/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f511c06aaf40bbd64b842d118276da85/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/caf515cd8aa93506ea19f397c89d439e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/caf515cd8aa93506ea19f397c89d439e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/fa3d8aef6a9ada739090fb106062d17c/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/fa3d8aef6a9ada739090fb106062d17c/AndroidManifest.xml:10:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:7:5-11:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/dea277663f70ca0e22b682bd17589cab/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/dea277663f70ca0e22b682bd17589cab/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bd2297590751d1ca42388cf1dea4bf21/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bd2297590751d1ca42388cf1dea4bf21/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ed3cd241a566019b59050d7eeedb72c2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ed3cd241a566019b59050d7eeedb72c2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/07be8be5f2e809c5bb8a2f45be845b87/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/07be8be5f2e809c5bb8a2f45be845b87/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/88448ec37f3fb3fe09d67435316771d3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/88448ec37f3fb3fe09d67435316771d3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/f9d8fac0d73a146dbb5f752f87eb6c32/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/f9d8fac0d73a146dbb5f752f87eb6c32/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/da64c714ee217df3d1e91c995ff6463c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/da64c714ee217df3d1e91c995ff6463c/AndroidManifest.xml:22:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bd2297590751d1ca42388cf1dea4bf21/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:12:5-31
+	android:label
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:9:5-37
+	android:roundIcon
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:11:5-37
+	android:icon
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:8:5-32
+	android:allowBackup
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:7:5-31
+	android:theme
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:13:5-36
+	android:networkSecurityConfig
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:10:5-57
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:6:5-41
+activity#com.example.roombox.ui.ChatActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:14:5-58
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:14:15-46
+activity#com.example.roombox.ui.LockActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:15:5-49
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:15:15-46
+activity#com.example.roombox.HotelListActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:16:5-51
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:16:15-48
+activity#com.example.roombox.ui.RegActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:17:5-19:53
+	android:theme
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:19:7-50
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:18:7-37
+activity#com.example.roombox.ui.LoginActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:20:5-22:53
+	android:theme
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:22:7-50
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:21:7-39
+activity#com.example.roombox.ui.PersonDataAct
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:23:5-50
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:23:15-47
+activity#com.example.roombox.ui.HotelDetialAct
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:24:5-51
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:24:15-48
+activity#com.example.roombox.ui.WelcomAct
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:25:5-46
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:25:15-43
+activity#com.example.roombox.MainActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:26:5-34:16
+	android:theme
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:28:7-50
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:27:7-35
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:29:7-33:23
+action#android.intent.action.MAIN
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:30:9-61
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:30:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:32:9-69
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:32:19-66
+activity#com.example.roombox.ui.MapAct
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:35:5-43
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:35:15-40
+activity#com.example.roombox.ui.CommentActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:36:5-52
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:36:15-49
+activity#com.example.roombox.ui.CriticalActivity
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:37:5-53
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:37:15-50
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:39:5-41:49
+	android:value
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:41:7-46
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:40:7-52
+uses-library#org.apache.http.legacy
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:43:5-45:34
+	android:required
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:45:7-31
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:44:7-44
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:47:3-77
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:18:5-79
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:18:5-79
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:47:20-74
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:48:3-67
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:48:20-64
+uses-permission#android.permission.INTERNET
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:49:3-65
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:15:5-67
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:15:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:49:20-62
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:50:3-73
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:50:20-70
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:51:3-83
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:51:20-80
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:52:3-74
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:17:5-76
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:52:20-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:53:3-79
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:12:5-81
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:53:20-76
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:54:3-71
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:16:5-73
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:16:5-73
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:54:20-68
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:55:3-69
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:19:5-71
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:19:5-71
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:55:20-66
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:56:3-79
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:20:5-81
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:56:20-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:57:3-77
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:21:5-79
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:21:5-79
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:57:20-74
+uses-permission#android.permission.CAMERA
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:58:3-63
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:13:5-65
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:58:20-60
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:59:3-66
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:59:20-63
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:60:3-78
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:11:5-80
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml:60:20-75
+uses-sdk
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/fa38c0bc5417c845b80cd75b5d0050ec/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/fa38c0bc5417c845b80cd75b5d0050ec/AndroidManifest.xml:20:5-43
+MERGED from [com.github.guoxiaoxing:phoenix-compress-picture:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-compress-picture-1.0.15.aar/6a65a4d4a7e9ebde20a68cb645543aae/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.guoxiaoxing:phoenix-compress-picture:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-compress-picture-1.0.15.aar/6a65a4d4a7e9ebde20a68cb645543aae/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.guoxiaoxing:phoenix-core:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-core-1.0.15.aar/aaa42f60ce36ad6d36f43410ee71c476/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.guoxiaoxing:phoenix-core:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-core-1.0.15.aar/aaa42f60ce36ad6d36f43410ee71c476/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/850652266cc485cdce7c833de3168fcd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/850652266cc485cdce7c833de3168fcd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5e2fe43fa600a4b5b7864d3da0742f0b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5e2fe43fa600a4b5b7864d3da0742f0b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f511c06aaf40bbd64b842d118276da85/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f511c06aaf40bbd64b842d118276da85/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/caf515cd8aa93506ea19f397c89d439e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/caf515cd8aa93506ea19f397c89d439e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/f146ab8b036bde1ae5cb54d53c6a604d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/f146ab8b036bde1ae5cb54d53c6a604d/AndroidManifest.xml:20:5-44
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/BaseRecyclerViewAdapterHelper-2.9.30.aar/6dca459fa6619857d41aeb7934b6750e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/BaseRecyclerViewAdapterHelper-2.9.30.aar/6dca459fa6619857d41aeb7934b6750e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/0cbd009407922854ffb6f9cc6ee18369/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/0cbd009407922854ffb6f9cc6ee18369/AndroidManifest.xml:5:5-43
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/fa3d8aef6a9ada739090fb106062d17c/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/glide-4.9.0.aar/fa3d8aef6a9ada739090fb106062d17c/AndroidManifest.xml:6:5-8:41
+MERGED from [com.youth.banner:banner:1.4.10] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/banner-1.4.10.aar/0175d28922e8bc0e3613e0a6367363de/AndroidManifest.xml:7:5-9:41
+MERGED from [com.youth.banner:banner:1.4.10] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/banner-1.4.10.aar/0175d28922e8bc0e3613e0a6367363de/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:5:5-43
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/dea277663f70ca0e22b682bd17589cab/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.9.0.aar/dea277663f70ca0e22b682bd17589cab/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f05323882ca94640c73d6adf4fa34e78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f05323882ca94640c73d6adf4fa34e78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/170669b08234ac940ff82003be5e0e40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/170669b08234ac940ff82003be5e0e40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/7f2b2b5c4390039849077b281b594e88/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/7f2b2b5c4390039849077b281b594e88/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/3b3de15afaf3257fd92df735429228d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/3b3de15afaf3257fd92df735429228d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/bc1b2756c18174b207f6f0e77ab77ee8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/bc1b2756c18174b207f6f0e77ab77ee8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/48c97dbb9f95e915f0f355ac0486baf5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/48c97dbb9f95e915f0f355ac0486baf5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/da03aaf373ff1c7f92b07ff74ed1e872/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/da03aaf373ff1c7f92b07ff74ed1e872/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4c91a256e373e6475e4996e5267e198d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/4c91a256e373e6475e4996e5267e198d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/be92a3c3c3568af7ace48c7e20fe1aa4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/be92a3c3c3568af7ace48c7e20fe1aa4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/96f447e12aa1cc6ac787a98a7614102d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/96f447e12aa1cc6ac787a98a7614102d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/73ea9c0b104de1c36e9f1fa78823e132/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/73ea9c0b104de1c36e9f1fa78823e132/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/8cbba8fedce4d1b645cbe04e734f5fee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/8cbba8fedce4d1b645cbe04e734f5fee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9e852d5adbb261f61273d846bdda1a2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9e852d5adbb261f61273d846bdda1a2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/0a68660bb476d6f40b9dddabb3222da2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/0a68660bb476d6f40b9dddabb3222da2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e99761c6772e0c87351018d3769ce6d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e99761c6772e0c87351018d3769ce6d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/4a910c532a415450ae890e5b4ec0d973/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/4a910c532a415450ae890e5b4ec0d973/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bd2297590751d1ca42388cf1dea4bf21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bd2297590751d1ca42388cf1dea4bf21/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ed3cd241a566019b59050d7eeedb72c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/ed3cd241a566019b59050d7eeedb72c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/42343a3341bf9b8952a11b817d7924d9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/42343a3341bf9b8952a11b817d7924d9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0038ae185ee556487844e6cc68590337/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0038ae185ee556487844e6cc68590337/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b5e5f7d3b222a79eaab94ba7f1ddf583/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b5e5f7d3b222a79eaab94ba7f1ddf583/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4a4f24d3ef45f43103f4a096b4255cf1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/4a4f24d3ef45f43103f4a096b4255cf1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/03527ed9adb0d12e0e459fd9fee3525a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/03527ed9adb0d12e0e459fd9fee3525a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/aa0c73126c36a617224c9829365cda6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/aa0c73126c36a617224c9829365cda6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e5dd8302273af9d92db5e149d21be543/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e5dd8302273af9d92db5e149d21be543/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a1c0ddd5b1caf77ae2bb151614c6ce1e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a1c0ddd5b1caf77ae2bb151614c6ce1e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e8ef939b87ec24de28763b11293c61f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e8ef939b87ec24de28763b11293c61f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/36785f37f9dcd5c5ca4902881c2647b5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/36785f37f9dcd5c5ca4902881c2647b5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/c24f700d0991fcf15ff4aaf917145e39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/c24f700d0991fcf15ff4aaf917145e39/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/07be8be5f2e809c5bb8a2f45be845b87/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/07be8be5f2e809c5bb8a2f45be845b87/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/fcc5ae6b0610c609b950a75e0c05700a/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/fcc5ae6b0610c609b950a75e0c05700a/AndroidManifest.xml:19:5-43
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/88448ec37f3fb3fe09d67435316771d3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.1.aar/88448ec37f3fb3fe09d67435316771d3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/f9d8fac0d73a146dbb5f752f87eb6c32/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.1.aar/f9d8fac0d73a146dbb5f752f87eb6c32/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/da64c714ee217df3d1e91c995ff6463c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.1.aar/da64c714ee217df3d1e91c995ff6463c/AndroidManifest.xml:20:5-44
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:14:5-84
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:14:22-81
+activity#com.guoxiaoxing.phoenix.picker.ui.BaseActivity
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:26:9-28:52
+	android:screenOrientation
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:27:13-74
+activity#com.guoxiaoxing.phoenix.picker.ui.camera.CameraActivity
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:29:9-32:72
+	android:screenOrientation
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:31:13-49
+	android:theme
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:32:13-69
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:30:13-83
+activity#com.guoxiaoxing.phoenix.picker.ui.picker.PickerActivity
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:33:9-36:72
+	android:screenOrientation
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:35:13-49
+	android:theme
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:36:13-69
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:34:13-83
+activity#com.guoxiaoxing.phoenix.picker.ui.picker.PreviewActivity
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:37:9-40:50
+	android:screenOrientation
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:40:13-47
+	android:configChanges
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:39:13-103
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:38:13-84
+activity#com.guoxiaoxing.phoenix.picker.ui.editor.PictureEditActivity
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:41:9-44:72
+	android:screenOrientation
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:43:13-49
+	android:theme
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:44:13-69
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:42:13-88
+activity#com.guoxiaoxing.phoenix.picker.ui.editor.TextInputActivity
+ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:45:9-49:77
+	android:screenOrientation
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:47:13-49
+	android:windowSoftInputMode
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:49:13-74
+	android:theme
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:48:13-61
+	android:name
+		ADDED from [com.github.guoxiaoxing:phoenix:1.0.15] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/AndroidManifest.xml:46:13-86
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.1.aar/7b64ede9a9a202eca759839c968e61d9/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/6ae26dc1471ea7eaf1ea38202320f504/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:12.0.1] /Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/098aec1e8fff3d8a929cd97202d2be4e/AndroidManifest.xml:24:13-58

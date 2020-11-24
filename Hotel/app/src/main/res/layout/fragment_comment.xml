@@ -4,28 +4,48 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical">
 
+   <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:padding="15dp">
     <TextView
-        android:id="@+id/pointTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:padding="15dp"/>
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:text="2间房源" />
 
-   <android.support.design.widget.TabLayout
-       android:id="@+id/tabLayout"
-       android:layout_width="match_parent"
+     <LinearLayout
+       android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginBottom="20dp"/>
+
+       android:layout_alignParentRight="true"
+       android:orientation="horizontal">
+       <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/itemS"
+         android:text="分享"/>
+       <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/itemS"
+         android:text="/"/>
+       <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/itemS"
+         android:text="编辑"/>
 
 
+     </LinearLayout>
 
+
+   </RelativeLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="60dp">
+        android:layout_marginBottom="60dp"/>
 
-
-    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

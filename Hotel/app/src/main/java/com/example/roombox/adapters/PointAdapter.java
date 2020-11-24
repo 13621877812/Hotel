@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.roombox.R;
-import com.example.roombox.bean.GiftBean;
+import com.example.roombox.bean.CollectionBean;
 
 import java.util.List;
 
@@ -22,10 +22,10 @@ import butterknife.ButterKnife;
 public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> {
 
     public interface ItemClickListener {
-        void itemClick(GiftBean bean);
+        void itemClick(CollectionBean bean);
     }
     private Context mContext;
-    private List<GiftBean> datas;
+    private List<CollectionBean> datas;
     private ItemClickListener listener;
     public PointAdapter(Context mContext) {
         this.mContext = mContext;
@@ -41,10 +41,10 @@ public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-         final GiftBean bean = datas.get(i);
-         viewHolder.text.setText(bean.getPoint() + "积分");
-        Glide.with(mContext).load(bean.getImage()).into(viewHolder.topImage);
-        viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
+         final CollectionBean bean = datas.get(i);
+         viewHolder.name.setText(bean.getName());
+         Glide.with(mContext).load(bean.getImage()).into(viewHolder.topImage);
+         viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 listener.itemClick(bean);
@@ -61,15 +61,21 @@ public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> 
         this.listener = listener;
     }
 
-    public void setDatas(List<GiftBean> datas) {
+    public void setDatas(List<CollectionBean> datas) {
         this.datas = datas;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.topImage)
         ImageView topImage;
-        @BindView(R.id.text)
-        TextView text;
+        @BindView(R.id.name)
+        TextView name;
+        @BindView(R.id.desc)
+        TextView desc;
+        @BindView(R.id.price)
+        TextView price;
+        @BindView(R.id.eval)
+        TextView eval;
         private View parentView;
         ViewHolder(View view) {
             super(view);

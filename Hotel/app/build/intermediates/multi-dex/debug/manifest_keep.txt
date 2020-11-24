@@ -1,0 +1,3 @@
+# Referenced at /Users/fpm0259/Desktop/台湾/Task/Hotel/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:32
+-keep class com.example.roombox.base.DemoApplication { <init>(...); }
+

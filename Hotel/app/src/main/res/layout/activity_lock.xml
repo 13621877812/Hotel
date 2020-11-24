@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="輸入密碼"
+      android:layout_gravity="center"
+      android:id="@+id/textView" />
+
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="e.g. 1234"
+      android:gravity="center"
+      android:maxLength="4"
+      android:id="@+id/editTextIPAddress" />
+
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="開門"
+      android:id="@+id/buttonPin14" />
+
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="鎖門"
+      android:id="@+id/buttonPin15" />
+
+
+
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="設定密碼"
+      android:id="@+id/buttonPin11" />
+
+
+
+
+
+
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="隨機產生密碼"
+      android:id="@+id/buttonPin12" />
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="訪客密碼"
+      android:id="@+id/buttonPin16" />
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="顯示密碼"
+      android:id="@+id/buttonPin13" />
+  </LinearLayout>
+
+</ScrollView>
