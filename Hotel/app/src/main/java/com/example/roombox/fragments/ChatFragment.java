@@ -50,9 +50,9 @@ public class ChatFragment extends Fragment {
     adapter = new SimpleAdapter(R.layout.item_chat, keyList, new SimpleAdapter.ConVert<ChatBean>() {
       @Override
       public void convert(BaseViewHolder helper, ChatBean o) {
-       String name = TextUtils.isEmpty(o.getName())?"AKi":o.getName();
-       String content = TextUtils.isEmpty(o.getName())?"有活动":o.getContent();
-       String time = TextUtils.isEmpty(o.getName())?"10月31":o.getTime();
+       String name = TextUtils.isEmpty(o.getSendName())?"AKi":o.getContent();
+       String content = TextUtils.isEmpty(o.getContent())?"有活动":o.getContent();
+       String time = TextUtils.isEmpty(o.getCreateTime())?"10月31":o.getCreateTime();
         helper.setText(R.id.tv_name, name);
         helper.setText(R.id.tv_content, content);
         helper.setText(R.id.tv_time, time);

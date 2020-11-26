@@ -1,25 +1,45 @@
 package com.example.roombox.bean;
 
 public class ChatBean {
-  private String logo;
-  private String name;
+  private String id;
+  private String sendUrl;
+  private String sendId;
+  private String sendName;
   private String content;
-  private String time;
+  private String receiveId;
+  private String createTime;
 
-  public String getLogo() {
-    return logo;
+  public String getId() {
+    return id;
   }
 
-  public void setLogo(String logo) {
-    this.logo = logo;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public String getName() {
-    return name;
+  public String getSendName() {
+    return sendName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setSendName(String sendName) {
+    this.sendName = sendName;
+  }
+
+
+  public String getSendUrl() {
+    return sendUrl;
+  }
+
+  public void setSendUrl(String sendUrl) {
+    this.sendUrl = sendUrl;
+  }
+
+  public String getSendId() {
+    return sendId;
+  }
+
+  public void setSendId(String sendId) {
+    this.sendId = sendId;
   }
 
   public String getContent() {
@@ -30,11 +50,19 @@ public class ChatBean {
     this.content = content;
   }
 
-  public String getTime() {
-    return time;
+  public String getReceiveId() {
+    return receiveId;
   }
 
-  public void setTime(String time) {
-    this.time = time;
+  public void setReceiveId(String receiveId) {
+    this.receiveId = receiveId;
+  }
+
+  public String getCreateTime() {
+    return createTime;
+  }
+
+  public void setCreateTime(String createTime) {
+    this.createTime = createTime;
   }
 }

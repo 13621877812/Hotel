@@ -16,6 +16,7 @@ import com.example.roombox.bean.User;
 
 import com.example.roombox.utils.ACache;
 import com.example.roombox.utils.Contans;
+import com.example.roombox.utils.HttpUtil;
 import com.google.gson.Gson;
 
 
@@ -23,6 +24,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
@@ -108,73 +110,25 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
             return;
         }
 
-        // TODO validate success, do something
         reg(account,pwd);
 
     }
 
     private void reg(final String name, final String pwd) {
-        String url = Contans.URL + "user/regist";
-        OkHttpClient okHttpClient  = new OkHttpClient.Builder()
-                .connectTimeout(10, TimeUnit.SECONDS)
-                .writeTimeout(10,TimeUnit.SECONDS)
-                .readTimeout(20, TimeUnit.SECONDS)
-                .build();
-        FormBody formBody = new FormBody.Builder()
-                .add("account", name)
-                .add("password", pwd)
-                .add("isowner", type.toString())
-                .build();
-        final Request request = new Request.Builder()
-                .url(url)
-                .post(formBody)//默认就是GET请求，可以不写
-                .build();
+        String url = "user/regist";
+        HashMap<String,String> params = new HashMap<>();
+        params.put("account",name);
+        params.put("password",pwd);
+        params.put("isowner",type.toString());
+        HttpUtil.httpPost(url,params,RegActivity.this,new HttpUtil.HttpCallBack(){
 
-        Call call = okHttpClient.newCall(request);
-        call.enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                Log.i("TAG", "onResponse: " + e.toString());
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-
-
-                final  String result = response.body().string();
-                if (response.body() != null) {
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-
-                            try {
-                                Log.i("TAG", "run: " + result);
-                                JSONObject jsonObject = new JSONObject(result);
-                                String code = jsonObject.getString("code");
-                                if ("0".equals(code)){
-                                    Contans.makeToast("regist success!",RegActivity.this);
-
-                                    finish();
-
-                                }else {
-                                    Contans.makeToast(jsonObject.getString("msg"),RegActivity.this);
-                                }
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-
-                        }
-                    });
-
-
-                    response.body().close();
-                }
-            }
+          @Override
+          public void success(JSONObject data) {
+            Contans.makeToast("regist success!",RegActivity.this);
+            finish();
+          }
         });
+
     }
 
     private void save(String name,String  pwd) {

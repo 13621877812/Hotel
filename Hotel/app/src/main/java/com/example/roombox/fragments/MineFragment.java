@@ -53,7 +53,9 @@ public class MineFragment extends Fragment {
   }
   private void initView(){
     ArrayList<HashMap<String,Object>> meumList = new ArrayList<HashMap<String, Object>>();
+    //租客
     String[] datas = new String[]{"历史订单","房屋管理","客服","登出","评论"};
+    //
     String[] datas1 = new String[]{"房屋管理","举报管理","登出"};
     for(int i = 0; i < datas.length; i++){
       HashMap<String,Object> map = new HashMap<String, Object>();

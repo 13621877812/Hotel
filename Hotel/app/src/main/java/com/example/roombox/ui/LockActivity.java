@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 import com.example.roombox.R;
@@ -24,7 +25,9 @@ import java.net.URL;
 
 import java.io.InputStream;
 
+
 public class LockActivity extends Activity implements View.OnClickListener {
+
   public final static String PREF_IP = "192.168.43.133";
   public final static String PREF_PORT = "80";
   // declare buttons and text inputs
@@ -93,7 +96,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
     }
     else if(view.getId()==buttonPin12.getId())
     {
-      parameterValue = "random"; //整合在我的-一般用戶-訪客密碼
+      parameterValue = "random"; //不需要
     }
     else if(view.getId()==buttonPin14.getId())
     {
@@ -105,7 +108,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
     }
     else if(view.getId()==buttonPin16.getId())
     {
-      parameterValue = "gues";//不需要
+      parameterValue = "gues";//整合在我的-一般用戶-訪客密碼
     }
     else
     {
@@ -238,10 +241,10 @@ public class LockActivity extends Activity implements View.OnClickListener {
     @Override
     protected Void doInBackground(Void... voids) {
       alertDialog.setMessage("Data sent, waiting for reply from server...");
-      if(!alertDialog.isShowing())
-      {
-        alertDialog.show();
-      }
+           /* if(!alertDialog.isShowing())
+            {
+                alertDialog.show();
+            }改成toast*/
       requestReply = sendRequest(parameterValue,ipAddress,portNumber, parameter);
       return null;
     }
@@ -259,10 +262,18 @@ public class LockActivity extends Activity implements View.OnClickListener {
       alertDialog.setMessage(requestReply);
       if(!alertDialog.isShowing())
       {
-        alertDialog.show(); // show dialog
-
+        //alertDialog.show(); // show dialog
 
       }
+
+
+
+      Toast.makeText(this.context,requestReply , Toast.LENGTH_SHORT).show();             //改成toast
+
+
+
+
+
       try {
         Thread.sleep(1800);
       } catch (InterruptedException e) {
@@ -280,11 +291,12 @@ public class LockActivity extends Activity implements View.OnClickListener {
     protected void onPreExecute() {
 
       alertDialog.setMessage("Sending data to server, please wait...");
-      if(!alertDialog.isShowing())
-      {
-        alertDialog.show();
-      }
+          /*  if(!alertDialog.isShowing())
+            {改成toast
+                alertDialog.show();
+            }*/
     }
 
   }
 }
+

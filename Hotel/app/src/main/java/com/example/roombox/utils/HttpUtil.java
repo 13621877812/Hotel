@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
+import com.bumptech.glide.RequestBuilder;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -25,30 +27,8 @@ public class HttpUtil {
  public interface  HttpCallBack{
     public void success(JSONObject data);
   }
-  public static void httpGet(){
-
-  }
-  public static void httpPost(String url,
-                              HashMap<String,String> params,
-                              final Activity context, final HttpCallBack httpCallBack){
-    String httpUrl = Contans.URL + url;
-    OkHttpClient okHttpClient  = new OkHttpClient.Builder()
-      .connectTimeout(10, TimeUnit.SECONDS)
-      .writeTimeout(10,TimeUnit.SECONDS)
-      .readTimeout(20, TimeUnit.SECONDS)
-      .build();
-    FormBody.Builder builder = new FormBody.Builder();
-    Set<String> keys = params.keySet();
-    for (String key : keys) {
-      String value = params.get(key);
-      builder.add(key,value);
-    }
-    RequestBody requestBody = builder.build();
-    final Request request = new Request.Builder()
-      .url(url)
-      .post(requestBody)//默认就是GET请求，可以不写
-      .build();
-    Call call = okHttpClient.newCall(request);
+  public static void httpGet(String url,final Activity context,final HttpCallBack httpCallBack){
+    Call call = getHttpCall(url,null);
     call.enqueue(new Callback() {
       @Override
       public void onFailure(Call call, IOException e) {
@@ -60,38 +40,89 @@ public class HttpUtil {
         final  String result = response.body().string();
         if (response.body() != null) {
 
-          context.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-              try {
-                JSONObject jsonObject = new JSONObject(result);
-                String code = jsonObject.getString("code");
-                if ("0".equals(code)){ //success
-                  JSONObject data =  jsonObject.getJSONObject("data");
-                  if (httpCallBack != null){
-                    httpCallBack.success(data);
-                  }
+          dealData(context,httpCallBack,result);
+        }
+      }
 
-                }else {
-                  Contans.makeToast(jsonObject.getString("msg"),context);
-                }
+    });
+  }
+  public static void httpPost(String url,
+                              HashMap<String,String> params,
+                              final Activity context, final HttpCallBack httpCallBack){
+    Call call = getHttpCall(url,params);
+    call.enqueue(new Callback() {
+      @Override
+      public void onFailure(Call call, IOException e) {
+        Log.i("TAG", "fail: " + e.toString());
+      }
 
-              } catch (JSONException e) {
-                Contans.makeToast("data error",context);
-                e.printStackTrace();
-              } catch (Exception e) {
-                Contans.makeToast("data error",context);
-                e.printStackTrace();
-              }
-
-            }
-          });
+      @Override
+      public void onResponse(Call call, Response response) throws IOException {
+        final  String result = response.body().string();
+        if (response.body() != null) {
+           dealData(context,httpCallBack,result);
         }
       }
 
     });
 
 
+  }
+  private static Call getHttpCall(String url,
+                           HashMap<String,String> params){
+    String httpUrl = Contans.URL + url;
+    OkHttpClient okHttpClient  = new OkHttpClient.Builder()
+      .connectTimeout(10, TimeUnit.SECONDS)
+      .writeTimeout(10,TimeUnit.SECONDS)
+      .readTimeout(20, TimeUnit.SECONDS)
+      .build();
+    RequestBody requestBody = null;
+    if (params != null){
+      FormBody.Builder builder = new FormBody.Builder();
+      Set<String> keys = params.keySet();
+      for (String key : keys) {
+        String value = params.get(key);
+        builder.add(key,value);
+      }
+      requestBody = builder.build();
+    }
+     Request.Builder requestBuild = new Request.Builder();
+     if (requestBody != null){
+       requestBuild.post(requestBody);
+     }
+     Request request = requestBuild.url(httpUrl).build();
+     Call call = okHttpClient.newCall(request);
+    return call;
+  }
+  private static void dealData(final Activity context,
+                               final HttpCallBack httpCallBack,
+                              final String data){
+    context.runOnUiThread(new Runnable() {
+      @Override
+      public void run() {
+        try {
+          JSONObject jsonObject = new JSONObject(data);
+          String code = jsonObject.getString("code");
+          if ("0".equals(code)){ //success
+            JSONObject data =  jsonObject.getJSONObject("data");
+            if (httpCallBack != null){
+              httpCallBack.success(data);
+            }
+
+          }else {
+            Contans.makeToast(jsonObject.getString("msg"),context);
+          }
+
+        } catch (JSONException e) {
+          Contans.makeToast("data error",context);
+          e.printStackTrace();
+        } catch (Exception e) {
+          Contans.makeToast("data error",context);
+          e.printStackTrace();
+        }
+
+      }
+    });
   }
 
 

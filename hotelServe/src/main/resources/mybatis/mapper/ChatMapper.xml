@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.ChatMapper">
+
+
+
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.ChatEntity">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <id column="sendUrl" jdbcType="INTEGER" property="sendUrl" />
+        <id column="sendId" jdbcType="INTEGER" property="sendId" />
+        <result column="sendName" jdbcType="VARCHAR" property="sendName" />
+        <result column="content" jdbcType="TIMESTAMP" property="content" />
+        <result column="receiveId" jdbcType="INTEGER" property="receiveId" />
+        <result column="createTime" jdbcType="VARCHAR" property="createTime" />
+
+    </resultMap>
+
+
+
+
+
+
+    <insert id="insert" parameterType="com.example.demo.entity.ChatEntity">
+
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into chat (sendUrl, sendName, sendId,
+        content,receiveId,createTime)
+        values (#{sendUrl,jdbcType=VARCHAR}, #{sendName,jdbcType=VARCHAR}, #{sendId,jdbcType=VARCHAR},
+        #{content,jdbcType=VARCHAR},#{receiveId,jdbcType=VARCHAR},#{createTime,jdbcType=INTEGER})
+    </insert>
+
+
+
+
+    <select id="selectAll" parameterType="com.example.demo.entity.ChatEntity" resultMap="BaseResultMap" useCache="true">
+
+     select *
+      from chat where  (sendId=#{sendId}  and receiveId = #{receiveId}) or (sendId=#{receiveId}  and receiveId = #{sendId)  order by id aes
+
+    </select>
+
+
+
+
+
+</mapper>

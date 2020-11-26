@@ -1,53 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad060d7f-82b8-470c-9553-fe6ec1d7e4f6" name="Default Changelist" comment="">
+    <list default="true" id="4d4123f5-b2ca-4e7e-829b-444974134265" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/adapters/ChatAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/ChatEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ChatMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ChatMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/apt/debug/com/example/roombox/ui/ChatActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/apt/debug/com/example/roombox/ui/ChatActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/asynclayoutinflater/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/compat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/constraint/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/coordinatorlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/coreui/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/coreutils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/customview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/design/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/drawerlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/fragment/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/loader/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/mediacompat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/slidingpanelayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/swiperefreshlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/transition/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v4/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/android/support/v7/viewpager/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/bumptech/glide/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/bumptech/glide/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/chad/library/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/chad/library/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/example/roombox/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/example/roombox/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/google/android/gms/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/google/maps/android/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/google/maps/android/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/guoxiaoxing/phoenix/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/guoxiaoxing/phoenix/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/guoxiaoxing/phoenix/compress/picture/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/guoxiaoxing/phoenix/compress/picture/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/guoxiaoxing/phoenix/core/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/guoxiaoxing/phoenix/core/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/youth/banner/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/generated/source/r/debug/com/youth/banner/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/asynclayoutinflater/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/asynclayoutinflater/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/asynclayoutinflater/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/asynclayoutinflater/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/compat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/compat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/compat/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/compat/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/constraint/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/constraint/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coordinatorlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coordinatorlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coordinatorlayout/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coordinatorlayout/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreui/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreui/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreui/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreui/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreutils/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreutils/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreutils/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/coreutils/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/customview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/customview/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/customview/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/customview/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/design/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/design/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/design/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/drawerlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/drawerlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/drawerlayout/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/drawerlayout/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/fragment/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/fragment/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/fragment/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/fragment/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/loader/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/loader/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/loader/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/loader/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/mediacompat/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/mediacompat/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/slidingpanelayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/slidingpanelayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/slidingpanelayout/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/slidingpanelayout/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/swiperefreshlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/swiperefreshlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/swiperefreshlayout/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/swiperefreshlayout/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/transition/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/transition/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/transition/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/transition/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v4/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v4/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v4/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v4/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/viewpager/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/viewpager/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/viewpager/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/android/support/v7/viewpager/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/bumptech/glide/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/bumptech/glide/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/bumptech/glide/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/bumptech/glide/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/chad/library/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/chad/library/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/chad/library/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/chad/library/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/MainActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/MainActivity_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$mipmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$raw.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$raw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/R$xml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/PointAdapter$ViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/PointAdapter$ViewHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/PointAdapter$ViewHolder_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/PointAdapter$ViewHolder_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/PointAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/PointAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/StudyAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/adapters/StudyAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/bean/ChatBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/bean/ChatBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ChatFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ChatFragment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ChatFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ChatFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ChatFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ChatFragment_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ColloectionFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ColloectionFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ColloectionFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/ColloectionFragment_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/HomeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/HomeFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/MineFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/MineFragment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/MineFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/MineFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/MineFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/MineFragment_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/SearchFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/SearchFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/SearchFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/fragments/SearchFragment_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity_ViewBinding$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity_ViewBinding$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/ChatActivity_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/CommentActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/CommentActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/CommentActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/CommentActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/CriticalActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/CriticalActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/HotelDetialAct.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/HotelDetialAct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/LockActivity$HttpRequestAsyncTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/LockActivity$HttpRequestAsyncTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/LockActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/LockActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/LoginActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/LoginActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/PersonDataAct.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/PersonDataAct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/ui/RegActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/Contans.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/Contans.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/HttpUtil$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/HttpUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/HttpUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/utils/HttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/views/CouchView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/views/CouchView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/views/MenuBottom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/views/MenuBottom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/views/MenuItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/example/roombox/views/MenuItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/google/android/gms/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/google/android/gms/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/google/maps/android/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/google/maps/android/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/compress/picture/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/compress/picture/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/compress/picture/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/compress/picture/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/core/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/core/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/core/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/guoxiaoxing/phoenix/core/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/youth/banner/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/classes/debug/com/youth/banner/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1HzwiUPjURw6vFAZJPN3pOi58zQ=" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1HzwiUPjURw6vFAZJPN3pOi58zQ=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/debug/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/debug/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/merged/debug/layout_activity_chat.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/merged/debug/layout_activity_chat.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/merged/debug/layout_fragment_search.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/merged/debug/layout_fragment_search.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/asynclayoutinflater/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/asynclayoutinflater/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/asynclayoutinflater/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/asynclayoutinflater/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/compat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/compat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/compat/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/compat/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/constraint/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/constraint/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coordinatorlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coordinatorlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coordinatorlayout/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coordinatorlayout/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreui/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreui/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreui/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreui/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreutils/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreutils/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreutils/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/coreutils/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/customview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/customview/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/customview/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/customview/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/design/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/design/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/design/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/design/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/drawerlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/drawerlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/drawerlayout/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/drawerlayout/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/fragment/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/fragment/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/fragment/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/fragment/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/graphics/drawable/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/graphics/drawable/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/graphics/drawable/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/graphics/drawable/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/loader/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/loader/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/loader/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/loader/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/mediacompat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/mediacompat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/mediacompat/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/mediacompat/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/slidingpanelayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/slidingpanelayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/slidingpanelayout/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/slidingpanelayout/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/swiperefreshlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/swiperefreshlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/swiperefreshlayout/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/swiperefreshlayout/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/transition/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/transition/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/transition/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/transition/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v4/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v4/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v4/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v4/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/appcompat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/appcompat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/appcompat/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/appcompat/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/recyclerview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/recyclerview/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/recyclerview/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/recyclerview/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/viewpager/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/viewpager/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/viewpager/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/android/support/v7/viewpager/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/bumptech/glide/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/bumptech/glide/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/bumptech/glide/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/bumptech/glide/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/chad/library/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/chad/library/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/chad/library/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/chad/library/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/MainActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/MainActivity_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$mipmap.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$mipmap.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$raw.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$raw.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$style.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$style.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$styleable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$styleable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$xml.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/R$xml.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/PointAdapter$ViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/PointAdapter$ViewHolder.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/PointAdapter$ViewHolder_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/PointAdapter$ViewHolder_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/PointAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/PointAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/StudyAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/adapters/StudyAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/bean/ChatBean.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/bean/ChatBean.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ChatFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ChatFragment$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ChatFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ChatFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ChatFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ChatFragment_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ColloectionFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ColloectionFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ColloectionFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/ColloectionFragment_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/HomeFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/HomeFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/MineFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/MineFragment$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/MineFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/MineFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/MineFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/MineFragment_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/SearchFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/SearchFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/SearchFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/fragments/SearchFragment_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity_ViewBinding$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity_ViewBinding$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/ChatActivity_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/CommentActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/CommentActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/CommentActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/CommentActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/CriticalActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/CriticalActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/HotelDetialAct.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/HotelDetialAct.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/LockActivity$HttpRequestAsyncTask.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/LockActivity$HttpRequestAsyncTask.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/LockActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/LockActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/LoginActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/LoginActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/PersonDataAct.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/PersonDataAct.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity$2$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/ui/RegActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/Contans.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/Contans.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/HttpUtil$1$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/HttpUtil$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/HttpUtil$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/HttpUtil.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/utils/HttpUtil.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/views/CouchView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/views/CouchView.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/views/MenuBottom.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/views/MenuBottom.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/views/MenuItem.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/example/roombox/views/MenuItem.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/google/android/gms/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/google/android/gms/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/google/maps/android/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/google/maps/android/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/compress/picture/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/compress/picture/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/compress/picture/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/compress/picture/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/core/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/core/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/core/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/guoxiaoxing/phoenix/core/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/youth/banner/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexBuilder/debug/210/com/youth/banner/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/bean/ChatBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/bean/ChatBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/fragments/ChatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/fragments/ChatFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/fragments/MineFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/fragments/MineFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/ui/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/ui/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/ui/LockActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/ui/LockActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/ui/RegActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/ui/RegActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/utils/Contans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/utils/Contans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/java/com/example/roombox/utils/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/res/layout/activity_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/res/layout/activity_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hotelServe.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1kS1YlFCoeOzhG5qcA5F8iftEWB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectId" id="1kp4kBFO111xlU98NI0qfNhR9i0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="hotelServe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -55,91 +329,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.DemoApplication (1)" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad060d7f-82b8-470c-9553-fe6ec1d7e4f6" name="Default Changelist" comment="" />
-      <created>1605679229304</created>
+      <changelist id="4d4123f5-b2ca-4e7e-829b-444974134265" name="Default Changelist" comment="" />
+      <created>1606384340232</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605679229304</updated>
-      <workItem from="1605679237379" duration="1220000" />
-      <workItem from="1605681622187" duration="1697000" />
-      <workItem from="1605683451375" duration="1034000" />
-      <workItem from="1605689809468" duration="615000" />
-      <workItem from="1605921781157" duration="1028000" />
-      <workItem from="1605923887422" duration="1248000" />
-      <workItem from="1605937579845" duration="130000" />
-      <workItem from="1605939519470" duration="939000" />
-      <workItem from="1605941600816" duration="790000" />
-      <workItem from="1605943907901" duration="239000" />
-      <workItem from="1605944380965" duration="1055000" />
+      <updated>1606384340232</updated>
+      <workItem from="1606384348172" duration="1626000" />
+      <workItem from="1606388435587" duration="1841000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="966" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1605944089613">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="966" y="137" key="#com.intellij.ide.util.MemberChooser/0.23.1920.977@0.23.1920.977" timestamp="1605944089613" />
-    <state width="1724" height="290" key="GridCell.Tab.0.bottom" timestamp="1605944614274">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1605944614274" />
-    <state width="1724" height="290" key="GridCell.Tab.0.center" timestamp="1605944614273">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1605944614273" />
-    <state width="1724" height="290" key="GridCell.Tab.0.left" timestamp="1605944614273">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1605944614273" />
-    <state width="1724" height="290" key="GridCell.Tab.0.right" timestamp="1605944614273">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1605944614273" />
-    <state width="1724" height="290" key="GridCell.Tab.1.bottom" timestamp="1605944614275">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1605944614275" />
-    <state width="1724" height="290" key="GridCell.Tab.1.center" timestamp="1605944614275">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1605944614275" />
-    <state width="1724" height="290" key="GridCell.Tab.1.left" timestamp="1605944614274">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1605944614274" />
-    <state width="1724" height="290" key="GridCell.Tab.1.right" timestamp="1605944614275">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1724" height="290" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1605944614275" />
-    <state x="1025" y="90" key="com.intellij.ide.util.TipDialog" timestamp="1605944394817">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="1025" y="90" key="com.intellij.ide.util.TipDialog/0.23.1920.977@0.23.1920.977" timestamp="1605944394817" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

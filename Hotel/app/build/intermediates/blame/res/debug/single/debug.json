@@ -244,6 +244,10 @@
         "source": "/Users/fpm0259/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a9d498a6e6e03c02929251497a0e65c7/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
     },
     {
+        "merged": "/Users/fpm0259/Desktop/台湾/Task/Hotel/app/build/intermediates/res/merged/debug/layout_chat_item.xml.flat",
+        "source": "/Users/fpm0259/Desktop/台湾/Task/Hotel/app/src/main/res/layout/chat_item.xml"
+    },
+    {
         "merged": "/Users/fpm0259/Desktop/台湾/Task/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f125.png.flat",
         "source": "/Users/fpm0259/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/3940202ab2ea0432bef515b95d563d89/res/drawable-xhdpi-v4/f125.png"
     },

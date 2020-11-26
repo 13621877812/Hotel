@@ -38,18 +38,18 @@ public final class R {
         public static final int bannerDefaultImage = 0x7f09002a;
         public static final int bannerTitle = 0x7f09002b;
         public static final int bannerViewPager = 0x7f09002c;
-        public static final int center = 0x7f09003f;
-        public static final int center_crop = 0x7f090040;
-        public static final int center_inside = 0x7f090042;
-        public static final int circleIndicator = 0x7f090047;
-        public static final int fit_center = 0x7f090077;
-        public static final int fit_end = 0x7f090078;
-        public static final int fit_start = 0x7f090079;
-        public static final int fit_xy = 0x7f09007a;
-        public static final int indicatorInside = 0x7f090095;
-        public static final int matrix = 0x7f0900ca;
-        public static final int numIndicator = 0x7f0900e1;
-        public static final int numIndicatorInside = 0x7f0900e2;
+        public static final int center = 0x7f090040;
+        public static final int center_crop = 0x7f090041;
+        public static final int center_inside = 0x7f090043;
+        public static final int circleIndicator = 0x7f090049;
+        public static final int fit_center = 0x7f090079;
+        public static final int fit_end = 0x7f09007a;
+        public static final int fit_start = 0x7f09007b;
+        public static final int fit_xy = 0x7f09007c;
+        public static final int indicatorInside = 0x7f090097;
+        public static final int matrix = 0x7f0900cc;
+        public static final int numIndicator = 0x7f0900e2;
+        public static final int numIndicatorInside = 0x7f0900e3;
         public static final int titleView = 0x7f09016e;
     }
     public static final class layout {

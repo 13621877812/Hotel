@@ -3,9 +3,9 @@ package com.example.roombox.ui;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -29,8 +29,7 @@ public class ChatActivity_ViewBinding implements Unbinder {
 
     View view;
     target.content = Utils.findRequiredViewAsType(source, R.id.content, "field 'content'", EditText.class);
-    target.otherContent = Utils.findRequiredViewAsType(source, R.id.otherContent, "field 'otherContent'", TextView.class);
-    target.mineContent = Utils.findRequiredViewAsType(source, R.id.mineContent, "field 'mineContent'", TextView.class);
+    target.chatList = Utils.findRequiredViewAsType(source, R.id.chatList, "field 'chatList'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.sendBtn, "method 'onViewClicked'");
     view2131296574 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -49,8 +48,7 @@ public class ChatActivity_ViewBinding implements Unbinder {
     this.target = null;
 
     target.content = null;
-    target.otherContent = null;
-    target.mineContent = null;
+    target.chatList = null;
 
     view2131296574.setOnClickListener(null);
     view2131296574 = null;
