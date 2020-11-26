@@ -4,6 +4,7 @@ import com.example.demo.entity.*;
 import com.example.demo.mapper.ChatMapper;
 import com.example.demo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -40,7 +41,9 @@ public class ChatController {
 
   //add
   @RequestMapping(value = "/add",method = RequestMethod.POST)
-  public ResultEntity addComment(ChatEntity entity) throws Exception{
+  public ResultEntity addComment(ChatEntity entity, HttpRequest request) throws Exception{
+
+
 
    //获取发送的人的头像和昵称
    UserEntity userEntity = userMapper.selectByPrimaryKey(entity.getSendId());
