@@ -50,7 +50,7 @@ public final class R {
         public static final int matrix = 0x7f0900cc;
         public static final int numIndicator = 0x7f0900e2;
         public static final int numIndicatorInside = 0x7f0900e3;
-        public static final int titleView = 0x7f09016e;
+        public static final int titleView = 0x7f09016f;
     }
     public static final class layout {
         public static final int banner = 0x7f0c0036;

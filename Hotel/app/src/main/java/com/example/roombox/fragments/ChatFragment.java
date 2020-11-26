@@ -1,7 +1,6 @@
 package com.example.roombox.fragments;
 
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,14 +12,20 @@ import android.view.ViewGroup;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.roombox.R;
 import com.example.roombox.bean.ChatBean;
-import com.example.roombox.bean.CommentBean;
-import com.example.roombox.ui.HotelDetialAct;
+import com.example.roombox.utils.HttpUtil;
 import com.example.roombox.utils.SimpleAdapter;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONObject;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
@@ -44,15 +49,16 @@ public class ChatFragment extends Fragment {
     initData();
     return view;
   }
-  private void initListView(){
+
+  private void initListView() {
     listView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
     adapter = new SimpleAdapter(R.layout.item_chat, keyList, new SimpleAdapter.ConVert<ChatBean>() {
       @Override
       public void convert(BaseViewHolder helper, ChatBean o) {
-       String name = TextUtils.isEmpty(o.getSendName())?"AKi":o.getContent();
-       String content = TextUtils.isEmpty(o.getContent())?"有活动":o.getContent();
-       String time = TextUtils.isEmpty(o.getCreateTime())?"10月31":o.getCreateTime();
+        String name = TextUtils.isEmpty(o.getSendName()) ? "AKi" : o.getContent();
+        String content = TextUtils.isEmpty(o.getContent()) ? "有活动" : o.getContent();
+        String time = TextUtils.isEmpty(o.getCreateTime()) ? "10月31" : o.getCreateTime();
         helper.setText(R.id.tv_name, name);
         helper.setText(R.id.tv_content, content);
         helper.setText(R.id.tv_time, time);
@@ -84,16 +90,35 @@ public class ChatFragment extends Fragment {
 
     listView.setAdapter(adapter);
   }
-  private void initData(){
-    ChatBean bean1 = new ChatBean();
-    ChatBean bean2 = new ChatBean();
-    keyList.add(bean1);
-    keyList.add(bean2);
+
+  private void initData() {
+    String url = "chat/list?sendId=1&receiveId=2";
+    HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
+      @Override
+      public void success(JSONObject data) {
+        Gson gson = new Gson();
+        Type userListType = new TypeToken<ArrayList<ChatBean>>() {
+        }.getType();
+        List<ChatBean> datas = gson.fromJson(data.toString(), userListType);
+        keyList.clear();
+        keyList.addAll(datas);
+      }
+    });
+
 
   }
+
   @Override
   public void onDestroyView() {
     super.onDestroyView();
     unbinder.unbind();
+  }
+
+  @OnClick(R.id.startBtn)
+  public void onViewClicked() {
+    initData();
+
+
+
   }
 }

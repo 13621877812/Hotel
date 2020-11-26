@@ -37,7 +37,7 @@
     <select id="selectAll" parameterType="com.example.demo.entity.ChatEntity" resultMap="BaseResultMap" useCache="true">
 
      select *
-      from chat where  (sendId=#{sendId}  and receiveId = #{receiveId}) or (sendId=#{receiveId}  and receiveId = #{sendId)  order by id aes
+      from chat where  (sendId=#{sendId}  and receiveId = #{receiveId}) or (receiveId=#{sendId}  and sendId = #{receiveId}) order by id
 
     </select>
 
