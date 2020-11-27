@@ -12,7 +12,7 @@
  Target Server Version : 14003048
  File Encoding         : utf-8
 
- Date: 11/26/2020 20:47:35 PM
+ Date: 11/27/2020 17:26:57 PM
 */
 
 -- ----------------------------
@@ -28,7 +28,7 @@ CREATE TABLE [dbo].[chat] (
 	[receiveId] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[createTime] datetime NOT NULL DEFAULT '',
 	[sendUrl] varchar(10) COLLATE Chinese_PRC_90_CS_AI_KS_SC NULL,
-	[sendName] varchar(10) COLLATE Chinese_PRC_90_CS_AI_KS_SC NOT NULL
+	[sendName] varchar(10) COLLATE Chinese_PRC_90_CS_AI_KS_SC NULL
 )
 ON [PRIMARY]
 GO
@@ -50,45 +50,6 @@ INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], 
 INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('5', N'没空', '2', '1', '2020-11-26 19:41:49.000', null, N'李四');
 GO
 SET IDENTITY_INSERT [dbo].[chat] OFF
-GO
-COMMIT
-GO
-
--- ----------------------------
---  Table structure for chat_copy
--- ----------------------------
-IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[chat_copy]') AND type IN ('U'))
-	DROP TABLE [dbo].[chat_copy]
-GO
-CREATE TABLE [dbo].[chat_copy] (
-	[id] int IDENTITY(1,1) NOT NULL,
-	[content] varchar(1000) COLLATE Chinese_PRC_90_CS_AI_KS NOT NULL,
-	[sendId] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[receiveId] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[createTime] datetime NOT NULL DEFAULT '',
-	[sendUrl] varchar(10) COLLATE Chinese_PRC_90_CS_AI_KS_SC NULL,
-	[sendName] varchar(10) COLLATE Chinese_PRC_90_CS_AI_KS_SC NOT NULL
-)
-ON [PRIMARY]
-GO
-EXEC sp_addextendedproperty 'MS_Description', N'消息id', 'SCHEMA', 'dbo', 'TABLE', 'chat_copy', 'COLUMN', 'id'
-GO
-EXEC sp_addextendedproperty 'MS_Description', N'内容', 'SCHEMA', 'dbo', 'TABLE', 'chat_copy', 'COLUMN', 'content'
-GO
-EXEC sp_addextendedproperty 'MS_Description', N'发送者头像', 'SCHEMA', 'dbo', 'TABLE', 'chat_copy', 'COLUMN', 'sendUrl'
-GO
-
--- ----------------------------
---  Records of chat_copy
--- ----------------------------
-BEGIN TRANSACTION
-GO
-SET IDENTITY_INSERT [dbo].[chat_copy] ON
-GO
-INSERT INTO [dbo].[chat_copy] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('4', N'你今晚有空吗？', '1', '2', '2020-11-26 19:41:31.000', null, N'张三');
-INSERT INTO [dbo].[chat_copy] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('5', N'没空', '2', '1', '2020-11-26 19:41:49.000', null, N'李四');
-GO
-SET IDENTITY_INSERT [dbo].[chat_copy] OFF
 GO
 COMMIT
 GO
@@ -127,17 +88,25 @@ IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[hot
 	DROP TABLE [dbo].[hotel]
 GO
 CREATE TABLE [dbo].[hotel] (
-	[hotel_id] int NOT NULL,
+	[hotel_id] int IDENTITY(1,1) NOT NULL,
 	[name] varchar(255) COLLATE Chinese_PRC_90_CS_AI NOT NULL,
 	[type] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[price] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[tel] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[tel] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 	[place] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI NOT NULL,
 	[area] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NOT NULL,
-	[grade] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL DEFAULT ((4)),
-	[img] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NOT NULL,
+	[grade] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 	[services] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL DEFAULT ((1)),
-	[latlng] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL DEFAULT ((1))
+	[latlng] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NULL,
+	[userId] varchar(20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[content] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[column1] int NOT NULL,
+	[num] int NOT NULL,
+	[max] int NOT NULL,
+	[roommax] int NOT NULL,
+	[beds] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[images] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[waternum] int NOT NULL DEFAULT ((0))
 )
 ON [PRIMARY]
 GO
@@ -147,31 +116,32 @@ GO
 -- ----------------------------
 BEGIN TRANSACTION
 GO
-INSERT INTO [dbo].[hotel] VALUES ('1', N'国泰宾馆', '1', '18', '13621877812', N'上海黄浦区', N'上海', '1', '1.png', '1,2,3,5,6,7,8', '1');
+SET IDENTITY_INSERT [dbo].[hotel] ON
+GO
+INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [content], [column1], [num], [max], [roommax], [beds], [images], [waternum]) VALUES ('1', '1', '23456', '2', null, '7890-33', '2345', null, '2345', null, '1234', '23456', '23456', '2', '234', '2', '23456', '123456', '12');
+GO
+SET IDENTITY_INSERT [dbo].[hotel] OFF
 GO
 COMMIT
 GO
 
 -- ----------------------------
---  Table structure for hotel_copy
+--  Table structure for order
 -- ----------------------------
-IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[hotel_copy]') AND type IN ('U'))
-	DROP TABLE [dbo].[hotel_copy]
+IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[order]') AND type IN ('U'))
+	DROP TABLE [dbo].[order]
 GO
-CREATE TABLE [dbo].[hotel_copy] (
+CREATE TABLE [dbo].[order] (
+	[id] int IDENTITY(1,1) NOT NULL,
 	[hotel_id] int NOT NULL,
-	[name] varchar(255) COLLATE Chinese_PRC_90_CS_AI NOT NULL,
-	[type] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[price] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[tel] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[place] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI NOT NULL,
-	[area] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NOT NULL,
-	[grade] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL DEFAULT ((4)),
-	[img] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NOT NULL,
-	[services] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL DEFAULT ((1)),
-	[latlng] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL DEFAULT ((1))
+	[startTime] datetime NOT NULL,
+	[userId] int NOT NULL,
+	[endTime] datetime NOT NULL,
+	[price] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
 )
 ON [PRIMARY]
+GO
+EXEC sp_addextendedproperty 'MS_Description', N'订单id', 'SCHEMA', 'dbo', 'TABLE', 'order', 'COLUMN', 'id'
 GO
 
 -- ----------------------------
@@ -225,16 +195,27 @@ IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[use
 GO
 CREATE TABLE [dbo].[user1] (
 	[id] int IDENTITY(1,1) NOT NULL,
-	[name] varchar(1) COLLATE Chinese_PRC_90_CS_AI_KS_SC NULL,
 	[account] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[password] varchar(1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[gender] varchar(10) COLLATE Chinese_PRC_90_CS_AI_KS_SC NULL,
-	[img] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[password] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[type] varchar(1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
 )
 ON [PRIMARY]
 GO
 EXEC sp_addextendedproperty 'MS_Description', N'0 租客 1 房东 2管理员', 'SCHEMA', 'dbo', 'TABLE', 'user1', 'COLUMN', 'type'
+GO
+
+-- ----------------------------
+--  Records of user1
+-- ----------------------------
+BEGIN TRANSACTION
+GO
+SET IDENTITY_INSERT [dbo].[user1] ON
+GO
+INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('7', '1', '1', '0');
+GO
+SET IDENTITY_INSERT [dbo].[user1] OFF
+GO
+COMMIT
 GO
 
 
@@ -243,18 +224,6 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[chat] ADD
 	CONSTRAINT [PK__chat__3213E83F20AE1E6B] PRIMARY KEY CLUSTERED ([id]) 
-	WITH (PAD_INDEX = OFF,
-		IGNORE_DUP_KEY = OFF,
-		ALLOW_ROW_LOCKS = ON,
-		ALLOW_PAGE_LOCKS = ON)
-	ON [default]
-GO
-
--- ----------------------------
---  Primary key structure for table chat_copy
--- ----------------------------
-ALTER TABLE [dbo].[chat_copy] ADD
-	CONSTRAINT [PK__chat_cop__3213E83FF50097E3] PRIMARY KEY CLUSTERED ([id]) 
 	WITH (PAD_INDEX = OFF,
 		IGNORE_DUP_KEY = OFF,
 		ALLOW_ROW_LOCKS = ON,
@@ -287,10 +256,10 @@ ALTER TABLE [dbo].[hotel] ADD
 GO
 
 -- ----------------------------
---  Primary key structure for table hotel_copy
+--  Primary key structure for table order
 -- ----------------------------
-ALTER TABLE [dbo].[hotel_copy] ADD
-	CONSTRAINT [PK__hotel_co__45FE7E2639843C6B] PRIMARY KEY CLUSTERED ([hotel_id]) 
+ALTER TABLE [dbo].[order] ADD
+	CONSTRAINT [PK__order__3213E83F6A6F0BE6] PRIMARY KEY CLUSTERED ([id]) 
 	WITH (PAD_INDEX = OFF,
 		IGNORE_DUP_KEY = OFF,
 		ALLOW_ROW_LOCKS = ON,
@@ -327,15 +296,7 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[chat] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[chat]', RESEED, 5)
-GO
-
--- ----------------------------
---  Options for table chat_copy
--- ----------------------------
-ALTER TABLE [dbo].[chat_copy] SET (LOCK_ESCALATION = TABLE)
-GO
-DBCC CHECKIDENT ('[dbo].[chat_copy]', RESEED, 5)
+DBCC CHECKIDENT ('[dbo].[chat]', RESEED, 23)
 GO
 
 -- ----------------------------
@@ -349,11 +310,15 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[hotel] SET (LOCK_ESCALATION = TABLE)
 GO
+DBCC CHECKIDENT ('[dbo].[hotel]', RESEED, 1)
+GO
 
 -- ----------------------------
---  Options for table hotel_copy
+--  Options for table order
 -- ----------------------------
-ALTER TABLE [dbo].[hotel_copy] SET (LOCK_ESCALATION = TABLE)
+ALTER TABLE [dbo].[order] SET (LOCK_ESCALATION = TABLE)
+GO
+DBCC CHECKIDENT ('[dbo].[order]', RESEED, 1)
 GO
 
 -- ----------------------------
@@ -367,6 +332,6 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[user1] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[user1]', RESEED, 1)
+DBCC CHECKIDENT ('[dbo].[user1]', RESEED, 7)
 GO
 
