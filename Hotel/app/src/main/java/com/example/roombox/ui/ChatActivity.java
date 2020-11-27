@@ -1,9 +1,13 @@
 package com.example.roombox.ui;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -74,6 +78,9 @@ public class ChatActivity extends AppCompatActivity {
       Toast.makeText(this, "内容不能为空!", Toast.LENGTH_LONG).show();
       return;
     }
+
+
+
     HashMap params = new HashMap();
     String account = ACache.get(this).getAsString("account");
     params.put("sendId", account);//当前用户id
@@ -85,13 +92,20 @@ public class ChatActivity extends AppCompatActivity {
       public void success(String data) {
         content.setFocusable(false);
         content.setText("");
+        hideKeyboard();
         getContents();
       }
     });
 
 
   }
-
+  private void hideKeyboard() {
+    View v = getCurrentFocus();
+    if (v != null) {
+      InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+      im.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+    }
+  }
   private void openTime() {
     Timer timer = new Timer();
     timer.schedule(new TimerTask() {
