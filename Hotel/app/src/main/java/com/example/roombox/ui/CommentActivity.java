@@ -39,131 +39,130 @@ import okhttp3.Response;
 
 public class CommentActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private SimpleAdapter adapter;
-    private ArrayList<CommentBean> keyList = new ArrayList<>();
-    HotelBean scenicBean;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comment);
-        recyclerView = findViewById(R.id.recycler);
-        Bundle bundle = getIntent().getExtras();
-        scenicBean = (HotelBean)bundle.getSerializable("bean");
+  private RecyclerView recyclerView;
+  private SimpleAdapter adapter;
+  private ArrayList<CommentBean> keyList = new ArrayList<>();
+  HotelBean scenicBean;
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_comment);
+    recyclerView = findViewById(R.id.recycler);
+    Bundle bundle = getIntent().getExtras();
+    scenicBean = (HotelBean) bundle.getSerializable("bean");
 
 
-        iint();
-    }
+    iint();
+  }
 
-    private void iint() {
-        recyclerView.setLayoutManager(new LinearLayoutManager(CommentActivity.this));
+  private void iint() {
+    recyclerView.setLayoutManager(new LinearLayoutManager(CommentActivity.this));
 
-        adapter = new SimpleAdapter(R.layout.common_item, keyList, new SimpleAdapter.ConVert<CommentBean>() {
-            @Override
-            public void convert(BaseViewHolder helper, CommentBean o) {
-                String userImg = TextUtils.isEmpty(o.getUserImg())?" ":o.getUserImg();
-                String name = o.getName();
-                if (TextUtils.isEmpty(name)){
-                    name = TextUtils.isEmpty(o.getAccount())?" ":o.getAccount();
-                }
-                RequestOptions mRequestOptions = RequestOptions.circleCropTransform()
-                        .diskCacheStrategy(DiskCacheStrategy.NONE)//不做磁盘缓存
-                        .skipMemoryCache(true);//不做内存缓存
-                ImageView view = helper.getView(R.id.userImg);
-                Glide.with(CommentActivity.this).load(Contans.HEADIMGURL + userImg ).apply(mRequestOptions).into(view);
-                helper.setText(R.id.user, name);
+    adapter = new SimpleAdapter(R.layout.common_item, keyList, new SimpleAdapter.ConVert<CommentBean>() {
+      @Override
+      public void convert(BaseViewHolder helper, CommentBean o) {
+        String userImg = TextUtils.isEmpty(o.getUserImg()) ? " " : o.getUserImg();
+        String name = o.getName();
+        if (TextUtils.isEmpty(name)) {
+          name = TextUtils.isEmpty(o.getAccount()) ? " " : o.getAccount();
+        }
+        RequestOptions mRequestOptions = RequestOptions.circleCropTransform()
+          .diskCacheStrategy(DiskCacheStrategy.NONE)//不做磁盘缓存
+          .skipMemoryCache(true);//不做内存缓存
+        ImageView view = helper.getView(R.id.userImg);
+        Glide.with(CommentActivity.this).load(Contans.HEADIMGURL + userImg).apply(mRequestOptions).into(view);
+        helper.setText(R.id.user, name);
 
 
 //                helper.setText(R.id.grade,  o.getGrade()+"");
-                RatingBar ratingBar = helper.getView(R.id.ratingBar);
-                ratingBar.setRating(Float.valueOf(o.getGrade()));
+        RatingBar ratingBar = helper.getView(R.id.ratingBar);
+        ratingBar.setRating(Float.valueOf(o.getGrade()));
 
 
-                String comment = TextUtils.isEmpty(o.getContent())?" ":o.getContent();
-                helper.setText(R.id.comment, comment);
-                String time = TextUtils.isEmpty(o.getAddtime())?" ":o.getAddtime();
+        String comment = TextUtils.isEmpty(o.getContent()) ? " " : o.getContent();
+        helper.setText(R.id.comment, comment);
+        String time = TextUtils.isEmpty(o.getAddtime()) ? " " : o.getAddtime();
 
-                helper.setText(R.id.time, TimeUtil.date2TimeStamp(time,"HH:mm yyyy/MM/dd"));
+        helper.setText(R.id.time, TimeUtil.date2TimeStamp(time, "HH:mm yyyy/MM/dd"));
 
-            }
-        });
+      }
+    });
 
-        recyclerView.setAdapter(adapter);
-        getData();
-
-
-    }
-
-    private void getData() {
-        keyList.clear();
-        String url = Contans.URL + "comment/list?hotel_id=" + scenicBean.getHotel_id();
-        OkHttpClient okHttpClient  = new OkHttpClient.Builder()
-                .connectTimeout(10, TimeUnit.SECONDS)
-                .writeTimeout(10,TimeUnit.SECONDS)
-                .readTimeout(20, TimeUnit.SECONDS)
-                .build();
+    recyclerView.setAdapter(adapter);
+    getData();
 
 
-        final Request request = new Request.Builder()
-                .url(url)
-                .get()
-                .build();
+  }
 
-        Call call = okHttpClient.newCall(request);
-        call.enqueue(new Callback() {
+  private void getData() {
+    keyList.clear();
+    String url = Contans.URL + "comment/list?hotel_id=" + scenicBean.getHotel_id();
+    OkHttpClient okHttpClient = new OkHttpClient.Builder()
+      .connectTimeout(10, TimeUnit.SECONDS)
+      .writeTimeout(10, TimeUnit.SECONDS)
+      .readTimeout(20, TimeUnit.SECONDS)
+      .build();
+
+
+    final Request request = new Request.Builder()
+      .url(url)
+      .get()
+      .build();
+
+    Call call = okHttpClient.newCall(request);
+    call.enqueue(new Callback() {
+      @Override
+      public void onFailure(Call call, IOException e) {
+        Log.i("TAG", "onResponse: " + e.toString());
+      }
+
+      @Override
+      public void onResponse(Call call, Response response) throws IOException {
+
+
+        final String result = response.body().string();
+        if (response.body() != null) {
+
+          runOnUiThread(new Runnable() {
             @Override
-            public void onFailure(Call call, IOException e) {
-                Log.i("TAG", "onResponse: " + e.toString());
-            }
+            public void run() {
 
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-
-
-                final  String result = response.body().string();
-                if (response.body() != null) {
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-
-                            try {
-                                Log.i("TAG", "run: " + result);
-                                JSONObject jsonObject = new JSONObject(result);
-                                String code = jsonObject.getString("code");
-                                String data = jsonObject.getString("data");
-                                if ("0".equals(code)){
+              try {
+                Log.i("TAG", "run: " + result);
+                JSONObject jsonObject = new JSONObject(result);
+                String code = jsonObject.getString("code");
+                String data = jsonObject.getString("data");
+                if ("0".equals(code)) {
 
 
-                                    Contans.makeToast("data update success!",CommentActivity.this);
-                                    Type type1 = new TypeToken<ArrayList<CommentBean>>(){}.getType();
-                                    ArrayList<CommentBean> datas = new Gson().fromJson(data,type1);
-                                    keyList.addAll(datas);
-                                    adapter.notifyDataSetChanged();
+                  Contans.makeToast("data update success!", CommentActivity.this);
+                  Type type1 = new TypeToken<ArrayList<CommentBean>>() {
+                  }.getType();
+                  ArrayList<CommentBean> datas = new Gson().fromJson(data, type1);
+                  keyList.addAll(datas);
+                  adapter.notifyDataSetChanged();
 
 
-                                }else {
-                                    Contans.makeToast("data update error!",CommentActivity.this);
-                                }
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-
-                        }
-                    });
-
-
-                    response.body().close();
+                } else {
+                  Contans.makeToast("data update error!", CommentActivity.this);
                 }
+
+              } catch (JSONException e) {
+                e.printStackTrace();
+              } catch (Exception e) {
+                e.printStackTrace();
+              }
+
             }
-        });
+          });
 
 
+          response.body().close();
+        }
+      }
+    });
 
 
-
-    }
+  }
 }

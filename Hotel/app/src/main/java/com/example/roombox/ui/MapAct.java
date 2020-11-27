@@ -1,25 +1,22 @@
 package com.example.roombox.ui;
 
-import android.os.Bundle;
-
-
 import com.example.roombox.R;
 import com.example.roombox.base.BaseActivity;
 
 
 public class MapAct extends BaseActivity {
-//    private MapView mapview;
+  //    private MapView mapview;
 //    private BaiduMap mBaiduMap;
 //    private boolean isFirstLocation=true;
 //    private LocationClient mLocationClient;
 //
-    @Override
-    public int intiLayout() {
-        return R.layout.act_map;
-    }
+  @Override
+  public int intiLayout() {
+    return R.layout.act_map;
+  }
 
-    @Override
-    public void initView() {
+  @Override
+  public void initView() {
 //        mapview = (MapView) findViewById(R.id.mapview);
 //        mBaiduMap = mapview.getMap();
 
@@ -27,10 +24,10 @@ public class MapAct extends BaseActivity {
 //        mBaiduMap.setMyLocationEnabled(true);
 
 //        initLoaction();
-    }
+  }
 
-    @Override
-    public void initData() {
+  @Override
+  public void initData() {
 //        mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
 //            //marker被点击时回调的方法
 //            //若响应点击事件，返回true，否则返回false
@@ -46,7 +43,7 @@ public class MapAct extends BaseActivity {
 //            }
 //        });
 
-    }
+  }
 
 
 //    private void initLoaction() {
@@ -122,8 +119,8 @@ public class MapAct extends BaseActivity {
 //
 
 
-    private void getHourse(){
+  private void getHourse() {
 
 
-    }
+  }
 }

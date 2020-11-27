@@ -25,9 +25,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
   public interface ItemClickListener {
     void itemClick(ChatBean bean);
   }
+
   private Context mContext;
   private List<ChatBean> datas = new ArrayList<>();
   private ItemClickListener listener;
+
   public ChatAdapter(Context mContext) {
     this.mContext = mContext;
   }
@@ -78,6 +80,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     @BindView(R.id.content)
     TextView content;
     private View parentView;
+
     ViewHolder(View view) {
       super(view);
       parentView = view;

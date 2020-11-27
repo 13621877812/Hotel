@@ -2,7 +2,6 @@ package com.example.roombox.ui;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -80,7 +79,6 @@ public class ChatActivity extends AppCompatActivity {
     }
 
 
-
     HashMap params = new HashMap();
     String account = ACache.get(this).getAsString("account");
     params.put("sendId", account);//当前用户id
@@ -99,6 +97,7 @@ public class ChatActivity extends AppCompatActivity {
 
 
   }
+
   private void hideKeyboard() {
     View v = getCurrentFocus();
     if (v != null) {
@@ -106,6 +105,7 @@ public class ChatActivity extends AppCompatActivity {
       im.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
   }
+
   private void openTime() {
     Timer timer = new Timer();
     timer.schedule(new TimerTask() {

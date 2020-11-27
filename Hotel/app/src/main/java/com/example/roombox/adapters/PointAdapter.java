@@ -21,66 +21,69 @@ import butterknife.ButterKnife;
 
 public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> {
 
-    public interface ItemClickListener {
-        void itemClick(CollectionBean bean);
-    }
-    private Context mContext;
-    private List<CollectionBean> datas;
-    private ItemClickListener listener;
-    public PointAdapter(Context mContext) {
-        this.mContext = mContext;
-    }
+  public interface ItemClickListener {
+    void itemClick(CollectionBean bean);
+  }
 
-    @NonNull
-    @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.point_item, viewGroup, false);
-        ViewHolder holder = new ViewHolder(view);
-        return holder;
-    }
+  private Context mContext;
+  private List<CollectionBean> datas;
+  private ItemClickListener listener;
 
-    @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int i) {
-         final CollectionBean bean = datas.get(i);
-         viewHolder.name.setText(bean.getName());
-         Glide.with(mContext).load(bean.getImage()).into(viewHolder.topImage);
-         viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.itemClick(bean);
-            }
-        });
-    }
+  public PointAdapter(Context mContext) {
+    this.mContext = mContext;
+  }
 
-    @Override
-    public int getItemCount() {
-        return datas.size();
-    }
+  @NonNull
+  @Override
+  public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    View view = LayoutInflater.from(mContext).inflate(R.layout.point_item, viewGroup, false);
+    ViewHolder holder = new ViewHolder(view);
+    return holder;
+  }
 
-    public void setListener(ItemClickListener listener) {
-        this.listener = listener;
-    }
+  @Override
+  public void onBindViewHolder(ViewHolder viewHolder, int i) {
+    final CollectionBean bean = datas.get(i);
+    viewHolder.name.setText(bean.getName());
+    Glide.with(mContext).load(bean.getImage()).into(viewHolder.topImage);
+    viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        listener.itemClick(bean);
+      }
+    });
+  }
 
-    public void setDatas(List<CollectionBean> datas) {
-        this.datas = datas;
-    }
+  @Override
+  public int getItemCount() {
+    return datas.size();
+  }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.topImage)
-        ImageView topImage;
-        @BindView(R.id.name)
-        TextView name;
-        @BindView(R.id.desc)
-        TextView desc;
-        @BindView(R.id.price)
-        TextView price;
-        @BindView(R.id.eval)
-        TextView eval;
-        private View parentView;
-        ViewHolder(View view) {
-            super(view);
-            parentView = view;
-            ButterKnife.bind(this, view);
-        }
+  public void setListener(ItemClickListener listener) {
+    this.listener = listener;
+  }
+
+  public void setDatas(List<CollectionBean> datas) {
+    this.datas = datas;
+  }
+
+  static class ViewHolder extends RecyclerView.ViewHolder {
+    @BindView(R.id.topImage)
+    ImageView topImage;
+    @BindView(R.id.name)
+    TextView name;
+    @BindView(R.id.desc)
+    TextView desc;
+    @BindView(R.id.price)
+    TextView price;
+    @BindView(R.id.eval)
+    TextView eval;
+    private View parentView;
+
+    ViewHolder(View view) {
+      super(view);
+      parentView = view;
+      ButterKnife.bind(this, view);
     }
+  }
 }

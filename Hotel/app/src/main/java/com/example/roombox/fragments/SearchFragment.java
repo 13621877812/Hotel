@@ -44,6 +44,7 @@ public class SearchFragment extends Fragment {
     initData();
     return view;
   }
+
   private void initView() {
 
     LinearLayoutManager manager = new LinearLayoutManager(getActivity());
@@ -59,6 +60,7 @@ public class SearchFragment extends Fragment {
 
 
   }
+
   private void initData() {
     //从网络获取
     ArrayList<CollectionBean> datas = new ArrayList<>();

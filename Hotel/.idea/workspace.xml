@@ -12,7 +12,41 @@
   <component name="ChangeListManager">
     <list default="true" id="f2166fbe-ad75-43bb-be26-efc2d8ef9a56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/HotelListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/HotelListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/adapters/ChatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/adapters/ChatAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/adapters/PointAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/adapters/PointAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/adapters/StudyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/adapters/StudyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/base/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/base/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/base/BaseFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/base/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/base/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/CollectionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/CollectionBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/CommentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/CommentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/HotelBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/HotelBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/WordBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/bean/WordBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/ChatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/ChatFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/ColloectionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/ColloectionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/MineFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/MineFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/SearchFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/CommentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/CommentActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/CriticalActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/CriticalActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/HotelDetialAct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/HotelDetialAct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/LockActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/LockActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/MapAct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/MapAct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/PersonDataAct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/PersonDataAct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/RegActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/RegActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/WelcomAct.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/WelcomAct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/ACache.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/ACache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/MyFragmentPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/MyFragmentPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/views/CouchView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/views/CouchView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/views/MenuBottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/views/MenuBottom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/views/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/views/MenuItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,77 +258,77 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/LockActivity.java</url>
-          <line>292</line>
+          <line>270</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>68</line>
+          <line>61</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>58</line>
+          <line>51</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>47</line>
+          <line>39</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>48</line>
+          <line>40</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>49</line>
+          <line>41</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>106</line>
+          <line>101</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>116</line>
+          <line>111</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>117</line>
+          <line>112</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>118</line>
+          <line>113</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>62</line>
+          <line>55</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/ui/LoginActivity.java</url>
-          <line>117</line>
+          <line>102</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>42</line>
+          <line>34</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>110</line>
+          <line>105</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/roombox/utils/HttpUtil.java</url>
-          <line>115</line>
+          <line>110</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>

@@ -1,86 +1,52 @@
 package com.example.roombox.ui;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.graphics.Paint;
-import android.net.Uri;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.roombox.R;
 import com.example.roombox.base.BaseActivity;
 import com.example.roombox.bean.CommentBean;
 import com.example.roombox.bean.HotelBean;
-import com.example.roombox.utils.Contans;
 import com.example.roombox.utils.SimpleAdapter;
-import com.example.roombox.utils.TimeUtil;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import com.youth.banner.loader.ImageLoader;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 
 
 public class HotelDetialAct extends BaseActivity {
 
-    private HotelBean bean;
+  private HotelBean bean;
 
-    private ImageView iv;
-    private TextView nameText;
-    private TextView priceText;
-    private TextView typeText;
-    private TextView placeText;
-    private TextView areaText;
-    private TextView telText;
-    private TextView gradeText;
+  private ImageView iv;
+  private TextView nameText;
+  private TextView priceText;
+  private TextView typeText;
+  private TextView placeText;
+  private TextView areaText;
+  private TextView telText;
+  private TextView gradeText;
 
-    ImageView banner;
+  ImageView banner;
 
 
-    RecyclerView recyclerView;
-    private SimpleAdapter adapter;
-    private ArrayList<CommentBean> keyList = new ArrayList<>();
-    @Override
-    public int intiLayout() {
-        return R.layout.act_hd;
-    }
+  RecyclerView recyclerView;
+  private SimpleAdapter adapter;
+  private ArrayList<CommentBean> keyList = new ArrayList<>();
 
-    @Override
-    public void initView() {
-      recyclerView = findViewById(R.id.listView);
-      iint();
+  @Override
+  public int intiLayout() {
+    return R.layout.act_hd;
+  }
+
+  @Override
+  public void initView() {
+    recyclerView = findViewById(R.id.listView);
+    iint();
 //        initBanner();
-    }
+  }
+
   private void iint() {
     recyclerView.setLayoutManager(new LinearLayoutManager(HotelDetialAct.this));
 
@@ -117,7 +83,6 @@ public class HotelDetialAct extends BaseActivity {
     recyclerView.setAdapter(adapter);
 
 
-
   }
 
   @Override
@@ -126,17 +91,17 @@ public class HotelDetialAct extends BaseActivity {
   }
 
   @Override
-    protected void onResume() {
-        super.onResume();
+  protected void onResume() {
+    super.onResume();
 
 //        refreshData();
 
 
+  }
 
-    }
-    private void setViewData(){
+  private void setViewData() {
 
-    }
+  }
 //    private void refreshData(){
 //        String url = Contans.URL + "hotel/getOne?hotel_id="+bean.getHotel_id();
 //        OkHttpClient okHttpClient  = new OkHttpClient.Builder()

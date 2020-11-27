@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.RelativeLayout;
 
-import com.example.roombox.adapters.PointAdapter;
 import com.example.roombox.fragments.ChatFragment;
 import com.example.roombox.fragments.ColloectionFragment;
 import com.example.roombox.fragments.HomeFragment;

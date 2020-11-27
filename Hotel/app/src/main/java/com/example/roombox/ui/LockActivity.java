@@ -22,7 +22,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-
 import java.io.InputStream;
 
 
@@ -31,7 +30,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
   public final static String PREF_IP = "192.168.43.133";
   public final static String PREF_PORT = "80";
   // declare buttons and text inputs
-  private Button buttonPin11,buttonPin12,buttonPin13,buttonPin14,buttonPin15,buttonPin16;
+  private Button buttonPin11, buttonPin12, buttonPin13, buttonPin14, buttonPin15, buttonPin16;
   private EditText editTextIPAddress, editTextPortNumber;
   // shared preferences objects used to save the IP address and port so that the user doesn't have to
   // type them next time he/she opens the app.
@@ -43,19 +42,19 @@ public class LockActivity extends Activity implements View.OnClickListener {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_lock);
 
-    sharedPreferences = getSharedPreferences("HTTP_HELPER_PREFS",Context.MODE_PRIVATE);
+    sharedPreferences = getSharedPreferences("HTTP_HELPER_PREFS", Context.MODE_PRIVATE);
     editor = sharedPreferences.edit();
 
     // assign buttons
-    buttonPin11 = (Button)findViewById(R.id.buttonPin11);
-    buttonPin12 = (Button)findViewById(R.id.buttonPin12);
-    buttonPin13 = (Button)findViewById(R.id.buttonPin13);
-    buttonPin14 = (Button)findViewById(R.id.buttonPin14);
-    buttonPin15 = (Button)findViewById(R.id.buttonPin15);
-    buttonPin16 = (Button)findViewById(R.id.buttonPin16);
+    buttonPin11 = (Button) findViewById(R.id.buttonPin11);
+    buttonPin12 = (Button) findViewById(R.id.buttonPin12);
+    buttonPin13 = (Button) findViewById(R.id.buttonPin13);
+    buttonPin14 = (Button) findViewById(R.id.buttonPin14);
+    buttonPin15 = (Button) findViewById(R.id.buttonPin15);
+    buttonPin16 = (Button) findViewById(R.id.buttonPin16);
 
     // assign text inputs
-    editTextIPAddress = (EditText)findViewById(R.id.editTextIPAddress);
+    editTextIPAddress = (EditText) findViewById(R.id.editTextIPAddress);
 
 
     // set button listener (this class)
@@ -84,41 +83,29 @@ public class LockActivity extends Activity implements View.OnClickListener {
 
 
     // save the IP address and port for the next time the app is used
-    editor.putString(PREF_IP,ipAddress); // set the ip address value to save
-    editor.putString(PREF_PORT,portNumber); // set the port number to save
+    editor.putString(PREF_IP, ipAddress); // set the ip address value to save
+    editor.putString(PREF_PORT, portNumber); // set the port number to save
     editor.commit(); // save the IP and PORT
 
     // get the pin number from the button that was clicked
-    if(view.getId()==buttonPin11.getId())
-    {
+    if (view.getId() == buttonPin11.getId()) {
 
       parameterValue = editTextIPAddress.getText().toString().trim(); //整合在我的-房東-房屋管理-設定密碼
-    }
-    else if(view.getId()==buttonPin12.getId())
-    {
+    } else if (view.getId() == buttonPin12.getId()) {
       parameterValue = "random"; //不需要
-    }
-    else if(view.getId()==buttonPin14.getId())
-    {
+    } else if (view.getId() == buttonPin14.getId()) {
       parameterValue = "open";   //整合在我的-一般用戶-開門
-    }
-    else if(view.getId()==buttonPin15.getId())
-    {
+    } else if (view.getId() == buttonPin15.getId()) {
       parameterValue = "clos";  //整合在我的-一般用戶-關門
-    }
-    else if(view.getId()==buttonPin16.getId())
-    {
+    } else if (view.getId() == buttonPin16.getId()) {
       parameterValue = "gues";//整合在我的-一般用戶-訪客密碼
-    }
-    else
-    {
+    } else {
       parameterValue = "show";//不需要
     }
 
 
-
     // execute HTTP request
-    if(ipAddress.length()>0 && portNumber.length()>0&&editTextIPAddress.getText().toString().trim().length()>0) {
+    if (ipAddress.length() > 0 && portNumber.length() > 0 && editTextIPAddress.getText().toString().trim().length() > 0) {
       new HttpRequestAsyncTask(
         view.getContext(), parameterValue, ipAddress, portNumber, "pin"
       ).execute();
@@ -128,9 +115,10 @@ public class LockActivity extends Activity implements View.OnClickListener {
   /**
    * Description: Send an HTTP Get request to a specified ip address and port.
    * Also send a parameter "parameterName" with the value of "parameterValue".
+   *
    * @param parameterValue the pin number to toggle
-   * @param ipAddress the ip address to send the request to
-   * @param portNumber the port number of the ip address
+   * @param ipAddress      the ip address to send the request to
+   * @param portNumber     the port number of the ip address
    * @param parameterName
    * @return The ip address' reply text, or an ERROR message is it fails to receive one
    */
@@ -138,7 +126,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
     String serverResponse = "ERROR";
 
     try {
-      URL website = new URL("http://"+ipAddress+":"+portNumber+"/?"+parameterName+"="+parameterValue);
+      URL website = new URL("http://" + ipAddress + ":" + portNumber + "/?" + parameterName + "=" + parameterValue);
       HttpURLConnection connection = (HttpURLConnection) website
         .openConnection(); // create an HTTP client
       // define the URL e.g. http://myIpaddress:myport/?pin=13 (to toggle pin 13 for example)
@@ -156,13 +144,6 @@ public class LockActivity extends Activity implements View.OnClickListener {
       connection.setConnectTimeout(3000);
       // 连接
       connection.connect();
-
-
-
-
-
-
-
 
 
       //HttpGet getRequest = new HttpGet(); // create an HTTP GET object
@@ -204,7 +185,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
   private class HttpRequestAsyncTask extends AsyncTask<Void, Void, Void> {
 
     // declare variables needed
-    private String requestReply,ipAddress, portNumber;
+    private String requestReply, ipAddress, portNumber;
     private Context context;
     private AlertDialog alertDialog;
     private String parameter;
@@ -212,13 +193,13 @@ public class LockActivity extends Activity implements View.OnClickListener {
 
     /**
      * Description: The asyncTask class constructor. Assigns the values used in its other methods.
-     * @param context the application context, needed to create the dialog
+     *
+     * @param context        the application context, needed to create the dialog
      * @param parameterValue the pin number to toggle
-     * @param ipAddress the ip address to send the request to
-     * @param portNumber the port number of the ip address
+     * @param ipAddress      the ip address to send the request to
+     * @param portNumber     the port number of the ip address
      */
-    public HttpRequestAsyncTask(Context context, String parameterValue, String ipAddress, String portNumber, String parameter)
-    {
+    public HttpRequestAsyncTask(Context context, String parameterValue, String ipAddress, String portNumber, String parameter) {
       this.context = context;
 
       alertDialog = new AlertDialog.Builder(this.context)
@@ -235,6 +216,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
     /**
      * Name: doInBackground
      * Description: Sends the request to the ip address
+     *
      * @param voids
      * @return
      */
@@ -245,7 +227,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
             {
                 alertDialog.show();
             }改成toast*/
-      requestReply = sendRequest(parameterValue,ipAddress,portNumber, parameter);
+      requestReply = sendRequest(parameterValue, ipAddress, portNumber, parameter);
       return null;
     }
 
@@ -254,24 +236,20 @@ public class LockActivity extends Activity implements View.OnClickListener {
      * Description: This function is executed after the HTTP request returns from the ip address.
      * The function sets the dialog's message with the reply text from the server and display the dialog
      * if it's not displayed already (in case it was closed by accident);
+     *
      * @param aVoid void parameter
      */
     @Override
     protected void onPostExecute(Void aVoid) {
       alertDialog.setCancelable(true);
       alertDialog.setMessage(requestReply);
-      if(!alertDialog.isShowing())
-      {
+      if (!alertDialog.isShowing()) {
         //alertDialog.show(); // show dialog
 
       }
 
 
-
-      Toast.makeText(this.context,requestReply , Toast.LENGTH_SHORT).show();             //改成toast
-
-
-
+      Toast.makeText(this.context, requestReply, Toast.LENGTH_SHORT).show();             //改成toast
 
 
       try {

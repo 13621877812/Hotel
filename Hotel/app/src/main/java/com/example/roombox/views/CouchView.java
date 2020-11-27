@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import com.example.roombox.R;
 
-public class CouchView extends LinearLayout {
+
+public class CouchView extends   LinearLayout {
   private Context mContext;
   private View mView;
   public CouchView(Context context) {

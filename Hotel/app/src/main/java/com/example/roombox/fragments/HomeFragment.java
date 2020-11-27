@@ -3,43 +3,35 @@ package com.example.roombox.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.roombox.R;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 
 public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
-//    private MapView mMap;
+  //    private MapView mMap;
 //    private GoogleMap mMap1;
-    private View mView;
+  private View mView;
 
-    public HomeFragment() {
+  public HomeFragment() {
 
-    }
-
+  }
 
 
   @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-       mView = inflater.inflate(R.layout.fragment_home, container, false);
-       initMapView(savedInstanceState);
-       return mView;
-    }
-    private void initMapView(Bundle savedInstanceState){
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                           Bundle savedInstanceState) {
+    mView = inflater.inflate(R.layout.fragment_home, container, false);
+    initMapView(savedInstanceState);
+    return mView;
+  }
+
+  private void initMapView(Bundle savedInstanceState) {
 //      mMap = (MapView) mView.findViewById(R.id.mapview);
 //      mMap.onCreate(savedInstanceState);
 //      mMap.onResume();
@@ -57,9 +49,10 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 //        mMap.getMapAsync(this);
 //      }
 
-    }
-   @Override
-   public void onMapReady(GoogleMap googleMap) {
+  }
+
+  @Override
+  public void onMapReady(GoogleMap googleMap) {
 //       mMap1 = googleMap;
 //       // Add a marker in Sydney and move the camera
 //       LatLng sydney = new LatLng(-34, 151);
@@ -73,5 +66,5 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 //    //添加标记到指定经纬度
 //    googleMap.addMarker(new MarkerOptions().position(new LatLng(lat, lng)).title("Marker")
 //      .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
-   }
+  }
 }

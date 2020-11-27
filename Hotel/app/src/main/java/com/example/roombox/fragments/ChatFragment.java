@@ -17,8 +17,6 @@ import com.example.roombox.utils.SimpleAdapter;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import org.json.JSONObject;
-
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -117,7 +115,6 @@ public class ChatFragment extends Fragment {
   @OnClick(R.id.startBtn)
   public void onViewClicked() {
     initData();
-
 
 
   }

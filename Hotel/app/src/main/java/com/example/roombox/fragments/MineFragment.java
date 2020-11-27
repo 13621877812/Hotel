@@ -1,24 +1,20 @@
 package com.example.roombox.fragments;
 
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Toast;
 
 import com.example.roombox.R;
 import com.example.roombox.ui.ChatActivity;
 import com.example.roombox.ui.CommentActivity;
-import com.example.roombox.ui.HotelDetialAct;
 import com.example.roombox.ui.LoginActivity;
 import com.example.roombox.ui.OrderActivity;
 import com.example.roombox.utils.ACache;
@@ -28,7 +24,6 @@ import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
@@ -56,19 +51,20 @@ public class MineFragment extends Fragment {
     initView();
     return view;
   }
-  private void initView(){
-    ArrayList<HashMap<String,Object>> meumList = new ArrayList<HashMap<String, Object>>();
-    //租客
-    String[] datas = new String[]{"历史订单","房屋管理","客服","登出","评论"};
 
-    String[] datas1 = new String[]{"房屋管理","举报管理","登出"};
-    for(int i = 0; i < datas.length; i++){
-      HashMap<String,Object> map = new HashMap<String, Object>();
-      map.put("ItemImage",R.mipmap.logo);
-      map.put("ItemText",""+datas[i]);
+  private void initView() {
+    ArrayList<HashMap<String, Object>> meumList = new ArrayList<HashMap<String, Object>>();
+    //租客
+    String[] datas = new String[]{"历史订单", "房屋管理", "客服", "登出", "评论"};
+
+    String[] datas1 = new String[]{"房屋管理", "举报管理", "登出"};
+    for (int i = 0; i < datas.length; i++) {
+      HashMap<String, Object> map = new HashMap<String, Object>();
+      map.put("ItemImage", R.mipmap.logo);
+      map.put("ItemText", "" + datas[i]);
       meumList.add(map);
     }
-    SimpleAdapter saItem = new SimpleAdapter(getActivity(),meumList,R.layout.item_mine_layout,
+    SimpleAdapter saItem = new SimpleAdapter(getActivity(), meumList, R.layout.item_mine_layout,
       new String[]{"ItemText"},
       new int[]{R.id.ItemText});
 
@@ -81,9 +77,10 @@ public class MineFragment extends Fragment {
     });
 
   }
+
   //跳转对应的页面
-  private void startPage(int index){
-    switch (index){
+  private void startPage(int index) {
+    switch (index) {
       case 0:
         startActivity(new Intent(getActivity(), OrderActivity.class));
         break;
@@ -94,8 +91,8 @@ public class MineFragment extends Fragment {
         startActivity(new Intent(getActivity(), ChatActivity.class));
         break;
       case 3://退出
-        ACache.get(getActivity()).put("account","");
-        ACache.get(getActivity()).put("type","");
+        ACache.get(getActivity()).put("account", "");
+        ACache.get(getActivity()).put("type", "");
         startActivity(new Intent(getActivity(), LoginActivity.class));
         break;
       case 4:
@@ -106,9 +103,8 @@ public class MineFragment extends Fragment {
     }
 
 
-
-
   }
+
   @Override
   public void onHiddenChanged(boolean hidden) {
     super.onHiddenChanged(hidden);

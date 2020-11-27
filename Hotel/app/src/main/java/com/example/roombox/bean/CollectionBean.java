@@ -1,12 +1,12 @@
 package com.example.roombox.bean;
 
 public class CollectionBean {
-    private int collectionId;
-    private String image;
-    private String name;
-    private String desc;
-    private String price;
-    private String eval;
+  private int collectionId;
+  private String image;
+  private String name;
+  private String desc;
+  private String price;
+  private String eval;
 
   public int getCollectionId() {
     return collectionId;

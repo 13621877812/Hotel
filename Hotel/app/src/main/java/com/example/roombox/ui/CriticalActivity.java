@@ -32,96 +32,95 @@ import okhttp3.Response;
 
 public class CriticalActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private RatingBar ratingBar;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_critical);
-        findViewById(R.id.submit).setOnClickListener(this);
-        ratingBar = findViewById(R.id.ratingBar);
+  private RatingBar ratingBar;
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_critical);
+    findViewById(R.id.submit).setOnClickListener(this);
+    ratingBar = findViewById(R.id.ratingBar);
+  }
+
+  @Override
+  public void onClick(View v) {
+    EditText editText = findViewById(R.id.comment);
+    if (TextUtils.isEmpty(editText.getText())) {
+      Contans.makeToast("comment is empty！", CriticalActivity.this);
+      return;
     }
 
-    @Override
-    public void onClick(View v) {
-        EditText editText = findViewById(R.id.comment);
-        if (TextUtils.isEmpty(editText.getText())){
-            Contans.makeToast("comment is empty！",CriticalActivity.this);
-            return;
-        }
+    saveData(editText.getText().toString());
 
-        saveData(editText.getText().toString());
+  }
 
-    }
-    private void saveData(String comment) {
-        HotelBean bean = (HotelBean)getIntent().getExtras().getSerializable("bean");
-        String hotel_id = bean.getHotel_id();
-        String username = ACache.get(CriticalActivity.this).getAsString("account");
-        String url = Contans.URL + "comment/add";
-        OkHttpClient okHttpClient  = new OkHttpClient.Builder()
-                .connectTimeout(10, TimeUnit.SECONDS)
-                .writeTimeout(10,TimeUnit.SECONDS)
-                .readTimeout(20, TimeUnit.SECONDS)
-                .build();
+  private void saveData(String comment) {
+    HotelBean bean = (HotelBean) getIntent().getExtras().getSerializable("bean");
+    String hotel_id = bean.getHotel_id();
+    String username = ACache.get(CriticalActivity.this).getAsString("account");
+    String url = Contans.URL + "comment/add";
+    OkHttpClient okHttpClient = new OkHttpClient.Builder()
+      .connectTimeout(10, TimeUnit.SECONDS)
+      .writeTimeout(10, TimeUnit.SECONDS)
+      .readTimeout(20, TimeUnit.SECONDS)
+      .build();
 
-        FormBody formBody = new FormBody.Builder()
-                .add("hotel_id", hotel_id)
+    FormBody formBody = new FormBody.Builder()
+      .add("hotel_id", hotel_id)
 //                .add("userID", userID)
-                .add("user_id", username)
-                .add("comment", comment)
-                .add("grade", String.valueOf(ratingBar.getRating()))
-                .build();
-        final Request request = new Request.Builder()
-                .url(url)
-                .post(formBody)
-                .build();
+      .add("user_id", username)
+      .add("comment", comment)
+      .add("grade", String.valueOf(ratingBar.getRating()))
+      .build();
+    final Request request = new Request.Builder()
+      .url(url)
+      .post(formBody)
+      .build();
 
-        Call call = okHttpClient.newCall(request);
-        call.enqueue(new Callback() {
+    Call call = okHttpClient.newCall(request);
+    call.enqueue(new Callback() {
+      @Override
+      public void onFailure(Call call, IOException e) {
+        Log.i("TAG", "onResponse: " + e.toString());
+      }
+
+      @Override
+      public void onResponse(Call call, Response response) throws IOException {
+
+
+        final String result = response.body().string();
+        if (response.body() != null) {
+
+          runOnUiThread(new Runnable() {
             @Override
-            public void onFailure(Call call, IOException e) {
-                Log.i("TAG", "onResponse: " + e.toString());
-            }
+            public void run() {
 
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-
-
-                final  String result = response.body().string();
-                if (response.body() != null) {
-
-                   runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-
-                            try {
-                                Log.i("TAG", "run: " + result);
-                                JSONObject jsonObject = new JSONObject(result);
-                                String code = jsonObject.getString("code");
-                                if ("0".equals(code)){
-                                    Contans.makeToast("comment submit success!",CriticalActivity.this);
-                                    finish();
-                                }else {
-                                    Contans.makeToast("comment submit error!",CriticalActivity.this);
-                                }
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-
-                        }
-                    });
-
-
-                    response.body().close();
+              try {
+                Log.i("TAG", "run: " + result);
+                JSONObject jsonObject = new JSONObject(result);
+                String code = jsonObject.getString("code");
+                if ("0".equals(code)) {
+                  Contans.makeToast("comment submit success!", CriticalActivity.this);
+                  finish();
+                } else {
+                  Contans.makeToast("comment submit error!", CriticalActivity.this);
                 }
+
+              } catch (JSONException e) {
+                e.printStackTrace();
+              } catch (Exception e) {
+                e.printStackTrace();
+              }
+
             }
-        });
+          });
 
 
+          response.body().close();
+        }
+      }
+    });
 
 
-
-    }
+  }
 }

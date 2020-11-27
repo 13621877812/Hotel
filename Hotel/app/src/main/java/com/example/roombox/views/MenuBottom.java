@@ -12,8 +12,6 @@ import com.example.roombox.R;
 
 import java.util.ArrayList;
 
-import butterknife.OnClick;
-
 public class MenuBottom extends LinearLayout implements View.OnClickListener {
   private Context mContext;
   private View mView;

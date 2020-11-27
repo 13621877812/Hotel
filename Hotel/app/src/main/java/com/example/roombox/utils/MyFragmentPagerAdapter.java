@@ -7,36 +7,37 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.List;
 
 
+
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    List<Fragment> list;//需要显示的fragment在构造器中传入
-    List<String> titleList;
+  List<Fragment> list;//需要显示的fragment在构造器中传入
+  List<String> titleList;
 
-    public MyFragmentPagerAdapter(FragmentManager fm, List<Fragment> list, List<String> titleList) {
+  public MyFragmentPagerAdapter(FragmentManager fm, List<Fragment> list, List<String> titleList) {
 
-        super(fm);
-        this.list = list;
-        this.titleList = titleList;
+    super(fm);
+    this.list = list;
+    this.titleList = titleList;
 
-    }
+  }
 
-//返回显示的Fragment总数
-    @Override
+  //返回显示的Fragment总数
+  @Override
 
-    public int getCount() {
+  public int getCount() {
 
-        return list.size();
+    return list.size();
 
-    }
+  }
 
-//返回要显示的Fragment的某个实例
-    @Override
+  //返回要显示的Fragment的某个实例
+  @Override
 
-    public Fragment getItem(int arg0) {
+  public Fragment getItem(int arg0) {
 
-        return list.get(arg0);
+    return list.get(arg0);
 
-    }
+  }
 //
 ////返回一个自定义tab视图（用于自定义Tablayout标签，不自定义可忽略）
 //    public View getTabView(int position) {
@@ -56,12 +57,12 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 //
 //    }
 
-//返回每个Tab的标题，当要自定义Tab的时候不应该重写该方法
-@Override
+  //返回每个Tab的标题，当要自定义Tab的时候不应该重写该方法
+  @Override
 
-public CharSequence getPageTitle(int position) {
+  public CharSequence getPageTitle(int position) {
 
-  return titleList.get(position);
-}
+    return titleList.get(position);
+  }
 
 }
