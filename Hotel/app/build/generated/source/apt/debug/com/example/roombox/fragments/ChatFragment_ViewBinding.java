@@ -15,7 +15,7 @@ import java.lang.Override;
 public class ChatFragment_ViewBinding implements Unbinder {
   private ChatFragment target;
 
-  private View view2131296595;
+  private View view2131296596;
 
   @UiThread
   public ChatFragment_ViewBinding(final ChatFragment target, View source) {
@@ -24,7 +24,7 @@ public class ChatFragment_ViewBinding implements Unbinder {
     View view;
     target.listView = Utils.findRequiredViewAsType(source, R.id.listView, "field 'listView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.startBtn, "method 'onViewClicked'");
-    view2131296595 = view;
+    view2131296596 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class ChatFragment_ViewBinding implements Unbinder {
 
     target.listView = null;
 
-    view2131296595.setOnClickListener(null);
-    view2131296595 = null;
+    view2131296596.setOnClickListener(null);
+    view2131296596 = null;
   }
 }

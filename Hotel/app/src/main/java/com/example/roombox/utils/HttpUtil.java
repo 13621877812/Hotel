@@ -5,12 +5,20 @@ import android.content.Context;
 import android.util.Log;
 
 import com.bumptech.glide.RequestBuilder;
+import com.example.roombox.base.ResultBean;
+import com.example.roombox.bean.ChatBean;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +33,7 @@ import okhttp3.Response;
 public class HttpUtil {
 
  public interface  HttpCallBack{
-    public void success(JSONObject data);
+    public void success(String data);
   }
   public static void httpGet(String url,final Activity context,final HttpCallBack httpCallBack){
     Call call = getHttpCall(url,null);
@@ -37,9 +45,8 @@ public class HttpUtil {
 
       @Override
       public void onResponse(Call call, Response response) throws IOException {
-        final  String result = response.body().string();
-        if (response.body() != null) {
-
+        if (response.body() != null){
+          final  String result = response.body().string();
           dealData(context,httpCallBack,result);
         }
       }
@@ -100,26 +107,23 @@ public class HttpUtil {
     context.runOnUiThread(new Runnable() {
       @Override
       public void run() {
-        try {
-          JSONObject jsonObject = new JSONObject(data);
-          String code = jsonObject.getString("code");
-          if ("0".equals(code)){ //success
-            JSONObject data =  jsonObject.getJSONObject("data");
+
+          Gson gson = new Gson();
+          Type resultType = new TypeToken<ResultBean>() {
+          }.getType();
+          ResultBean bean = gson.fromJson(data, resultType);
+          String code = bean.getCode();
+          if ("0".equals(code)){ //// succes
+            Object object =  bean.getData();
             if (httpCallBack != null){
-              httpCallBack.success(data);
+              httpCallBack.success(object == null?"":object.toString());
             }
 
           }else {
-            Contans.makeToast(jsonObject.getString("msg"),context);
+            Contans.makeToast(bean.getMsg(),context);
           }
 
-        } catch (JSONException e) {
-          Contans.makeToast("data error",context);
-          e.printStackTrace();
-        } catch (Exception e) {
-          Contans.makeToast("data error",context);
-          e.printStackTrace();
-        }
+
 
       }
     });

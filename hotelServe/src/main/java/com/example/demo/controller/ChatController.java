@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 
@@ -21,8 +22,6 @@ public class ChatController {
   @Autowired
   ChatMapper chatMapper;
 
-  @Autowired
-  UserMapper userMapper;
 
   //list
   @RequestMapping(value = "/list",method = RequestMethod.GET)
@@ -41,16 +40,10 @@ public class ChatController {
 
   //add
   @RequestMapping(value = "/add",method = RequestMethod.POST)
-  public ResultEntity addComment(ChatEntity entity, HttpRequest request) throws Exception{
+  public ResultEntity addComment(ChatEntity entity) throws Exception{
 
 
-
-   //获取发送的人的头像和昵称
-   UserEntity userEntity = userMapper.selectByPrimaryKey(entity.getSendId());
-   entity.setSendName(StringUtils.isEmpty(userEntity.getName())?entity.getSendId():userEntity.getName());
-   entity.setSendUrl(StringUtils.isEmpty(userEntity.getImg())?" ":userEntity.getImg());
-   entity.setCreateTime(new Date());
-
+    entity.setCreateTime(new Date());
     ResultEntity result = new ResultEntity();
     int addId = chatMapper.insert(entity);
     result.setCode(0);

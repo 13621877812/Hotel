@@ -95,11 +95,11 @@ public class ChatFragment extends Fragment {
     String url = "chat/list?sendId=1&receiveId=2";
     HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
       @Override
-      public void success(JSONObject data) {
+      public void success(String data) {
         Gson gson = new Gson();
         Type userListType = new TypeToken<ArrayList<ChatBean>>() {
         }.getType();
-        List<ChatBean> datas = gson.fromJson(data.toString(), userListType);
+        List<ChatBean> datas = gson.fromJson((String) data, userListType);
         keyList.clear();
         keyList.addAll(datas);
       }

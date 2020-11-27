@@ -22,9 +22,9 @@ public class UserController {
     @RequestMapping(value = "/regist",method = RequestMethod.POST)
     public ResultEntity registUser(@RequestParam(value = "account") String account,
                                    @RequestParam(value = "password") String password,
-                                   @RequestParam(value = "isowner") String isowner){
+                                   @RequestParam(value = "type") String type){
 
-        System.out.println(account + " " +password);
+
         //先查看账号是否重复
         UserEntity dbUser =  userMapper.selectByPrimaryKey(account);
         if (dbUser != null){
@@ -39,7 +39,7 @@ public class UserController {
         UserEntity user =  new UserEntity();
         user.setAccount(account);
         user.setPassword(password);
-        user.setIsowner(Integer.parseInt(isowner));
+        user.setType(Integer.parseInt(type));
         int insertId = userMapper.insert(user);
 
         ResultEntity result = new ResultEntity();
@@ -52,7 +52,8 @@ public class UserController {
 
     //login
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public ResultEntity loginUser(@RequestParam(value = "account") String account, @RequestParam(value = "password") String password){
+    public ResultEntity loginUser(@RequestParam(value = "account") String account,
+                                  @RequestParam(value = "password") String password){
 
         ResultEntity result = new ResultEntity();
         //先查看账号是否重复
@@ -63,10 +64,8 @@ public class UserController {
 
                 result.setCode(0);
                 HashMap<String,String> data = new HashMap<String,String>();
-                data.put("userimage",dbUser.getImg());
-                data.put("username",dbUser.getName());
-                data.put("gender",dbUser.getGender());
-
+                data.put("account",dbUser.getAccount());
+                data.put("type",dbUser.getType().toString() );
                 result.setData(data);
                 result .setMsg("login success!");
                 return result;
@@ -84,28 +83,6 @@ public class UserController {
 
     }
 
-    //update
-    @RequestMapping(value = "/update",method = RequestMethod.POST)
-    public ResultEntity updateUser(@RequestParam(value = "account") String account, @RequestParam(value = "gender") String gender,
-                                   @RequestParam(value = "name") String name, @RequestParam(value = "img") String img){
-
-        ResultEntity result = new ResultEntity();
-        //先查看账号是否重复
-
-
-        UserEntity userEntity = new UserEntity();
-        userEntity.setAccount(account);
-        userEntity.setName(name);
-        userEntity.setGender(gender);
-        userEntity.setImg(img);
-
-        int res =  userMapper.updateByPrimaryKey(userEntity);
-
-        result.setCode(0);
-        result .setMsg("submit success!");
-        return result;
-
-    }
 
 
 

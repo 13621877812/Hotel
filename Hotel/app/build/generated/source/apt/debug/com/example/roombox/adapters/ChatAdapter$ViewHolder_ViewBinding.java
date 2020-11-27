@@ -19,11 +19,10 @@ public class ChatAdapter$ViewHolder_ViewBinding implements Unbinder {
   public ChatAdapter$ViewHolder_ViewBinding(ChatAdapter.ViewHolder target, View source) {
     this.target = target;
 
-    target.topImage = Utils.findRequiredViewAsType(source, R.id.topImage, "field 'topImage'", ImageView.class);
+    target.userImage = Utils.findRequiredViewAsType(source, R.id.userImage, "field 'userImage'", ImageView.class);
     target.name = Utils.findRequiredViewAsType(source, R.id.name, "field 'name'", TextView.class);
-    target.desc = Utils.findRequiredViewAsType(source, R.id.desc, "field 'desc'", TextView.class);
-    target.price = Utils.findRequiredViewAsType(source, R.id.price, "field 'price'", TextView.class);
-    target.eval = Utils.findRequiredViewAsType(source, R.id.eval, "field 'eval'", TextView.class);
+    target.time = Utils.findRequiredViewAsType(source, R.id.time, "field 'time'", TextView.class);
+    target.content = Utils.findRequiredViewAsType(source, R.id.content, "field 'content'", TextView.class);
   }
 
   @Override
@@ -33,10 +32,9 @@ public class ChatAdapter$ViewHolder_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.topImage = null;
+    target.userImage = null;
     target.name = null;
-    target.desc = null;
-    target.price = null;
-    target.eval = null;
+    target.time = null;
+    target.content = null;
   }
 }

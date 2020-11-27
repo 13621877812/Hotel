@@ -40,4 +40,18 @@ public class HotelController {
 
         return  result;
     }
+
+  //add
+  @RequestMapping(value = "/add",method = RequestMethod.POST)
+  public ResultEntity addOne(HotelEntity entity){
+
+    ResultEntity result = new ResultEntity();
+
+    int db =  hotelMapper.insert(entity);
+    result.setCode(0);
+    result.setMsg("update grade success!");
+    result.setData(entity);
+
+    return  result;
+  }
 }

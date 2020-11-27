@@ -16,7 +16,12 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
 
 import com.example.roombox.R;
+import com.example.roombox.ui.ChatActivity;
+import com.example.roombox.ui.CommentActivity;
 import com.example.roombox.ui.HotelDetialAct;
+import com.example.roombox.ui.LoginActivity;
+import com.example.roombox.ui.OrderActivity;
+import com.example.roombox.utils.ACache;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -55,7 +60,7 @@ public class MineFragment extends Fragment {
     ArrayList<HashMap<String,Object>> meumList = new ArrayList<HashMap<String, Object>>();
     //租客
     String[] datas = new String[]{"历史订单","房屋管理","客服","登出","评论"};
-    //
+
     String[] datas1 = new String[]{"房屋管理","举报管理","登出"};
     for(int i = 0; i < datas.length; i++){
       HashMap<String,Object> map = new HashMap<String, Object>();
@@ -71,10 +76,37 @@ public class MineFragment extends Fragment {
     gridView.setOnItemClickListener(new OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        int index = position + 1;
-        Toast.makeText(getActivity(),"点击了选项：" + index,Toast.LENGTH_LONG).show();
+        startPage(position);
       }
     });
+
+  }
+  //跳转对应的页面
+  private void startPage(int index){
+    switch (index){
+      case 0:
+        startActivity(new Intent(getActivity(), OrderActivity.class));
+        break;
+      case 1:
+        startActivity(new Intent(getActivity(), ChatActivity.class));
+        break;
+      case 2:
+        startActivity(new Intent(getActivity(), ChatActivity.class));
+        break;
+      case 3://退出
+        ACache.get(getActivity()).put("account","");
+        ACache.get(getActivity()).put("type","");
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+        break;
+      case 4:
+        startActivity(new Intent(getActivity(), CommentActivity.class));
+        break;
+      default:
+        break;
+    }
+
+
+
 
   }
   @Override

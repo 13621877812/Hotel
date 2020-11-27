@@ -14,6 +14,7 @@ import com.example.roombox.R;
 import com.example.roombox.bean.ChatBean;
 import com.example.roombox.bean.CollectionBean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -25,7 +26,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     void itemClick(ChatBean bean);
   }
   private Context mContext;
-  private List<ChatBean> datas;
+  private List<ChatBean> datas = new ArrayList<>();
   private ItemClickListener listener;
   public ChatAdapter(Context mContext) {
     this.mContext = mContext;
@@ -41,9 +42,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
 
   @Override
   public void onBindViewHolder(ViewHolder viewHolder, int i) {
+    viewHolder.userImage.setImageResource(R.drawable.logo);
     final ChatBean bean = datas.get(i);
-    viewHolder.name.setText(bean.getContent());
-    Glide.with(mContext).load(bean.getSendUrl()).into(viewHolder.topImage);
+    viewHolder.name.setText(bean.getSendId());
+    viewHolder.time.setText(bean.getCreateTime());
+    viewHolder.content.setText(bean.getContent());
     viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -66,16 +69,14 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
   }
 
   static class ViewHolder extends RecyclerView.ViewHolder {
-    @BindView(R.id.topImage)
-    ImageView topImage;
+    @BindView(R.id.userImage)
+    ImageView userImage;
     @BindView(R.id.name)
     TextView name;
-    @BindView(R.id.desc)
-    TextView desc;
-    @BindView(R.id.price)
-    TextView price;
-    @BindView(R.id.eval)
-    TextView eval;
+    @BindView(R.id.time)
+    TextView time;
+    @BindView(R.id.content)
+    TextView content;
     private View parentView;
     ViewHolder(View view) {
       super(view);

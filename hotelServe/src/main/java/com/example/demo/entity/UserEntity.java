@@ -4,64 +4,38 @@ public class UserEntity {
     private int id;
     private  String account;
     private  String password;
-    private  Integer isowner;
-    private  String name;
-    private  String gender;
-    private  String img;
+    private  Integer type;
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public String getAccount() {
-        return account;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public Integer getIsowner() {
-        return isowner;
-    }
+  public String getAccount() {
+    return account;
+  }
 
-    public void setIsowner(Integer isowner) {
-        this.isowner = isowner;
-    }
+  public void setAccount(String account) {
+    this.account = account;
+  }
 
-    public void setAccount(String account) {
-        this.account = account;
-    }
+  public String getPassword() {
+    return password;
+  }
 
-    public String getPassword() {
-        return password;
-    }
+  public void setPassword(String password) {
+    this.password = password;
+  }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+  public Integer getType() {
+    return type;
+  }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
-    }
+  public void setType(Integer type) {
+    this.type = type;
+  }
 }

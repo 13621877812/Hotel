@@ -57,7 +57,7 @@ public class CommentController {
        //grade
         Integer avgGrade = commentMapper.avgGrade(hotel_id);
         HotelEntity hotelEntity = new HotelEntity();
-        hotelEntity.setGrade(avgGrade + "");
+//        hotelEntity.setGrade(avgGrade + "");
         hotelEntity.setHotel_id(hotel_id);
         hotelMapper.updateByPrimaryKey(hotelEntity);
 

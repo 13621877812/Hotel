@@ -123,7 +123,7 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
         HttpUtil.httpPost(url,params,RegActivity.this,new HttpUtil.HttpCallBack(){
 
           @Override
-          public void success(JSONObject data) {
+          public void success(String data) {
             Contans.makeToast("regist success!",RegActivity.this);
             finish();
           }

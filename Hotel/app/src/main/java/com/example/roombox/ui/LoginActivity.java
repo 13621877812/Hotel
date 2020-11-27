@@ -107,16 +107,16 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
           params.put("password",pwd);
           HttpUtil.httpPost(url, params, LoginActivity.this, new HttpUtil.HttpCallBack() {
             @Override
-            public void success(JSONObject data) {
+            public void success(String data1) {
+
               Contans.makeToast("login success!",LoginActivity.this);
               try {
-                String userimage  = TextUtils.isEmpty(data.getString("userimage"))?"":data.getString("userimage");
-                String username = TextUtils.isEmpty(data.getString("username"))?"":data.getString("username");
-                String gender = TextUtils.isEmpty(data.getString("gender"))?"":data.getString("gender");
-                ACache.get(LoginActivity.this).put("account",name);
-                ACache.get(LoginActivity.this).put("userimage",userimage);
-                ACache.get(LoginActivity.this).put("username",username);
-                ACache.get(LoginActivity.this).put("gender",gender);
+                JSONObject data = new JSONObject((String) data1);
+                String account  = TextUtils.isEmpty(data.getString("account"))?"":data.getString("account");
+                String type  = TextUtils.isEmpty(data.getString("type"))?"":data.getString("type");
+//
+                ACache.get(LoginActivity.this).put("account",account);
+                ACache.get(LoginActivity.this).put("type",type);
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 finish();
               } catch (JSONException e) {
