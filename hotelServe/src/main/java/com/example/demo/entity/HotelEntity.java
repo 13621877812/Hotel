@@ -8,14 +8,14 @@ public class HotelEntity {
     private  String price; //每晚价格
     private  String area; //房源区域
     private  String place;//房源地址
-    private  String content;//房源介绍
+    private  String intro;//房源介绍
     private  Integer type; //住宿类型
-    private  Integer column1; //空间类型
+    private  Integer spaceType; //空间类型
     private  Integer num; //房源房数
     private  Integer max; //可容纳客户数
     private  Integer roommax;//可容纳卧室数
     private  String beds;//床
-    private  Integer waternum;//沐浴数
+    private  Integer bathnum;//沐浴数
     private  String services; //服务
     private  String images;
 
@@ -68,12 +68,12 @@ public class HotelEntity {
     this.place = place;
   }
 
-  public String getContent() {
-    return content;
+  public String getIntro() {
+    return intro;
   }
 
-  public void setContent(String desc) {
-    this.content = desc;
+  public void setIntro(String intro) {
+    this.intro = intro;
   }
 
   public Integer getType() {
@@ -84,12 +84,12 @@ public class HotelEntity {
     this.type = type;
   }
 
-  public Integer getColumn1() {
-    return column1;
+  public Integer getSpaceType() {
+    return spaceType;
   }
 
-  public void setColumn1(Integer column1) {
-    this.column1 = column1;
+  public void setSpaceType(Integer spaceType) {
+    this.spaceType = spaceType;
   }
 
   public Integer getNum() {
@@ -124,12 +124,12 @@ public class HotelEntity {
     this.beds = beds;
   }
 
-  public Integer getWaternum() {
-    return waternum;
+  public Integer getBathnum() {
+    return bathnum;
   }
 
-  public void setWaternum(Integer waternum) {
-    this.waternum = waternum;
+  public void setBathnum(Integer bathnum) {
+    this.bathnum = bathnum;
   }
 
   public String getServices() {

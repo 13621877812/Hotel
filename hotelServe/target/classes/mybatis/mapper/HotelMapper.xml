@@ -12,14 +12,14 @@
         <result column="price" jdbcType="VARCHAR" property="price" />
         <result column="area" jdbcType="VARCHAR" property="area" />
       <result column="place" jdbcType="VARCHAR" property="place" />
-      <result column="desc" jdbcType="VARCHAR" property="desc" />
+      <result column="intro" jdbcType="VARCHAR" property="intro" />
       <result column="type" jdbcType="INTEGER" property="type" />
-      <result column="column" jdbcType="INTEGER" property="column" />
+      <result column="spaceType" jdbcType="INTEGER" property="spaceType" />
       <result column="num" jdbcType="INTEGER" property="num" />
       <result column="max" jdbcType="INTEGER" property="max" />
       <result column="roommax" jdbcType="INTEGER" property="roommax" />
         <result column="beds" jdbcType="VARCHAR" property="beds" />
-        <result column="waternum" jdbcType="INTEGER" property="waternum" />
+        <result column="bathnum" jdbcType="INTEGER" property="bathnum" />
         <result column="services" jdbcType="VARCHAR" property="services" />
         <result column="images" jdbcType="VARCHAR" property="images" />
 
@@ -28,9 +28,9 @@
   <insert id="insert" parameterType="com.example.demo.entity.HotelEntity">
 
 
-    insert into hotel (userId, name, price, area,place,content,type,column1,num,max,roommax,beds,waternum,services,images)
-    values (#{userId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},#{price,jdbcType=VARCHAR},#{area,jdbcType=VARCHAR},#{place,jdbcType=VARCHAR},#{content,jdbcType=VARCHAR},
-    #{type,jdbcType=INTEGER},#{column1,jdbcType=INTEGER},#{num,jdbcType=INTEGER},#{max,jdbcType=INTEGER},#{roommax,jdbcType=INTEGER},#{beds,jdbcType=VARCHAR},#{waternum,jdbcType=INTEGER},#{services,jdbcType=VARCHAR},
+    insert into hotel (userId, name, price, area,place,intro,type,spaceType,num,max,roommax,beds,bathnum,services,images)
+    values (#{userId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},#{price,jdbcType=VARCHAR},#{area,jdbcType=VARCHAR},#{place,jdbcType=VARCHAR},#{intro,jdbcType=VARCHAR},
+    #{type,jdbcType=INTEGER},#{spaceType,jdbcType=INTEGER},#{num,jdbcType=INTEGER},#{max,jdbcType=INTEGER},#{roommax,jdbcType=INTEGER},#{beds,jdbcType=VARCHAR},#{bathnum,jdbcType=INTEGER},#{services,jdbcType=VARCHAR},
     #{images,jdbcType=VARCHAR})
 
 

@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/ownerid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房東帳號"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
+            android:ems="10"
+            android:hint="輸入房東帳號"
+            android:inputType="textUri|textMultiLine"
+            android:textColor="#000000"
+            android:maxLength="20"
+
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源名稱"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/housename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:ems="10"
+            android:hint="輸入房源名稱"
+            android:maxLength="32"
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="每晚價格"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/perprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:digits="1234567890"
+            android:ems="10"
+            android:hint="輸入每晚價格"
+
+            android:inputType="number"
+            android:maxLength="6"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源區域"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:maxLength="20"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="輸入房源區域"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源地址"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源地址"
+            android:maxLength="100"
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="房源介紹"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源介紹"
+            android:maxLength="200"
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="住宿類型"
+            android:textColor="#000000"
+            />
+
+
+        <Spinner
+            android:id="@+id/type"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:entries="@array/houseType" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="空間類型"
+            android:textColor="#000000"
+            />
+
+        <RadioGroup
+            android:id="@+id/spacetype"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginBottom="64dp">
+
+            <RadioButton
+                android:id="@+id/whole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:buttonTint="#000000"
+                android:checked="true"
+                android:text="獨立空間"
+                android:textColorHighlight="#000000"
+                android:textColorLink="#000000" />
+
+            <TextView
+                android:id="@+id/t10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="房客擁有自己的獨立臥房，其他區域則與他人共用。"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:buttonTint="#000000"
+                android:text="合住房間"
+                android:textColorLink="#000000" />
+
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="房客會住在與其他人合用的臥房或公共區域。"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+
+        </RadioGroup>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源房數"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/roomnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源房數"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/t12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源可容納房客數"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/mannum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源最大可容納房客數"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/t13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源臥室數"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源臥室數"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:id="@+id/t14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源床數"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/bednum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源床數"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/t15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="床型資訊"
+            android:textColor="#000000"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+
+        <TextView
+            android:id="@+id/t16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源衛浴數"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/bathnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:hint="輸入房源衛浴數"
+
+            android:textColor="#000000"
+            android:textColorHint="#E6E6E6" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/t17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="提供設備與服務"
+            android:textColor="#000000"
+
+            />
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="空調"
+            android:buttonTint="#000000"
+            />
+
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="無線網路"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="電視"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="暖氣"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="電視"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="日用品"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="洗衣機"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="熨斗"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="熱水"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="早餐"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="咖啡"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="茶"
+            android:buttonTint="#000000"
+            />
+
+        <CheckBox
+            android:id="@+id/c13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="廚房"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="冰箱"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="餐具"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="爐子"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="廚具"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="衣架"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="洗髮露"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="沐浴乳"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="吹風機"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="急救包"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="滅火器"
+            android:buttonTint="#000000"
+            />
+        <CheckBox
+            android:id="@+id/c24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="#000000"
+            android:text="煙霧警報器"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/roomimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="房源相片"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:id="@+id/roomimg_up"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:text="新增"
+            android:maxLength="100"
+            android:textColor="#E6E6E6"
+
+            android:background="@drawable/roomimg_upbt"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/room_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:text="新增"
+            android:maxLength="100"
+            android:textColor="#ffffff"
+            android:layout_gravity="right"
+            android:background="#E6E6E6"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+

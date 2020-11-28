@@ -13,8 +13,11 @@ import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
 import com.example.roombox.R;
+import com.example.roombox.ui.AddHotelActivity;
 import com.example.roombox.ui.ChatActivity;
 import com.example.roombox.ui.CommentActivity;
+import com.example.roombox.ui.FeedBackActivity;
+import com.example.roombox.ui.HotelManagerActivity;
 import com.example.roombox.ui.LoginActivity;
 import com.example.roombox.ui.OrderActivity;
 import com.example.roombox.utils.ACache;
@@ -53,14 +56,19 @@ public class MineFragment extends Fragment {
   }
 
   private void initView() {
-    ArrayList<HashMap<String, Object>> meumList = new ArrayList<HashMap<String, Object>>();
-    //租客
-    String[] datas = new String[]{"历史订单", "房屋管理", "客服", "登出", "评论"};
-
-    String[] datas1 = new String[]{"房屋管理", "举报管理", "登出"};
+    //0 租客 1 房东 2管理员
+    final String type = ACache.get(getActivity()).getAsString("type");
+    //管理员
+    String[] datas = new String[]{"房屋管理", "举报管理", "登出"};
+    if ("1".equals(type)){
+      datas = new String[]{"历史订单", "房屋管理", "客服", "登出", "评论"};
+    }
+    if ("0".equals(type)){
+      return;
+    }
+    ArrayList meumList = new ArrayList();
     for (int i = 0; i < datas.length; i++) {
       HashMap<String, Object> map = new HashMap<String, Object>();
-      map.put("ItemImage", R.mipmap.logo);
       map.put("ItemText", "" + datas[i]);
       meumList.add(map);
     }
@@ -72,20 +80,45 @@ public class MineFragment extends Fragment {
     gridView.setOnItemClickListener(new OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        startPage(position);
+          if ("2".equals(type)){
+              startPage(position);
+          }else {
+              startPage1(position);
+          }
+
       }
     });
 
   }
 
-  //跳转对应的页面
+  //跳转对应的页面(管理员)
   private void startPage(int index) {
+    switch (index) {
+      case 0:
+        startActivity(new Intent(getActivity(), AddHotelActivity.class));
+        break;
+      case 1:
+        startActivity(new Intent(getActivity(), FeedBackActivity.class));
+        break;
+      case 2:
+        ACache.get(getActivity()).put("account", "");
+        ACache.get(getActivity()).put("type", "");
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+        break;
+      default:
+        break;
+    }
+
+
+  }
+  //跳转对应的页面(房东)
+  private void startPage1(int index) {
     switch (index) {
       case 0:
         startActivity(new Intent(getActivity(), OrderActivity.class));
         break;
       case 1:
-        startActivity(new Intent(getActivity(), ChatActivity.class));
+        startActivity(new Intent(getActivity(), HotelManagerActivity.class));
         break;
       case 2:
         startActivity(new Intent(getActivity(), ChatActivity.class));
