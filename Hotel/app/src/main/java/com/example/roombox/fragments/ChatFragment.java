@@ -86,7 +86,9 @@ public class ChatFragment extends Fragment {
   }
 
   private void initData() {
-    String url = "chat/list?sendId=1&receiveId=2";
+
+    String account = ACache.get(getActivity()).getAsString("account");
+    String url = "chat/recent?sendId=" + account;
     HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
       @Override
       public void success(String data) {

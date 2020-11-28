@@ -23,6 +23,17 @@ public class ChatController {
   ChatMapper chatMapper;
 
 
+  @RequestMapping(value = "/recent",method = RequestMethod.GET)
+  public ResultEntity getData(@RequestParam(value = "sendId") String sendId){
+    ResultEntity result = new ResultEntity();
+    ChatEntity chatEntity = new ChatEntity();
+    chatEntity.setSendId(sendId);
+    List<ChatEntity> datas = chatMapper.selectRecent(chatEntity);
+    result.setCode(0);
+    result.setData(datas);
+    return  result;
+  }
+
   //list
   @RequestMapping(value = "/list",method = RequestMethod.GET)
   public ResultEntity getData(@RequestParam(value = "sendId") String sendId,
