@@ -1,6 +1,8 @@
 package com.example.roombox.bean;
 
-public class ChatBean {
+import java.io.Serializable;
+
+public class ChatBean implements Serializable{
   private String id;
   private String sendUrl;
   private String sendId;

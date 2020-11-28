@@ -2,6 +2,7 @@ package com.example.roombox.fragments;
 
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -30,6 +31,10 @@ import android.widget.ImageView;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.example.roombox.bean.ChatBean;
+import com.example.roombox.bean.HotelBean;
+import com.example.roombox.ui.HotelDetialAct;
+import com.example.roombox.utils.HttpUtil;
 import com.google.android.gms.common.ConnectionResult;
 
 import com.example.roombox.R;
@@ -50,8 +55,12 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -63,6 +72,10 @@ public class HomeFragment extends Fragment implements
   private GoogleMap mMap1;
   private View mView;
   private ImageView imgMyLocation;
+  ArrayList<HotelBean> hotelDatas;
+
+
+
 
 
   LocationManager lm;
@@ -74,9 +87,35 @@ public class HomeFragment extends Fragment implements
     mView = inflater.inflate(R.layout.fragment_home, container, false);
     initMapView(savedInstanceState);
 
+    mView.findViewById(R.id.toDetail).setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        HotelBean bean = hotelDatas.get(0);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("hotel",bean);
+        Intent intent = new Intent(getActivity(), HotelDetialAct.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+      }
+    });
+    initData();
     return mView;
   }
+  //获取房源数据
+   private void initData(){
 
+     String url = "hotel/list";
+     HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
+       @Override
+       public void success(String data) {
+         Gson gson = new Gson();
+         Type type = new TypeToken<ArrayList<HotelBean>>() {
+         }.getType();
+         hotelDatas = gson.fromJson(data, type);
+
+       }
+     });
+   }
   private void initMapView(Bundle savedInstanceState) {
     mMap = (MapView) mView.findViewById(R.id.mapview);
     mMap.onCreate(savedInstanceState);
@@ -107,6 +146,7 @@ public class HomeFragment extends Fragment implements
 
 
     imgMyLocation = (ImageView) mView.findViewById(R.id.locatebt);
+
     lm = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
     String price="3.1K";
 

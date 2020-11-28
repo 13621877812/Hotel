@@ -42,13 +42,16 @@ public class ChatActivity extends AppCompatActivity {
   TextView titleView;
 
   private ChatAdapter chatAdapter;
-
+  String otherId;
+  String account;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_chat);
     ButterKnife.bind(this);
+    otherId = getIntent().getStringExtra("sendId");
+    account = ACache.get(this).getAsString("account");
     initView();
     openTime();
     getContents();
@@ -56,6 +59,8 @@ public class ChatActivity extends AppCompatActivity {
 
   private void initView() {
 
+
+      titleView.setText(otherId);
     LinearLayoutManager manager = new LinearLayoutManager(ChatActivity.this);
     chatList.setLayoutManager(manager);
     chatAdapter = new ChatAdapter(this);
@@ -80,9 +85,9 @@ public class ChatActivity extends AppCompatActivity {
 
 
     HashMap params = new HashMap();
-    String account = ACache.get(this).getAsString("account");
+
     params.put("sendId", account);//当前用户id
-    params.put("receiveId", "2");//接收用户
+    params.put("receiveId", otherId);//接收用户
     params.put("content", content1);//聊天内
     HttpUtil.httpPost("chat/add", params, ChatActivity.this, new HttpUtil.HttpCallBack() {
 
@@ -118,7 +123,8 @@ public class ChatActivity extends AppCompatActivity {
 
   //获取聊天列表内容
   private void getContents() {//返回信息
-    String url = "chat/list?sendId=1&receiveId=2";
+
+    String url = "chat/list?sendId=" + otherId + "&receiveId=" + account;
     HttpUtil.httpGet(url, ChatActivity.this, new HttpUtil.HttpCallBack() {
       @Override
       public void success(String data) {

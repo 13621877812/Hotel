@@ -4,8 +4,13 @@ import android.app.Activity;
 import android.util.Log;
 
 import com.example.roombox.base.ResultBean;
+import com.example.roombox.ui.AddHotelActivity;
 import com.google.gson.Gson;
+import com.google.gson.internal.bind.DateTypeAdapter;
 import com.google.gson.reflect.TypeToken;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -16,6 +21,8 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -27,7 +34,7 @@ public class HttpUtil {
     public void success(String data);
   }
 
-  public static void httpGet(String url, final Activity context, final HttpCallBack httpCallBack) {
+  public static void httpGet(final String url, final Activity context, final HttpCallBack httpCallBack) {
     Call call = getHttpCall(url, null);
     call.enqueue(new Callback() {
       @Override
@@ -39,14 +46,14 @@ public class HttpUtil {
       public void onResponse(Call call, Response response) throws IOException {
         if (response.body() != null) {
           final String result = response.body().string();
-          dealData(context, httpCallBack, result);
+          dealData(context, httpCallBack, result,url);
         }
       }
 
     });
   }
 
-  public static void httpPost(String url,
+  public static void httpPost(final String url,
                               HashMap<String, String> params,
                               final Activity context, final HttpCallBack httpCallBack) {
     Call call = getHttpCall(url, params);
@@ -60,11 +67,20 @@ public class HttpUtil {
       public void onResponse(Call call, Response response) throws IOException {
         final String result = response.body().string();
         if (response.body() != null) {
-          dealData(context, httpCallBack, result);
+          dealData(context, httpCallBack, result,url);
         }
       }
 
     });
+
+
+  }
+
+  public static void httpUpload(String url,
+                              HashMap<String, String> params,
+                              final Activity context, final HttpCallBack httpCallBack) {
+
+
 
 
   }
@@ -98,7 +114,9 @@ public class HttpUtil {
 
   private static void dealData(final Activity context,
                                final HttpCallBack httpCallBack,
-                               final String data) {
+                               final String data,String url) {
+    Log.i("HTTP", "dealData: " + url);
+    Log.i("HTTP", "dealData: " + data);
     context.runOnUiThread(new Runnable() {
       @Override
       public void run() {

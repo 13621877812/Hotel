@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.roombox.R;
 import com.example.roombox.bean.CollectionBean;
+import com.example.roombox.bean.HotelBean;
 
 import java.util.List;
 
@@ -22,11 +23,11 @@ import butterknife.ButterKnife;
 public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> {
 
   public interface ItemClickListener {
-    void itemClick(CollectionBean bean);
+    void itemClick(HotelBean bean);
   }
 
   private Context mContext;
-  private List<CollectionBean> datas;
+  private List<HotelBean> datas;
   private ItemClickListener listener;
 
   public PointAdapter(Context mContext) {
@@ -43,9 +44,9 @@ public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> 
 
   @Override
   public void onBindViewHolder(ViewHolder viewHolder, int i) {
-    final CollectionBean bean = datas.get(i);
+    final HotelBean bean = datas.get(i);
     viewHolder.name.setText(bean.getName());
-    Glide.with(mContext).load(bean.getImage()).into(viewHolder.topImage);
+    Glide.with(mContext).load(bean.getImages()).into(viewHolder.topImage);
     viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -63,7 +64,7 @@ public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> 
     this.listener = listener;
   }
 
-  public void setDatas(List<CollectionBean> datas) {
+  public void setDatas(List<HotelBean> datas) {
     this.datas = datas;
   }
 

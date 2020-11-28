@@ -20,6 +20,7 @@ import com.example.roombox.ui.FeedBackActivity;
 import com.example.roombox.ui.HotelManagerActivity;
 import com.example.roombox.ui.LoginActivity;
 import com.example.roombox.ui.OrderActivity;
+import com.example.roombox.ui.PersonDataAct;
 import com.example.roombox.utils.ACache;
 
 import java.util.ArrayList;
@@ -98,7 +99,7 @@ public class MineFragment extends Fragment {
         startActivity(new Intent(getActivity(), AddHotelActivity.class));
         break;
       case 1:
-        startActivity(new Intent(getActivity(), FeedBackActivity.class));
+        startActivity(new Intent(getActivity(), PersonDataAct.class));
         break;
       case 2:
         ACache.get(getActivity()).put("account", "");

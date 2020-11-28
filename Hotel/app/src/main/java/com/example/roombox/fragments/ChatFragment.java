@@ -1,5 +1,6 @@
 package com.example.roombox.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,11 +10,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.roombox.R;
 import com.example.roombox.bean.ChatBean;
+import com.example.roombox.ui.ChatActivity;
+import com.example.roombox.ui.HotelDetialAct;
+import com.example.roombox.utils.ACache;
 import com.example.roombox.utils.HttpUtil;
 import com.example.roombox.utils.SimpleAdapter;
+import com.example.roombox.utils.TimeUtil;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -54,34 +60,24 @@ public class ChatFragment extends Fragment {
     adapter = new SimpleAdapter(R.layout.item_chat, keyList, new SimpleAdapter.ConVert<ChatBean>() {
       @Override
       public void convert(BaseViewHolder helper, ChatBean o) {
-        String name = TextUtils.isEmpty(o.getSendName()) ? "AKi" : o.getContent();
-        String content = TextUtils.isEmpty(o.getContent()) ? "有活动" : o.getContent();
-        String time = TextUtils.isEmpty(o.getCreateTime()) ? "10月31" : o.getCreateTime();
+        String name = o.getSendName();
+        String content = o.getContent();
+        String time = o.getCreateTime();
         helper.setText(R.id.tv_name, name);
         helper.setText(R.id.tv_content, content);
-        helper.setText(R.id.tv_time, time);
-//        String name = o.getName();
-//        if (TextUtils.isEmpty(name)){
-//          name = TextUtils.isEmpty(o.getAccount())?" ":o.getAccount();
-//        }
-//        RequestOptions mRequestOptions = RequestOptions.circleCropTransform()
-//          .diskCacheStrategy(DiskCacheStrategy.NONE)//不做磁盘缓存
-//          .skipMemoryCache(true);//不做内存缓存
-//        ImageView view = helper.getView(R.id.userImg);
-//        Glide.with(HotelDetialAct.this).load(Contans.HEADIMGURL + userImg ).apply(mRequestOptions).into(view);
-//        helper.setText(R.id.user, name);
-//
-//
-////                helper.setText(R.id.grade,  o.getGrade()+"");
-//        RatingBar ratingBar = helper.getView(R.id.ratingBar);
-//        ratingBar.setRating(Float.valueOf(o.getGrade()));
-//
-//
-//        String comment = TextUtils.isEmpty(o.getContent())?" ":o.getContent();
-//        helper.setText(R.id.comment, comment);
-//        String time = TextUtils.isEmpty(o.getAddtime())?" ":o.getAddtime();
-//
-//        helper.setText(R.id.time, TimeUtil.date2TimeStamp(time,"HH:mm yyyy/MM/dd"));
+        helper.setText(R.id.tv_time, TimeUtil.date2TimeStamp(time,"HH:mm yyyy/MM/dd"));
+
+      }
+    });
+    adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+      @Override
+      public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+        ChatBean chatBean = keyList.get(position);
+        String account = ACache.get(getActivity()).getAsString("account");
+        String sendId = account.equals(chatBean.getSendId())?chatBean.getReceiveId():chatBean.getSendId();
+        Intent intent = new Intent(getActivity(), ChatActivity.class);
+        intent.putExtra("sendId",sendId);
+        startActivity(intent);
 
       }
     });

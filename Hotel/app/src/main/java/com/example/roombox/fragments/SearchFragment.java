@@ -1,6 +1,7 @@
 package com.example.roombox.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,7 +15,13 @@ import android.widget.TextView;
 import com.example.roombox.R;
 import com.example.roombox.adapters.PointAdapter;
 import com.example.roombox.bean.CollectionBean;
+import com.example.roombox.bean.HotelBean;
+import com.example.roombox.ui.HotelDetialAct;
+import com.example.roombox.utils.HttpUtil;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -53,26 +60,33 @@ public class SearchFragment extends Fragment {
     listView.setAdapter(pointAdapter);
     pointAdapter.setListener(new PointAdapter.ItemClickListener() {
       @Override
-      public void itemClick(CollectionBean bean) {
-
+      public void itemClick(HotelBean bean) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("hotel",bean);
+        Intent intent = new Intent(getActivity(), HotelDetialAct.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
       }
     });
 
 
   }
 
-  private void initData() {
-    //从网络获取
-    ArrayList<CollectionBean> datas = new ArrayList<>();
-    CollectionBean collectionBean1 = new CollectionBean();
-    collectionBean1.setName("EAST DISTRICT.整套房子");
-    collectionBean1.setDesc("南方舟/2～7人大套房/大东夜市");
-    collectionBean1.setEval("86人评价");
-    collectionBean1.setPrice("$866/每晚");
-    datas.add(collectionBean1);
-    datas.add(collectionBean1);
-    pointAdapter.setDatas(datas);
-    pointAdapter.notifyDataSetChanged();
+  //获取房源数据
+  private void initData(){
+
+    String url = "hotel/list";
+    HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
+      @Override
+      public void success(String data) {
+        Gson gson = new Gson();
+        Type type = new TypeToken<ArrayList<HotelBean>>() {
+        }.getType();
+         ArrayList datas = gson.fromJson(data, type);
+        pointAdapter.setDatas(datas);
+        pointAdapter.notifyDataSetChanged();
+      }
+    });
   }
 
 

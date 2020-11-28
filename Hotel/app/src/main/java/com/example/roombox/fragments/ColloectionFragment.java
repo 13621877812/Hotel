@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.example.roombox.R;
 import com.example.roombox.adapters.PointAdapter;
 import com.example.roombox.bean.CollectionBean;
+import com.example.roombox.bean.HotelBean;
 
 import java.util.ArrayList;
 
@@ -55,7 +56,7 @@ public class ColloectionFragment extends Fragment {
     listView.setAdapter(pointAdapter);
     pointAdapter.setListener(new PointAdapter.ItemClickListener() {
       @Override
-      public void itemClick(CollectionBean bean) {
+      public void itemClick(HotelBean bean) {
 
       }
     });
@@ -65,11 +66,11 @@ public class ColloectionFragment extends Fragment {
 
   private void initData() {
     //从网络获取
-    ArrayList<CollectionBean> datas = new ArrayList<>();
-    CollectionBean collectionBean1 = new CollectionBean();
+    ArrayList<HotelBean> datas = new ArrayList<>();
+    HotelBean collectionBean1 = new HotelBean();
     collectionBean1.setName("EAST DISTRICT.整套房子");
-    collectionBean1.setDesc("南方舟/2～7人大套房/大东夜市");
-    collectionBean1.setEval("86人评价");
+    collectionBean1.setIntro("南方舟/2～7人大套房/大东夜市");
+    collectionBean1.setArea("86人评价");
     collectionBean1.setPrice("$866/每晚");
     datas.add(collectionBean1);
     datas.add(collectionBean1);
