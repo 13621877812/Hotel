@@ -2,6 +2,8 @@ package com.example.demo.mapper;
 
 import com.example.demo.entity.UserEntity;
 
+import java.util.ArrayList;
+
 public interface UserMapper {
 
 
@@ -23,7 +25,7 @@ public interface UserMapper {
     UserEntity selectByPrimaryKey(String account);
 
 
-
+    ArrayList<UserEntity> selectAll();
 
 
     /**

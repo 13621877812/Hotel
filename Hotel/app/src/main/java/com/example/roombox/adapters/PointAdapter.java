@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.roombox.R;
 import com.example.roombox.bean.CollectionBean;
 import com.example.roombox.bean.HotelBean;
+import com.example.roombox.utils.Contans;
 
 import java.util.List;
 
@@ -46,7 +47,7 @@ public class PointAdapter extends RecyclerView.Adapter<PointAdapter.ViewHolder> 
   public void onBindViewHolder(ViewHolder viewHolder, int i) {
     final HotelBean bean = datas.get(i);
     viewHolder.name.setText(bean.getName());
-    Glide.with(mContext).load(bean.getImages()).into(viewHolder.topImage);
+    Glide.with(mContext).load(Contans.HEADIMGURL+bean.getImages()).into(viewHolder.topImage);
     viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {

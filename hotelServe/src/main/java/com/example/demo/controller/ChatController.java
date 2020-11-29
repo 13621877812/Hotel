@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -22,15 +23,34 @@ public class ChatController {
   @Autowired
   ChatMapper chatMapper;
 
+  @Autowired
+  UserMapper userMapper;
 
   @RequestMapping(value = "/recent",method = RequestMethod.GET)
   public ResultEntity getData(@RequestParam(value = "sendId") String sendId){
+
+    ArrayList<UserEntity> users = userMapper.selectAll();
+    ArrayList<ChatEntity> chatEntities = new ArrayList<>();
+    for (int i = 0; i < users.size(); i++) {
+      UserEntity userEntity = users.get(i);
+      if (sendId.equals(userEntity.getAccount())){
+        continue;
+      }
+      ChatEntity entity1 = new ChatEntity();
+      entity1.setSendId(userEntity.getAccount());
+      entity1.setReceiveId(sendId);
+      ChatEntity entity = chatMapper.selectRecent(entity1);
+      if(entity != null){
+          chatEntities.add(entity);
+      }
+
+    }
+
+
     ResultEntity result = new ResultEntity();
     ChatEntity chatEntity = new ChatEntity();
-    chatEntity.setSendId(sendId);
-    List<ChatEntity> datas = chatMapper.selectRecent(chatEntity);
     result.setCode(0);
-    result.setData(datas);
+    result.setData(chatEntities);
     return  result;
   }
 

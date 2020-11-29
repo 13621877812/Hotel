@@ -99,7 +99,7 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
     HashMap<String, String> params = new HashMap<>();
     params.put("account", name);
     params.put("password", pwd);
-    params.put("isowner", type.toString());
+    params.put("type", type.toString());
     HttpUtil.httpPost(url, params, RegActivity.this, new HttpUtil.HttpCallBack() {
 
       @Override

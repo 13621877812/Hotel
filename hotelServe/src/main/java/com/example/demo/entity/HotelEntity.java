@@ -9,16 +9,15 @@ public class HotelEntity {
     private  String area; //房源区域
     private  String place;//房源地址
     private  String intro;//房源介绍
-    private  Integer type; //住宿类型
-    private  Integer spaceType; //空间类型
-    private  Integer num; //房源房数
-    private  Integer max; //可容纳客户数
-    private  Integer roommax;//可容纳卧室数
+    private  String type; //住宿类型
+    private  String spaceType; //空间类型
+    private  String num; //房源房数
+    private  String max; //可容纳客户数
+    private  String roommax;//可容纳卧室数
     private  String beds;//床
-    private  Integer bathnum;//沐浴数
+    private  String bathnum;//沐浴数
     private  String services; //服务
     private  String images;
-
 
   public int getHotel_id() {
     return hotel_id;
@@ -76,43 +75,43 @@ public class HotelEntity {
     this.intro = intro;
   }
 
-  public Integer getType() {
+  public String getType() {
     return type;
   }
 
-  public void setType(Integer type) {
+  public void setType(String type) {
     this.type = type;
   }
 
-  public Integer getSpaceType() {
+  public String getSpaceType() {
     return spaceType;
   }
 
-  public void setSpaceType(Integer spaceType) {
+  public void setSpaceType(String spaceType) {
     this.spaceType = spaceType;
   }
 
-  public Integer getNum() {
+  public String getNum() {
     return num;
   }
 
-  public void setNum(Integer num) {
+  public void setNum(String num) {
     this.num = num;
   }
 
-  public Integer getMax() {
+  public String getMax() {
     return max;
   }
 
-  public void setMax(Integer max) {
+  public void setMax(String max) {
     this.max = max;
   }
 
-  public Integer getRoommax() {
+  public String getRoommax() {
     return roommax;
   }
 
-  public void setRoommax(Integer roommax) {
+  public void setRoommax(String roommax) {
     this.roommax = roommax;
   }
 
@@ -124,11 +123,11 @@ public class HotelEntity {
     this.beds = beds;
   }
 
-  public Integer getBathnum() {
+  public String getBathnum() {
     return bathnum;
   }
 
-  public void setBathnum(Integer bathnum) {
+  public void setBathnum(String bathnum) {
     this.bathnum = bathnum;
   }
 

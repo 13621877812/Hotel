@@ -39,10 +39,9 @@
 
 
     <select id="selectRecent" parameterType="com.example.demo.entity.ChatEntity" resultMap="BaseResultMap" useCache="true">
+       SELECT * from chat WHERE createTime = (select MAX(createTime)
+      from chat where  (sendId=#{sendId}  and receiveId = #{receiveId}) or (receiveId=#{sendId}  and sendId = #{receiveId}))
 
-        SELECT chat.* FROM chat,user1 WHERE (chat.receiveId = #{sendId} or chat.sendId = #{sendId}) AND chat.sendId=user1.account AND chat.createTime IN
-        (SELECT MAX(createTime) FROM chat GROUP BY sendId)
-         ORDER BY chat.createTime DESC
     </select>
 
 

@@ -323,6 +323,7 @@ public class AddHotelActivity extends AppCompatActivity {
 
 
                 final String result = response.body().string();
+                Log.i("TAGUPLOAD", "onResponse: " + result);
                 if (response.body() != null) {
 
                     runOnUiThread(new Runnable() {

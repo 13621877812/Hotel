@@ -5,12 +5,12 @@ import android.widget.Toast;
 
 public class Contans {
 
-    public static String  URL="http://192.168.2.105:8084/";
+
+    public static String  URL="http://192.168.2.105:8079/";
     public static String  IMGURL= URL +  "img/";
     public static String  HEADIMGURL= URL +  "head/";
     public static final void makeToast(String msg, Context context){
         Toast.makeText(context,msg,Toast.LENGTH_LONG).show();
     }
-
 
 }

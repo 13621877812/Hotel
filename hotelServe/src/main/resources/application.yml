@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8079
 web:
   #  文件上传路径
   upload-path: C:/Users/Administrator/Desktop/res

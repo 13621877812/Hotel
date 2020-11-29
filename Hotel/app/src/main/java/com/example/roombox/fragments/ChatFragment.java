@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,8 +51,21 @@ public class ChatFragment extends Fragment {
     View view = inflater.inflate(R.layout.fragment_chat, container, false);
     unbinder = ButterKnife.bind(this, view);
     initListView();
-    initData();
     return view;
+  }
+
+  @Override
+  public void onHiddenChanged(boolean hidden) {
+    super.onHiddenChanged(hidden);
+    if (this != null && !hidden) {
+      initData();
+    }
+  }
+
+  @Override
+  public void onResume() {
+    super.onResume();
+    initData();
   }
 
   private void initListView() {
@@ -60,7 +74,9 @@ public class ChatFragment extends Fragment {
     adapter = new SimpleAdapter(R.layout.item_chat, keyList, new SimpleAdapter.ConVert<ChatBean>() {
       @Override
       public void convert(BaseViewHolder helper, ChatBean o) {
-        String name = o.getSendName();
+
+
+        String name = o.getSendId();
         String content = o.getContent();
         String time = o.getCreateTime();
         helper.setText(R.id.tv_name, name);
@@ -87,6 +103,7 @@ public class ChatFragment extends Fragment {
 
   private void initData() {
 
+
     String account = ACache.get(getActivity()).getAsString("account");
     String url = "chat/recent?sendId=" + account;
     HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
@@ -98,6 +115,7 @@ public class ChatFragment extends Fragment {
         List<ChatBean> datas = gson.fromJson((String) data, userListType);
         keyList.clear();
         keyList.addAll(datas);
+        adapter.notifyDataSetChanged();
       }
     });
 
@@ -110,10 +128,5 @@ public class ChatFragment extends Fragment {
     unbinder.unbind();
   }
 
-  @OnClick(R.id.startBtn)
-  public void onViewClicked() {
-    initData();
 
-
-  }
 }

@@ -10,7 +10,7 @@ public class MyPicConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-       registry.addResourceHandler("/head/**").addResourceLocations("file:/Users/sunjianwei/Desktop/私活项目/android/hotelServe/src/main/resources/static/head/");
+       registry.addResourceHandler("/head/**").addResourceLocations("file:/Users/eden/Desktop/台湾/hotelServe/src/main/resources/static/head/");
     }
 
 }

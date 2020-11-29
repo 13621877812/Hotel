@@ -28,7 +28,7 @@ public interface ChatMapper {
     List<ChatEntity> selectAll(ChatEntity entity);
 
 
-   List<ChatEntity> selectRecent(ChatEntity entity);
+   ChatEntity selectRecent(ChatEntity entity);
 
 
 }

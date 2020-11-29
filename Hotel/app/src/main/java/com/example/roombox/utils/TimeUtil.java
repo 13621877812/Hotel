@@ -1,5 +1,8 @@
 package com.example.roombox.utils;
 
+import android.util.Log;
+
+import java.math.BigDecimal;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 
@@ -30,8 +33,13 @@ public class TimeUtil {
     public static String date2TimeStamp(String date_str,String format){
         try {
             SimpleDateFormat sdf = new SimpleDateFormat(format);
+            BigDecimal decimal = new BigDecimal(date_str);
 
-            Date date = new Date(Long.valueOf(date_str));
+
+            Log.i("TAG", "date2TimeStamp: "+decimal.toPlainString());
+
+
+            Date date = new Date(Long.valueOf(decimal.toPlainString()));
 
             return String.valueOf(sdf.format(date));
         } catch (Exception e) {
