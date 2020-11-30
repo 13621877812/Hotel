@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.roombox.R;
-import com.example.roombox.bean.WordBean;
 
 import java.util.ArrayList;
 import java.util.List;

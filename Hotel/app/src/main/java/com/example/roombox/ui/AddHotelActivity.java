@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,14 +21,19 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.roombox.R;
+import com.example.roombox.adapters.PointAdapter;
+import com.example.roombox.adapters.RoomAdapter;
+import com.example.roombox.bean.RoomBean;
 import com.example.roombox.utils.Contans;
 import com.example.roombox.utils.HttpUtil;
+import com.google.gson.Gson;
 import com.guoxiaoxing.phoenix.compress.picture.internal.PictureCompressor;
 import com.guoxiaoxing.phoenix.core.PhoenixOption;
 import com.guoxiaoxing.phoenix.core.listener.ImageLoader;
 import com.guoxiaoxing.phoenix.core.model.MediaEntity;
 import com.guoxiaoxing.phoenix.core.model.MimeType;
 import com.guoxiaoxing.phoenix.picker.Phoenix;
+import com.guoxiaoxing.phoenix.picker.util.StringUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -156,6 +163,8 @@ public class AddHotelActivity extends AppCompatActivity {
     private File file;
     private String compressPath;
     private String imagePath = "1.png";
+    private RoomAdapter roomAdapter;
+    ArrayList rooms = new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -172,10 +181,41 @@ public class AddHotelActivity extends AppCompatActivity {
                     }
                 });
 
+        initListView();
+        initListener();
+
 
     }
 
+    private void initListener(){
+      bedroom.setOnFocusChangeListener(new android.view.View.
+        OnFocusChangeListener() {
+        @Override
+        public void onFocusChange(View v, boolean hasFocus) {
+          if (hasFocus) {
 
+          } else {
+            if (!TextUtils.isEmpty(bedroom.getText().toString())){
+              Integer num = Integer.parseInt(bedroom.getText().toString());
+              rooms.clear();
+              for (int i = 0; i < num; i++) {
+                RoomBean roomBean = new RoomBean();
+                rooms.add(roomBean);
+              }
+              roomAdapter.setDatas(rooms);
+              roomAdapter.notifyDataSetChanged();
+            }
+
+          }
+        }
+      });
+    }
+    private void initListView(){
+      LinearLayoutManager manager = new LinearLayoutManager(this);
+      listView.setLayoutManager(manager);
+      roomAdapter = new RoomAdapter(this);
+      listView.setAdapter(roomAdapter);
+    }
     @OnClick({R.id.roomimg_up, R.id.room_sub})
     public void onClick(View view) {
         switch (view.getId()) {
@@ -224,6 +264,12 @@ public class AddHotelActivity extends AppCompatActivity {
         String max = mannum.getText().toString(); //可容纳客户数
         String roommax = bedroom.getText().toString();//可容纳卧室数
         String beds = bednum.getText().toString();//床
+
+        Gson gson = new Gson();
+        beds =  gson.toJson(rooms);
+
+
+
         String bathnum1 = bathnum.getText().toString();
         ;//沐浴数
         StringBuffer services = new StringBuffer();;

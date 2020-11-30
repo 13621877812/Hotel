@@ -129,9 +129,8 @@ public class HttpUtil {
         if ("0".equals(code)) { //// succes
           Object object = bean.getData();
           if (httpCallBack != null) {
-            httpCallBack.success(object == null ? "" : object.toString());
+            httpCallBack.success(object == null ? "" :gson.toJson(object) );
           }
-
         } else {
           Contans.makeToast(bean.getMsg(), context);
         }

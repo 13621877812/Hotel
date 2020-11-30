@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="15dp">
+
+
+    <TextView
+      android:id="@+id/roomName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="卧室1"/>
+    <TextView
+      android:id="@+id/bednum"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0张床"/>
+
+ <LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal">
+
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="30dp"
+     android:text="@string/bed1"/>
+
+   <com.bigkoo.snappingstepper.SnappingStepper
+     android:id="@+id/stepper1"
+     android:layout_marginLeft="100dp"
+     android:layout_width="120dp"
+     android:layout_height="30dp"/>
+ </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/bed2"/>
+
+    <com.bigkoo.snappingstepper.SnappingStepper
+      android:id="@+id/stepper2"
+      android:layout_marginLeft="100dp"
+      android:layout_width="120dp"
+      android:layout_height="30dp"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/bed3"/>
+
+    <com.bigkoo.snappingstepper.SnappingStepper
+      android:id="@+id/stepper3"
+      android:layout_marginLeft="111.5dp"
+      android:layout_width="120dp"
+      android:layout_height="30dp"
+      android:background="@color/white"/>
+  </LinearLayout>
+
+
+
+</LinearLayout>

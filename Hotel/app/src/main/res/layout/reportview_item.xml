@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/topImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/logo"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Mark" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2020年11月" />
+
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">>
+
+        <TextView
+            android:id="@+id/eva1l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:singleLine="false"
+            android:textSize="18dp"
+            android:textColor="#3b3b3b"
+            android:layout_marginTop="20dp"
+            android:text="小黑人這次要與大家分享的是(round corners)，因為在某些特定的版面佈局裡畫面看起來太方方正正的會讓使用者覺得過於強硬或單調，所以如果要讓畫面看起來活潑可愛一點把圖片或Layout佈局轉換成圓角也會是個不錯的選擇喔，小黑人今天要介紹的圓角有兩種，一種是ImageView將方形的圖片轉換成圓角圖，一種是Layout佈局裡(如: LinearLayout、RelativeLayout、FrameLayout、ScrollView...等)進行佈景圓角，在畫面加入一些UI特效會讓整體畫面活潑很多唷，哈哈~至於要怎麼做呢？就讓我們繼續看下去吧。" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
