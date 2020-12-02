@@ -501,7 +501,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="電視"
+            android:text="日用品"
             android:buttonTint="#000000"
             />
         <CheckBox
@@ -510,7 +510,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="日用品"
+            android:text="洗衣機"
             android:buttonTint="#000000"
             />
         <CheckBox
@@ -519,7 +519,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="洗衣機"
+            android:text="熨斗"
             android:buttonTint="#000000"
             />
         <CheckBox
@@ -528,7 +528,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="熨斗"
+            android:text="熱水"
             android:buttonTint="#000000"
             />
         <CheckBox
@@ -537,7 +537,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="熱水"
+            android:text="早餐"
             android:buttonTint="#000000"
             />
         <CheckBox
@@ -546,20 +546,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="早餐"
-            android:buttonTint="#000000"
-            />
-        <CheckBox
-            android:id="@+id/c11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
             android:text="咖啡"
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c12"
+            android:id="@+id/c11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -569,7 +560,7 @@
             />
 
         <CheckBox
-            android:id="@+id/c13"
+            android:id="@+id/c12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -578,7 +569,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c14"
+            android:id="@+id/c13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -587,7 +578,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c15"
+            android:id="@+id/c14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -596,7 +587,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c16"
+            android:id="@+id/c15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -605,7 +596,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c17"
+            android:id="@+id/c16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -614,7 +605,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c18"
+            android:id="@+id/c17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -623,7 +614,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c19"
+            android:id="@+id/c18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -632,7 +623,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c20"
+            android:id="@+id/c19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -641,7 +632,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c21"
+            android:id="@+id/c20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -650,7 +641,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c22"
+            android:id="@+id/c21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -659,7 +650,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c23"
+            android:id="@+id/c22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -668,7 +659,7 @@
             android:buttonTint="#000000"
             />
         <CheckBox
-            android:id="@+id/c24"
+            android:id="@+id/c23"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"

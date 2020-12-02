@@ -74,8 +74,6 @@ public class ChatFragment extends Fragment {
     adapter = new SimpleAdapter(R.layout.item_chat, keyList, new SimpleAdapter.ConVert<ChatBean>() {
       @Override
       public void convert(BaseViewHolder helper, ChatBean o) {
-
-
         String name = o.getSendId();
         String content = o.getContent();
         String time = o.getCreateTime();
@@ -94,7 +92,6 @@ public class ChatFragment extends Fragment {
         Intent intent = new Intent(getActivity(), ChatActivity.class);
         intent.putExtra("sendId",sendId);
         startActivity(intent);
-
       }
     });
 

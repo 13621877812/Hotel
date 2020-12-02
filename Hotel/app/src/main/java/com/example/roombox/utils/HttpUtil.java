@@ -2,16 +2,9 @@ package com.example.roombox.utils;
 
 import android.app.Activity;
 import android.util.Log;
-
 import com.example.roombox.base.ResultBean;
-import com.example.roombox.ui.AddHotelActivity;
 import com.google.gson.Gson;
-import com.google.gson.internal.bind.DateTypeAdapter;
 import com.google.gson.reflect.TypeToken;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -21,8 +14,6 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -41,7 +32,6 @@ public class HttpUtil {
       public void onFailure(Call call, IOException e) {
         Log.i("TAG", "fail: " + e.toString());
       }
-
       @Override
       public void onResponse(Call call, Response response) throws IOException {
         if (response.body() != null) {

@@ -1,6 +1,7 @@
 package com.example.roombox.bean;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class HotelBean implements Serializable {
   private String hotel_id;
@@ -25,6 +26,9 @@ public class HotelBean implements Serializable {
   }
 
   public void setHotel_id(String hotel_id) {
+
+
+
     this.hotel_id = hotel_id;
   }
 

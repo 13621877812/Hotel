@@ -61,6 +61,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
       case R.id.tv_reg:
         startActivity(new Intent(LoginActivity.this, RegActivity.class));
         break;
+      default:
+        break;
     }
   }
 
@@ -71,14 +73,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
       Toast.makeText(this, "please enter your account", Toast.LENGTH_SHORT).show();
       return;
     }
-
     String pwd = et_pwd.getText().toString().trim();
     if (TextUtils.isEmpty(pwd)) {
       Toast.makeText(this, "please enter your password", Toast.LENGTH_SHORT).show();
       return;
     }
-
-
     login(account, pwd);
 
 

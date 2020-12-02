@@ -4,6 +4,7 @@ package com.example.demo.mapper;
 import com.example.demo.entity.OrderEntity;
 
 
+import java.util.HashMap;
 import java.util.List;
 
 public interface  OrderMapper{
@@ -26,7 +27,7 @@ public interface  OrderMapper{
      *
      * @mbg.generated
      */
-    List<OrderEntity> selectAll(OrderEntity entity);
+    List<HashMap> selectAll(String account);
 
 
 

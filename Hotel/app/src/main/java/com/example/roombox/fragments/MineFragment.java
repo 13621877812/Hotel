@@ -16,11 +16,9 @@ import com.example.roombox.R;
 import com.example.roombox.ui.AddHotelActivity;
 import com.example.roombox.ui.ChatActivity;
 import com.example.roombox.ui.CommentActivity;
-import com.example.roombox.ui.FeedBackActivity;
 import com.example.roombox.ui.HotelManagerActivity;
 import com.example.roombox.ui.LoginActivity;
 import com.example.roombox.ui.OrderActivity;
-import com.example.roombox.ui.PersonDataAct;
 import com.example.roombox.utils.ACache;
 
 import java.util.ArrayList;

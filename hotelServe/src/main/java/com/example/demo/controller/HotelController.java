@@ -51,7 +51,6 @@ public class HotelController {
     result.setCode(0);
     result.setMsg("update grade success!");
     result.setData(entity);
-
     return  result;
   }
 }

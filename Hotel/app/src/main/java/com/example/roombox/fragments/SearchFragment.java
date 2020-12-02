@@ -13,8 +13,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.example.roombox.R;
-import com.example.roombox.adapters.PointAdapter;
-import com.example.roombox.bean.CollectionBean;
+import com.example.roombox.adapters.CollectionAdapter;
 import com.example.roombox.bean.HotelBean;
 import com.example.roombox.ui.HotelDetialAct;
 import com.example.roombox.utils.HttpUtil;
@@ -38,8 +37,9 @@ public class SearchFragment extends Fragment {
   TextView searchBtn;
   @BindView(R.id.listView)
   RecyclerView listView;
+  ArrayList<HotelBean> datas;
   Unbinder unbinder;
-  private PointAdapter pointAdapter;
+  private CollectionAdapter collectionAdapter;
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -56,9 +56,9 @@ public class SearchFragment extends Fragment {
 
     LinearLayoutManager manager = new LinearLayoutManager(getActivity());
     listView.setLayoutManager(manager);
-    pointAdapter = new PointAdapter(getActivity());
-    listView.setAdapter(pointAdapter);
-    pointAdapter.setListener(new PointAdapter.ItemClickListener() {
+    collectionAdapter = new CollectionAdapter(getActivity());
+    listView.setAdapter(collectionAdapter);
+    collectionAdapter.setListener(new CollectionAdapter.ItemClickListener() {
       @Override
       public void itemClick(HotelBean bean) {
         Bundle bundle = new Bundle();
@@ -82,9 +82,9 @@ public class SearchFragment extends Fragment {
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<HotelBean>>() {
         }.getType();
-         ArrayList datas = gson.fromJson(data, type);
-        pointAdapter.setDatas(datas);
-        pointAdapter.notifyDataSetChanged();
+        datas = gson.fromJson(data, type);
+        collectionAdapter.setDatas(datas);
+        collectionAdapter.notifyDataSetChanged();
       }
     });
   }
@@ -98,5 +98,15 @@ public class SearchFragment extends Fragment {
 
   @OnClick(R.id.searchBtn)
   public void onViewClicked() {
+   String keyWord = searchView.getQuery().toString();
+   ArrayList<HotelBean> data1 = new ArrayList<>();
+    for (HotelBean bean:datas){
+      String name = bean.getName();
+      if (name.contains(keyWord)){
+        data1.add(bean);
+      }
+    }
+    collectionAdapter.setDatas(data1);
+    collectionAdapter.notifyDataSetChanged();
   }
 }

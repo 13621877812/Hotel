@@ -5,19 +5,26 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.roombox.R;
-import com.example.roombox.adapters.PointAdapter;
-import com.example.roombox.bean.CollectionBean;
+import com.example.roombox.adapters.CollectionAdapter;
 import com.example.roombox.bean.HotelBean;
+import com.example.roombox.utils.ACache;
+import com.example.roombox.utils.HttpUtil;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
@@ -28,9 +35,10 @@ public class ColloectionFragment extends Fragment {
   Unbinder unbinder;
   @BindView(R.id.listView)
   RecyclerView listView;
+  @BindView(R.id.totalText)
+  TextView totalText;
 
-  private PointAdapter pointAdapter;
-  private long totalPoints;
+  private CollectionAdapter collectionAdapter;
 
   public ColloectionFragment() {
 
@@ -52,51 +60,37 @@ public class ColloectionFragment extends Fragment {
 
     LinearLayoutManager manager = new LinearLayoutManager(getActivity());
     listView.setLayoutManager(manager);
-    pointAdapter = new PointAdapter(getActivity());
-    listView.setAdapter(pointAdapter);
-    pointAdapter.setListener(new PointAdapter.ItemClickListener() {
+    collectionAdapter = new CollectionAdapter(getActivity());
+    listView.setAdapter(collectionAdapter);
+    collectionAdapter.setListener(new CollectionAdapter.ItemClickListener() {
       @Override
       public void itemClick(HotelBean bean) {
-
+      }
+    });
+  }
+  private void initData() {
+    //从网络获取
+    String account = ACache.get(getActivity()).getAsString("account");
+    String url = "collection/list?account=" + account;
+    HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
+      @Override
+      public void success(String data) {
+        Log.i("COLLECTION", "success: ");
+        Gson gson = new Gson();
+        Type type = new TypeToken<ArrayList<HotelBean>>() {
+        }.getType();
+        ArrayList<HotelBean> datas = gson.fromJson(data, type);
+        totalText.setText(datas.size() + "间房源");
+        collectionAdapter.setDatas(datas);
+        collectionAdapter.notifyDataSetChanged();
       }
     });
 
-
-  }
-
-  private void initData() {
-    //从网络获取
-    ArrayList<HotelBean> datas = new ArrayList<>();
-    HotelBean collectionBean1 = new HotelBean();
-    collectionBean1.setName("EAST DISTRICT.整套房子");
-    collectionBean1.setIntro("南方舟/2～7人大套房/大东夜市");
-    collectionBean1.setArea("86人评价");
-    collectionBean1.setPrice("$866/每晚");
-    datas.add(collectionBean1);
-    datas.add(collectionBean1);
-    pointAdapter.setDatas(datas);
-    pointAdapter.notifyDataSetChanged();
   }
 
 
-  private void refreshDatas(Object index) {
-    int idx = Integer.parseInt(index.toString());
-    switch (idx) {
-      case 0:
-
-        break;
-      case 1:
-
-        break;
-      case 2:
-
-        break;
-      default:
-        break;
-    }
-
-    pointAdapter.notifyDataSetChanged();
-
+  @OnClick(R.id.editBtn)
+  public void onViewClicked() {
   }
 
   @Override
@@ -111,4 +105,6 @@ public class ColloectionFragment extends Fragment {
     super.onDestroyView();
     unbinder.unbind();
   }
+
+
 }

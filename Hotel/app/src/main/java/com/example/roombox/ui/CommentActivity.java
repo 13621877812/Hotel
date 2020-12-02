@@ -59,7 +59,7 @@ public class CommentActivity extends AppCompatActivity {
   private void iint() {
     recyclerView.setLayoutManager(new LinearLayoutManager(CommentActivity.this));
 
-    adapter = new SimpleAdapter(R.layout.common_item, keyList, new SimpleAdapter.ConVert<CommentBean>() {
+    adapter = new SimpleAdapter(R.layout.reportview_item, keyList, new SimpleAdapter.ConVert<CommentBean>() {
       @Override
       public void convert(BaseViewHolder helper, CommentBean o) {
         String userImg = TextUtils.isEmpty(o.getUserImg()) ? " " : o.getUserImg();
@@ -70,21 +70,14 @@ public class CommentActivity extends AppCompatActivity {
         RequestOptions mRequestOptions = RequestOptions.circleCropTransform()
           .diskCacheStrategy(DiskCacheStrategy.NONE)//不做磁盘缓存
           .skipMemoryCache(true);//不做内存缓存
-        ImageView view = helper.getView(R.id.userImg);
+        ImageView view = helper.getView(R.id.topImage);
         Glide.with(CommentActivity.this).load(Contans.HEADIMGURL + userImg).apply(mRequestOptions).into(view);
-        helper.setText(R.id.user, name);
-
-
-//                helper.setText(R.id.grade,  o.getGrade()+"");
-        RatingBar ratingBar = helper.getView(R.id.ratingBar);
-        ratingBar.setRating(Float.valueOf(o.getGrade()));
-
-
+        helper.setText(R.id.name, name);
         String comment = TextUtils.isEmpty(o.getContent()) ? " " : o.getContent();
-        helper.setText(R.id.comment, comment);
+        helper.setText(R.id.eva1l, comment);
         String time = TextUtils.isEmpty(o.getAddtime()) ? " " : o.getAddtime();
 
-        helper.setText(R.id.time, TimeUtil.date2TimeStamp(time, "HH:mm yyyy/MM/dd"));
+        helper.setText(R.id.desc, TimeUtil.date2TimeStamp(time, "yyyy年MM月"));
 
       }
     });

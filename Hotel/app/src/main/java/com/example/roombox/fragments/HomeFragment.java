@@ -17,8 +17,10 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -78,6 +80,7 @@ public class HomeFragment extends Fragment implements
 
 
 
+
   LocationManager lm;
 
 
@@ -106,13 +109,13 @@ public class HomeFragment extends Fragment implements
 
      String url = "hotel/list";
      HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
+       @RequiresApi(api = Build.VERSION_CODES.N)
        @Override
        public void success(String data) {
          Gson gson = new Gson();
          Type type = new TypeToken<ArrayList<HotelBean>>() {
          }.getType();
          hotelDatas = gson.fromJson(data, type);
-
        }
      });
    }

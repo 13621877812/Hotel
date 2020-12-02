@@ -17,11 +17,9 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.roombox.R;
-import com.example.roombox.adapters.PointAdapter;
 import com.example.roombox.adapters.RoomAdapter;
 import com.example.roombox.bean.RoomBean;
 import com.example.roombox.utils.Contans;
@@ -33,7 +31,6 @@ import com.guoxiaoxing.phoenix.core.listener.ImageLoader;
 import com.guoxiaoxing.phoenix.core.model.MediaEntity;
 import com.guoxiaoxing.phoenix.core.model.MimeType;
 import com.guoxiaoxing.phoenix.picker.Phoenix;
-import com.guoxiaoxing.phoenix.picker.util.StringUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -153,8 +150,7 @@ public class AddHotelActivity extends AppCompatActivity {
     CheckBox c22;
     @BindView(R.id.c23)
     CheckBox c23;
-    @BindView(R.id.c24)
-    CheckBox c24;
+
 
     @BindView(R.id.roomimg_up)
     ImageButton roomimgUp;
@@ -273,7 +269,7 @@ public class AddHotelActivity extends AppCompatActivity {
         String bathnum1 = bathnum.getText().toString();
         ;//沐浴数
         StringBuffer services = new StringBuffer();;
-        CheckBox[] boxes = new CheckBox[]{c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c10,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24 };
+        CheckBox[] boxes = new CheckBox[]{c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c10,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23 };
         String service = "";
         for (int i = 0; i < boxes.length; i++) {
             CheckBox box = boxes[i];

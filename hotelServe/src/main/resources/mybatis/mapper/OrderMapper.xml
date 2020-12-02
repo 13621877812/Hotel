@@ -21,8 +21,7 @@
 
 
     <insert id="insert" parameterType="com.example.demo.entity.OrderEntity">
-
-        insert into order (hotel_id,startTime,userId,endTime,price)
+        insert into order1 (hotel_id,startTime,userId,endTime,price)
         values  ( #{hotel_id,jdbcType=VARCHAR}, #{startTime,jdbcType=TIMESTAMP},
         #{userId,jdbcType=VARCHAR},#{endTime,jdbcType=TIMESTAMP},#{price,jdbcType=VARCHAR})
     </insert>
@@ -30,10 +29,10 @@
 
 
 
-    <select id="selectAll" parameterType="com.example.demo.entity.OrderEntity" resultMap="BaseResultMap" useCache="true">
+    <select id="selectAll" parameterType="java.lang.String" resultType="java.util.HashMap" useCache="true">
 
-     select *
-      from order where  hotel_id=#{hotel_id}  order by id
+     select hotel.*,order1.startTime,order1.endTime,order1.price orderPrice
+      from order1 join hotel on order1.hotel_id = hotel.hotel_id where  order1.account=#{account}  order by id
     </select>
 
 
