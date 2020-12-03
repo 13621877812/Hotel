@@ -12,7 +12,7 @@
  Target Server Version : 14003048
  File Encoding         : utf-8
 
- Date: 11/28/2020 17:49:47 PM
+ Date: 12/03/2020 12:45:49 PM
 */
 
 -- ----------------------------
@@ -46,12 +46,38 @@ BEGIN TRANSACTION
 GO
 SET IDENTITY_INSERT [dbo].[chat] ON
 GO
-INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('4', N'你今晚有空吗？', '1', '2', '2020-11-26 19:41:31.000', null, N'张三');
-INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('5', N'没空', '2', '1', '2020-11-26 19:41:49.000', null, N'李四');
-INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('24', 'ddd', '3', '1', '2020-11-28 17:21:32.000', null, N'六');
-INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('25', 'ttt', '1', '6', '2020-11-28 17:23:51.000', null, 'uu');
+INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('4', N'你今晚有空吗？', '3', '2', '2020-11-26 19:41:31.000', null, N'张三');
+INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('5', N'没空', '2', '3', '2020-11-26 19:41:49.000', null, N'李四');
 GO
 SET IDENTITY_INSERT [dbo].[chat] OFF
+GO
+COMMIT
+GO
+
+-- ----------------------------
+--  Table structure for collection
+-- ----------------------------
+IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[collection]') AND type IN ('U'))
+	DROP TABLE [dbo].[collection]
+GO
+CREATE TABLE [dbo].[collection] (
+	[id] int IDENTITY(1,1) NOT NULL,
+	[hotel_id] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[account] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+)
+ON [PRIMARY]
+GO
+
+-- ----------------------------
+--  Records of collection
+-- ----------------------------
+BEGIN TRANSACTION
+GO
+SET IDENTITY_INSERT [dbo].[collection] ON
+GO
+INSERT INTO [dbo].[collection] ([id], [hotel_id], [account]) VALUES ('1', '2', '3');
+GO
+SET IDENTITY_INSERT [dbo].[collection] OFF
 GO
 COMMIT
 GO
@@ -101,7 +127,7 @@ CREATE TABLE [dbo].[hotel] (
 	[services] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL DEFAULT ((1)),
 	[latlng] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NULL,
 	[userId] varchar(20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-	[intro] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NULL,
+	[intro] varchar(255) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NULL,
 	[spaceType] int NOT NULL,
 	[num] int NOT NULL,
 	[max] int NOT NULL,
@@ -120,7 +146,8 @@ BEGIN TRANSACTION
 GO
 SET IDENTITY_INSERT [dbo].[hotel] ON
 GO
-INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum]) VALUES ('8', N'绿水家园', '1', '88', null, N'闵行区', N'上海', null, N'很多', null, '1', N'还行', '1', '2', '8', '3', '7', '8888', '9');
+INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum]) VALUES ('1', '1', '23456', '2', null, '7890-33', '2345', null, '2345', null, '1234', '23456', '23456', '2', '234', '2', '23456', '123456', '12');
+INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum]) VALUES ('2', N'绿水家园', '0', '88', null, N'莘庄', N'上海闵行区', null, 'a,b,c', null, '1', '23456', '0', '2', '9', '3', '2', 'Screenshot_2020-11-22-13-22-58-419_com.tencent.mm.jpg', '5');
 GO
 SET IDENTITY_INSERT [dbo].[hotel] OFF
 GO
@@ -128,22 +155,36 @@ COMMIT
 GO
 
 -- ----------------------------
---  Table structure for order
+--  Table structure for order1
 -- ----------------------------
-IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[order]') AND type IN ('U'))
-	DROP TABLE [dbo].[order]
+IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[order1]') AND type IN ('U'))
+	DROP TABLE [dbo].[order1]
 GO
-CREATE TABLE [dbo].[order] (
+CREATE TABLE [dbo].[order1] (
 	[id] int IDENTITY(1,1) NOT NULL,
 	[hotel_id] int NOT NULL,
 	[startTime] datetime NOT NULL,
-	[userId] int NOT NULL,
+	[account] int NOT NULL,
 	[endTime] datetime NOT NULL,
 	[price] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
 )
 ON [PRIMARY]
 GO
-EXEC sp_addextendedproperty 'MS_Description', N'订单id', 'SCHEMA', 'dbo', 'TABLE', 'order', 'COLUMN', 'id'
+EXEC sp_addextendedproperty 'MS_Description', N'订单id', 'SCHEMA', 'dbo', 'TABLE', 'order1', 'COLUMN', 'id'
+GO
+
+-- ----------------------------
+--  Records of order1
+-- ----------------------------
+BEGIN TRANSACTION
+GO
+SET IDENTITY_INSERT [dbo].[order1] ON
+GO
+INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('1', '2', '2020-12-01 17:17:37.000', '3', '2020-12-25 17:17:41.000', '88');
+GO
+SET IDENTITY_INSERT [dbo].[order1] OFF
+GO
+COMMIT
 GO
 
 -- ----------------------------
@@ -214,8 +255,8 @@ GO
 SET IDENTITY_INSERT [dbo].[user1] ON
 GO
 INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('7', '1', '1', '0');
-INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('8', '2', '2', '1');
-INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('9', '3', '3', '2');
+INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('8', '3', '3', '2');
+INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('9', '2', '2', '1');
 GO
 SET IDENTITY_INSERT [dbo].[user1] OFF
 GO
@@ -260,9 +301,9 @@ ALTER TABLE [dbo].[hotel] ADD
 GO
 
 -- ----------------------------
---  Primary key structure for table order
+--  Primary key structure for table order1
 -- ----------------------------
-ALTER TABLE [dbo].[order] ADD
+ALTER TABLE [dbo].[order1] ADD
 	CONSTRAINT [PK__order__3213E83F6A6F0BE6] PRIMARY KEY CLUSTERED ([id]) 
 	WITH (PAD_INDEX = OFF,
 		IGNORE_DUP_KEY = OFF,
@@ -300,7 +341,15 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[chat] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[chat]', RESEED, 25)
+DBCC CHECKIDENT ('[dbo].[chat]', RESEED, 23)
+GO
+
+-- ----------------------------
+--  Options for table collection
+-- ----------------------------
+ALTER TABLE [dbo].[collection] SET (LOCK_ESCALATION = TABLE)
+GO
+DBCC CHECKIDENT ('[dbo].[collection]', RESEED, 1)
 GO
 
 -- ----------------------------
@@ -314,15 +363,15 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[hotel] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[hotel]', RESEED, 8)
+DBCC CHECKIDENT ('[dbo].[hotel]', RESEED, 2)
 GO
 
 -- ----------------------------
---  Options for table order
+--  Options for table order1
 -- ----------------------------
-ALTER TABLE [dbo].[order] SET (LOCK_ESCALATION = TABLE)
+ALTER TABLE [dbo].[order1] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[order]', RESEED, 1)
+DBCC CHECKIDENT ('[dbo].[order1]', RESEED, 1)
 GO
 
 -- ----------------------------

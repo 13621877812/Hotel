@@ -68,15 +68,14 @@ import java.util.Locale;
 
 
 public class HomeFragment extends Fragment implements
-        OnMapReadyCallback , GoogleMap.OnMarkerClickListener {
+  OnMapReadyCallback , GoogleMap.OnMarkerClickListener {
 
   private MapView mMap;
   private GoogleMap mMap1;
   private View mView;
   private ImageView imgMyLocation;
   ArrayList<HotelBean> hotelDatas;
-
-
+  java.text.DecimalFormat   df=new   java.text.DecimalFormat("#.#");
 
 
 
@@ -99,26 +98,44 @@ public class HomeFragment extends Fragment implements
         Intent intent = new Intent(getActivity(), HotelDetialAct.class);
         intent.putExtras(bundle);
         startActivity(intent);
+
       }
     });
     initData();
+
     return mView;
   }
+  @Override
+  public void onHiddenChanged(boolean hidden) {
+    super.onHiddenChanged(hidden);
+    if (this != null && !hidden) {
+      if (mMap1 != null){
+        mMap1.clear();
+      }
+      initData();
+    }
+  }
   //获取房源数据
-   private void initData(){
+  private void initData(){
 
-     String url = "hotel/list";
-     HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
-       @RequiresApi(api = Build.VERSION_CODES.N)
-       @Override
-       public void success(String data) {
-         Gson gson = new Gson();
-         Type type = new TypeToken<ArrayList<HotelBean>>() {
-         }.getType();
-         hotelDatas = gson.fromJson(data, type);
-       }
-     });
-   }
+    String url = "hotel/list";
+    HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
+      @Override
+      public void success(String data) {
+        Gson gson = new Gson();
+        Type type = new TypeToken<ArrayList<HotelBean>>() {
+        }.getType();
+        hotelDatas = gson.fromJson(data, type);
+
+        for (HotelBean bean : hotelDatas){
+          addresstoMarker(bean.getPlace(),bean.getName(),bean.getPrice(),bean.getHotel_id());
+
+        }
+
+
+      }
+    });
+  }
   private void initMapView(Bundle savedInstanceState) {
     mMap = (MapView) mView.findViewById(R.id.mapview);
     mMap.onCreate(savedInstanceState);
@@ -132,72 +149,44 @@ public class HomeFragment extends Fragment implements
       e.printStackTrace();
     }
     int errorCode = GooglePlayServicesUtil
-            .isGooglePlayServicesAvailable(this.getActivity());
+      .isGooglePlayServicesAvailable(this.getActivity());
     if (ConnectionResult.SUCCESS != errorCode) {
       GooglePlayServicesUtil.getErrorDialog(errorCode,
-              this.getActivity(), 0).show();
+        this.getActivity(), 0).show();
     } else {
       mMap.getMapAsync(this);
     }
 
   }
 
+
+
+
+
+
+
+
   @Override
   public void onMapReady(GoogleMap googleMap) {
     mMap1 = googleMap;
     // Add a marker in Sydney and move the camera
-
-
     imgMyLocation = (ImageView) mView.findViewById(R.id.locatebt);
-
     lm = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-    String price="3.1K";
-
-
-
-
-
-
-
-    BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap( drawTextToBitmap(getContext(),price));
-
-
     UiSettings settings = mMap1.getUiSettings();
-
     settings.setTiltGesturesEnabled(false);
     settings.setCompassEnabled(true);
     settings.setTiltGesturesEnabled(true);
     settings.setMyLocationButtonEnabled(false);
     settings.setMapToolbarEnabled(false);
     if (ContextCompat.checkSelfPermission(getContext(),
-            Manifest.permission.ACCESS_FINE_LOCATION)
-            == PackageManager.PERMISSION_GRANTED) {
+      Manifest.permission.ACCESS_FINE_LOCATION)
+      == PackageManager.PERMISSION_GRANTED) {
       //Location Permission already granted
       mMap1.setOnMarkerClickListener(this);
       mMap1.setMyLocationEnabled(true);
-
-
-
-      //地址轉經緯
-      String addressString ="台北市中正區館前路2號";
-      Geocoder geoCoder = new Geocoder(getContext(), Locale.getDefault());
-      List<Address> addressLocation = null;
-      try {
-        addressLocation = geoCoder.getFromLocationName(addressString, 1);
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
-      double latitude = addressLocation.get(0).getLatitude();
-      double longitude = addressLocation.get(0).getLongitude();
-
-      LatLng latLng4 = new LatLng((latitude), (longitude));
-      mMap1.addMarker(new MarkerOptions().position(latLng4).icon(icon));
-
-
-
-
       LatLng latLng = new LatLng((lm.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude()), (lm.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude()));
-      mMap1.addMarker(new MarkerOptions().position(latLng).icon(icon));
+      CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 14);
+      mMap1.moveCamera(cameraUpdate);
     }
 
 
@@ -207,6 +196,7 @@ public class HomeFragment extends Fragment implements
       public void onClick(View v) {
         getMyLocation();
 
+
       }
 
       private void getMyLocation() {
@@ -215,33 +205,34 @@ public class HomeFragment extends Fragment implements
 
         }
         LatLng latLng = new LatLng((lm.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude()), (lm.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude()));
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 18);
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 14);
         mMap1.moveCamera(cameraUpdate);
       }
 
 
     });
-//    // 移动地图到指定经度的位置
-//    googleMap.moveCamera(CameraUpdateFactory.newLatLng(appointLoc));
-//    //添加标记到指定经纬度
-//    googleMap.addMarker(new MarkerOptions().position(new LatLng(lat, lng)).title("Marker")
-//      .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+
   }
 
 
   public boolean onMarkerClick(final Marker marker) {
     //轉至訂房頁面
-    // Retrieve the data from the marker.
-    Integer clickCount = (Integer) marker.getTag();
-
-    // Check if a click count was set, then display the click count.
-
-    Toast.makeText(getContext(), "f", Toast.LENGTH_SHORT).show();
 
 
-    // Return false to indicate that we have not consumed the event and that we wish
-    // for the default behavior to occur (which is for the camera to move such that the
-    // marker is centered and for the marker's info window to open, if it has one).
+    String id= marker.getId().replaceAll("[A-Za-z]+","");
+
+
+
+
+    int i =Integer.valueOf(id);
+    HotelBean bean = hotelDatas.get(i);
+    Bundle bundle = new Bundle();
+    bundle.putSerializable("hotel",bean);
+    Intent intent = new Intent(getActivity(), HotelDetialAct.class);
+    intent.putExtras(bundle);
+    startActivity(intent);
+
+
     return false;
   }
 
@@ -250,7 +241,27 @@ public class HomeFragment extends Fragment implements
 
 
   }
+  public void addresstoMarker(String address,String name,String price,String id){
+    double i=Integer.valueOf(price)*0.001;
+    price=df.format(i)+"K";
+    BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap( drawTextToBitmap(getContext(),price));
 
+    Geocoder geoCoder = new Geocoder(getContext(), Locale.getDefault());
+    List<Address> addressLocation = null;
+    try {
+      addressLocation = geoCoder.getFromLocationName(address, 1);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    double latitude = addressLocation.get(0).getLatitude();
+    double longitude = addressLocation.get(0).getLongitude();
+
+
+    mMap1.addMarker(new MarkerOptions().position(new LatLng(latitude,longitude)).icon(icon));
+
+
+
+  }
 
   public static Bitmap drawTextToBitmap(Context gContext, String gText) {
     //加價格至marker
@@ -258,10 +269,10 @@ public class HomeFragment extends Fragment implements
     Resources resources = gContext.getResources();
     float scale = resources.getDisplayMetrics().density;
     Bitmap bitmap =
-            BitmapFactory.decodeResource(resources, R.drawable.marker);
+      BitmapFactory.decodeResource(resources, R.drawable.marker);
 
     android.graphics.Bitmap.Config bitmapConfig =
-            bitmap.getConfig();
+      bitmap.getConfig();
     // set default bitmap config if none
     if (bitmapConfig == null) {
       bitmapConfig = android.graphics.Bitmap.Config.ARGB_8888;
@@ -296,4 +307,6 @@ public class HomeFragment extends Fragment implements
 
   }
 }
+
+
 
