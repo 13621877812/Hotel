@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
-  List<Fragment> list;//需要显示的fragment在构造器中传入
+  List<Fragment> list;//需要顯示的fragment在構造器中傳入
   List<String> titleList;
 
   public MyFragmentPagerAdapter(FragmentManager fm, List<Fragment> list, List<String> titleList) {
@@ -21,7 +21,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
   }
 
-  //返回显示的Fragment总数
+  //返回顯示的Fragment總數
   @Override
 
   public int getCount() {
@@ -30,7 +30,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
   }
 
-  //返回要显示的Fragment的某个实例
+  //返回要顯示的Fragment的某個實例
   @Override
 
   public Fragment getItem(int arg0) {
@@ -39,7 +39,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
   }
 //
-////返回一个自定义tab视图（用于自定义Tablayout标签，不自定义可忽略）
+////返回一個自定義tab視圖（用於自定義Tablayout標簽，不自定義可忽略）
 //    public View getTabView(int position) {
 //
 //
@@ -57,7 +57,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 //
 //    }
 
-  //返回每个Tab的标题，当要自定义Tab的时候不应该重写该方法
+  //返回每個Tab的標題，當要自定義Tab的時候不應該重寫該方法
   @Override
 
   public CharSequence getPageTitle(int position) {

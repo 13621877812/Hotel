@@ -92,13 +92,13 @@ public class HotelDetialAct extends BaseActivity {
   public void initData() {
     bean = (HotelBean) getIntent().getExtras().getSerializable("hotel");
     info.setText(bean.getName());
-    String typeString = "0".equals(bean.getType()) ? "整套房子" : "合租房间";
+    String typeString = "0".equals(bean.getType()) ? "整套房子" : "合租房間";
     type.setText(typeString);
-    ownerText.setText("房东:" + bean.getUserId());
+    ownerText.setText("房東:" + bean.getUserId());
     String info = bean.getNum() + "套房-" +
-      bean.getRoommax() + "间卧室-" +
-      bean.getBeds() + "张床-" +
-      bean.getBathnum() + "间沐浴";
+            bean.getRoommax() + "間臥室-" +
+            bean.getBeds() + "張床-" +
+            bean.getBathnum() + "間沐浴";
     hotelInfo.setText(info);
 
     Glide.with(this).load(Contans.HEADIMGURL + bean.getImages()).into(hotelImage);
@@ -106,7 +106,7 @@ public class HotelDetialAct extends BaseActivity {
     priceText.setText("$" + bean.getPrice() + "/晚");
 
 
-    //服务数据处理
+    //服務數據處理
     String[] serviceNames = this.getResources().getStringArray(R.array.serviceType);
     for (int i = 0; i < serviceNames.length; i++) {
       String name = serviceNames[i];
@@ -150,29 +150,29 @@ public class HotelDetialAct extends BaseActivity {
 
   @OnClick({R.id.criticalBtn,R.id.commentBtn,R.id.orderBtn,R.id.collectionBtn})
   public void onViewClicked(View view) {
-     switch (view.getId()){
-       case R.id.criticalBtn:
-         startActivity(new Intent(this,CommentActivity.class));
-         break;
-       case R.id.commentBtn:
-         startActivity(new Intent(this,CriticalActivity.class));
-         break;
-       case R.id.orderBtn:
-         orderHotel();
-         break;
-       case R.id.collectionBtn:
-         collection();
-         break;
+    switch (view.getId()){
+      case R.id.criticalBtn:
+        startActivity(new Intent(this,CommentActivity.class));
+        break;
+      case R.id.commentBtn:
+        startActivity(new Intent(this,CriticalActivity.class));
+        break;
+      case R.id.orderBtn:
+        orderHotel();
+        break;
+      case R.id.collectionBtn:
+        collection();
+        break;
 
-       default:
-         break;
-     }
+      default:
+        break;
+    }
   }
   //收藏
   private void collection(){
 
   }
-  //预定
+  //預定
   private void orderHotel(){
 
   }

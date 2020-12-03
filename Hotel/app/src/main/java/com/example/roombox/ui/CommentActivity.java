@@ -68,8 +68,8 @@ public class CommentActivity extends AppCompatActivity {
           name = TextUtils.isEmpty(o.getAccount()) ? " " : o.getAccount();
         }
         RequestOptions mRequestOptions = RequestOptions.circleCropTransform()
-          .diskCacheStrategy(DiskCacheStrategy.NONE)//不做磁盘缓存
-          .skipMemoryCache(true);//不做内存缓存
+                .diskCacheStrategy(DiskCacheStrategy.NONE)//不做磁盤緩存
+                .skipMemoryCache(true);//不做內存緩存
         ImageView view = helper.getView(R.id.topImage);
         Glide.with(CommentActivity.this).load(Contans.HEADIMGURL + userImg).apply(mRequestOptions).into(view);
         helper.setText(R.id.name, name);
@@ -92,16 +92,16 @@ public class CommentActivity extends AppCompatActivity {
     keyList.clear();
     String url = Contans.URL + "comment/list?hotel_id=" + scenicBean.getHotel_id();
     OkHttpClient okHttpClient = new OkHttpClient.Builder()
-      .connectTimeout(10, TimeUnit.SECONDS)
-      .writeTimeout(10, TimeUnit.SECONDS)
-      .readTimeout(20, TimeUnit.SECONDS)
-      .build();
+            .connectTimeout(10, TimeUnit.SECONDS)
+            .writeTimeout(10, TimeUnit.SECONDS)
+            .readTimeout(20, TimeUnit.SECONDS)
+            .build();
 
 
     final Request request = new Request.Builder()
-      .url(url)
-      .get()
-      .build();
+            .url(url)
+            .get()
+            .build();
 
     Call call = okHttpClient.newCall(request);
     call.enqueue(new Callback() {

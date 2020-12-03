@@ -1,0 +1,245 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.roombox"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:5:3-77
+11-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:5:20-74
+12    <uses-permission android:name="android.permission.CALL_PHONE" />
+12-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:6:3-67
+12-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:6:20-64
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:7:3-65
+13-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:7:20-62
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:8:3-73
+14-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:8:20-70
+15    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+15-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:9:3-83
+15-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:9:20-80
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:10:3-74
+16-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:10:20-71
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:11:3-79
+17-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:11:20-76
+18    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+18-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:12:3-71
+18-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:12:20-68
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:13:3-69
+19-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:13:20-66
+20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+20-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:14:3-79
+20-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:14:20-76
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:15:3-77
+21-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:15:20-74
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:16:3-63
+22-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:16:20-60
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:17:3-66
+23-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:17:20-63
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:18:3-78
+24-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:18:20-75
+25    <uses-permission android:name="android.permission.CALL_PHONE" />
+25-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:6:3-67
+25-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:6:20-64
+26    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+26-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:14:5-84
+26-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:14:22-81
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d001f351bd91b5fa98401f851662e6f1\play-services-maps-12.0.1\AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d001f351bd91b5fa98401f851662e6f1\play-services-maps-12.0.1\AndroidManifest.xml:27:9-41
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d001f351bd91b5fa98401f851662e6f1\play-services-maps-12.0.1\AndroidManifest.xml:28:9-32
+31
+32    <application
+32-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:21:3-71:17
+33        android:name="com.example.roombox.base.DemoApplication"
+33-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:22:7-43
+34        android:allowBackup="true"
+34-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:23:7-33
+35        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+35-->[com.android.support:support-compat:28.0.0] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\f8a397328201698168ace7f239d1330f\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+36        android:debuggable="true"
+37        android:icon="@mipmap/logo"
+37-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:24:7-34
+38        android:label="@string/app_name"
+38-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:25:7-39
+39        android:networkSecurityConfig="@xml/net_work_config"
+39-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:26:7-59
+40        android:roundIcon="@mipmap/logo"
+40-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:27:7-39
+41        android:supportsRtl="true"
+41-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:28:7-33
+42        android:testOnly="true"
+43        android:theme="@style/AppTheme" >
+43-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:29:7-38
+44        <activity android:name="com.example.roombox.ui.AddOrderActivity" />
+44-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:30:5-62
+44-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:30:15-50
+45        <activity android:name="com.example.roombox.ui.OrderActivity" />
+45-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:31:5-50
+45-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:31:15-47
+46        <activity
+46-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:32:5-34:55
+47            android:name="com.example.roombox.ui.ChatActivity"
+47-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:33:9-40
+48            android:theme="@style/AppTheme.NoActionBar" />
+48-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:34:9-52
+49        <activity android:name="com.example.roombox.ui.LockActivity" />
+49-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:35:5-49
+49-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:35:15-46
+50        <activity android:name="com.example.roombox.HotelListActivity" />
+50-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:36:5-51
+50-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:36:15-48
+51        <activity
+51-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:37:5-39:55
+52            android:name="com.example.roombox.ui.RegActivity"
+52-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:38:9-39
+53            android:theme="@style/AppTheme.NoActionBar" />
+53-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:39:9-52
+54        <activity
+54-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:40:5-42:55
+55            android:name="com.example.roombox.ui.LoginActivity"
+55-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:41:9-41
+56            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:name=".MainActivity" /> -->
+56-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:42:9-52
+57        <activity
+57-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:43:5-45:55
+58            android:name="com.example.roombox.ui.HotelDetialAct"
+58-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:44:9-42
+59            android:theme="@style/AppTheme.NoActionBar" />
+59-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:45:9-52
+60        <activity android:name="com.example.roombox.MainActivity" />
+60-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:46:5-46
+60-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:46:15-43
+61        <activity
+61-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:47:5-55:16
+62            android:name="com.example.roombox.ui.WelcomAct"
+62-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:48:9-37
+63            android:theme="@style/AppTheme.NoActionBar" >
+63-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:49:9-52
+64            <intent-filter>
+64-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:50:7-54:23
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:51:9-61
+65-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:51:17-58
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:53:9-69
+67-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:53:19-66
+68            </intent-filter>
+69        </activity>
+70        <activity android:name="com.example.roombox.ui.MapAct" />
+70-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:56:5-43
+70-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:56:15-40
+71        <activity android:name="com.example.roombox.ui.CommentActivity" />
+71-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:57:5-52
+71-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:57:15-49
+72        <activity android:name="com.example.roombox.ui.CriticalActivity" />
+72-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:58:5-53
+72-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:58:15-50
+73
+74        <meta-data
+74-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:60:5-62:51
+75            android:name="com.google.android.geo.API_KEY"
+75-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:61:9-54
+76            android:value="@string/google_maps_key" />
+76-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:62:9-48
+77
+78        <uses-library
+78-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:64:5-66:36
+79            android:name="org.apache.http.legacy"
+79-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:65:9-46
+80            android:required="false" />
+80-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:66:9-33
+81
+82        <activity android:name="com.example.roombox.ui.HotelManagerActivity" />
+82-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:68:5-57
+82-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:68:15-54
+83        <activity android:name="com.example.roombox.ui.FeedBackActivity" />
+83-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:69:5-53
+83-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:69:15-50
+84        <activity android:name="com.example.roombox.ui.AddHotelActivity" />
+84-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:70:5-53
+84-->C:\Users\Heytia\Desktop\Hotel\app\src\main\AndroidManifest.xml:70:15-50
+85        <activity
+85-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:26:9-28:52
+86            android:name="com.guoxiaoxing.phoenix.picker.ui.BaseActivity"
+86-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:27:13-74
+87            android:screenOrientation="portrait" />
+87-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:28:13-49
+88        <activity
+88-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:29:9-32:72
+89            android:name="com.guoxiaoxing.phoenix.picker.ui.camera.CameraActivity"
+89-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:30:13-83
+90            android:screenOrientation="portrait"
+90-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:31:13-49
+91            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+91-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:32:13-69
+92        <activity
+92-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:33:9-36:72
+93            android:name="com.guoxiaoxing.phoenix.picker.ui.picker.PickerActivity"
+93-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:34:13-83
+94            android:screenOrientation="portrait"
+94-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:35:13-49
+95            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+95-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:36:13-69
+96        <activity
+96-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:37:9-40:50
+97            android:name="com.guoxiaoxing.phoenix.picker.ui.picker.PreviewActivity"
+97-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:38:13-84
+98            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+98-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:39:13-103
+99            android:screenOrientation="sensor" />
+99-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:40:13-47
+100        <activity
+100-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:41:9-44:72
+101            android:name="com.guoxiaoxing.phoenix.picker.ui.editor.PictureEditActivity"
+101-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:42:13-88
+102            android:screenOrientation="portrait"
+102-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:43:13-49
+103            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+103-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:44:13-69
+104        <activity
+104-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:45:9-49:77
+105            android:name="com.guoxiaoxing.phoenix.picker.ui.editor.TextInputActivity"
+105-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:46:13-86
+106            android:screenOrientation="portrait"
+106-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:47:13-49
+107            android:theme="@style/theme_activity_text_input"
+107-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:48:13-61
+108            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+108-->[com.github.guoxiaoxing:phoenix:1.0.15] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\a328cbf5a0d2066be59d63d378154b0f\phoenix-1.0.15\AndroidManifest.xml:49:13-74
+109        <activity
+109-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d44ec55e83bf2d3fac2d06b7b5662884\play-services-base-12.0.1\AndroidManifest.xml:23:9-26:75
+110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+110-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d44ec55e83bf2d3fac2d06b7b5662884\play-services-base-12.0.1\AndroidManifest.xml:24:13-79
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d44ec55e83bf2d3fac2d06b7b5662884\play-services-base-12.0.1\AndroidManifest.xml:25:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-base:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\d44ec55e83bf2d3fac2d06b7b5662884\play-services-base-12.0.1\AndroidManifest.xml:26:13-72
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\10f89ca7ffd45376fa7856c33aaccdb7\play-services-basement-12.0.1\AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\10f89ca7ffd45376fa7856c33aaccdb7\play-services-basement-12.0.1\AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:12.0.1] C:\Users\Heytia\.gradle\caches\transforms-2\files-2.1\10f89ca7ffd45376fa7856c33aaccdb7\play-services-basement-12.0.1\AndroidManifest.xml:25:13-66
+117    </application>
+118
+119</manifest>

@@ -14,13 +14,13 @@ import com.example.roombox.utils.Contans;
 
 
 public abstract class BaseActivity extends AppCompatActivity {
-//    /***是否显示标题栏*/
+//    /***是否顯示標題欄*/
 //    private  boolean isshowtitle = true;
-//    /***是否显示标题栏*/
+//    /***是否顯示標題欄*/
 //    private  boolean isshowstate = true;
-  /***封装toast对象**/
+  /***封裝toast對象**/
   private static Toast toast;
-  /***获取TAG的activity名称**/
+  /***獲取TAG的activity名稱**/
   protected final String TAG = this.getClass().getSimpleName();
   protected User userbean;
 
@@ -36,11 +36,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 //            getWindow().setFlags(WindowManager.LayoutParams. FLAG_FULLSCREEN ,
 //                    WindowManager.LayoutParams. FLAG_FULLSCREEN);
 //        }
-    //设置布局
+    //設置布局
     setContentView(intiLayout());
     //初始化控件
     initView();
-    //设置数据
+    //設置數據
     initData();
   }
 
@@ -61,7 +61,7 @@ public abstract class BaseActivity extends AppCompatActivity {
   }
 
   /**
-   * 设置布局
+   * 設置布局
    *
    * @return
    */
@@ -73,12 +73,12 @@ public abstract class BaseActivity extends AppCompatActivity {
   public abstract void initView();
 
   /**
-   * 设置数据
+   * 設置數據
    */
   public abstract void initData();
 
 //    /**
-//     * 是否设置标题栏
+//     * 是否設置標題欄
 //     *
 //     * @return
 //     */
@@ -87,7 +87,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //    }
 //
 //    /**
-//     * 设置是否显示状态栏
+//     * 設置是否顯示狀態欄
 //     * @param ishow
 //     */
 //    public void setState(boolean ishow) {
@@ -95,7 +95,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //    }
 
   /**
-   * 显示长toast
+   * 顯示長toast
    *
    * @param msg
    */
@@ -112,7 +112,7 @@ public abstract class BaseActivity extends AppCompatActivity {
   }
 
   /**
-   * 显示短toast
+   * 顯示短toast
    *
    * @param msg
    */

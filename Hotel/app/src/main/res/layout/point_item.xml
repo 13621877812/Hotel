@@ -7,49 +7,49 @@
     android:layout_marginLeft="15dp">
 
   <RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginRight="20dp">
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="20dp">
 
     <ImageView
-      android:id="@+id/topImage"
-      android:layout_width="100dp"
-      android:layout_height="100dp"
-      android:background="@color/colorWhite"
-      android:src="@mipmap/logo"/>
+        android:id="@+id/topImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorWhite"
+        android:src="@mipmap/logo"/>
 
   </RelativeLayout>
 
 
 
   <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
 
     <TextView
-      android:id="@+id/name"
-      android:layout_width="match_parent"
-      android:layout_height="20dp"
-      android:text="EAST DISTRICT.整套房子" />
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="EAST DISTRICT.整套房子" />
 
     <TextView
-      android:id="@+id/desc"
-      android:layout_width="match_parent"
-      android:layout_height="20dp"
-      android:text="南方舟/2～7人大套房/大东夜市" />
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="南方舟/2～7人大套房/大東夜市" />
 
     <TextView
-      android:id="@+id/eval"
-      android:layout_width="match_parent"
-      android:layout_height="20dp"
-      android:text="86人评价" />
+        android:id="@+id/eval"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="86人評價" />
 
     <TextView
-      android:id="@+id/price"
-      android:layout_width="match_parent"
-      android:layout_height="20dp"
-      android:text="$866/每晚" />
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="$866/每晚" />
 
   </LinearLayout>
 

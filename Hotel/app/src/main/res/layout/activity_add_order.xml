@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_height="match_parent"
-  android:layout_width="match_parent"
-  android:orientation="vertical"
-  android:gravity="center_horizontal"
-  android:paddingTop="50dp"
-  android:paddingLeft="20dp"
-  android:paddingRight="20dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
 
   <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
-
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:textColor="@color/black"
-      android:textSize="17sp"
-      android:text="开始时间："/>
-
-    <TextView
-      android:id="@+id/startTime"
       android:layout_width="match_parent"
-      android:layout_weight="1"
-      android:layout_height="wrap_content"
-      android:text="点击选择时间"/>
+      android:layout_height="50dp"
+      android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:text="開始時間："/>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="點擊選擇時間"/>
 
   </LinearLayout>
   <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
-
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:textColor="@color/black"
-      android:textSize="17sp"
-      android:text="结束时间："/>
-
-    <TextView
-      android:id="@+id/endTime"
       android:layout_width="match_parent"
-      android:layout_weight="1"
-      android:layout_height="wrap_content"
-      android:text="点击选择时间"/>
+      android:layout_height="50dp"
+      android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:text="結束時間："/>
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="點擊選擇時間"/>
 
   </LinearLayout>
 
 
   <TextView
-    android:id="@+id/orderBtn"
-    android:paddingTop="15dp"
-    android:paddingBottom="15dp"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:background="@color/pink"
-    android:textColor="@color/white"
-    android:textSize="18sp"
-    android:gravity="center_horizontal"
-    android:text="开始预定"/>
+      android:id="@+id/orderBtn"
+      android:paddingTop="15dp"
+      android:paddingBottom="15dp"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:background="@color/pink"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:gravity="center_horizontal"
+      android:text="開始預定"/>
 
 
 

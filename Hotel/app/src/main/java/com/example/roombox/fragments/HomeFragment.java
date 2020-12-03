@@ -68,7 +68,7 @@ import java.util.Locale;
 
 
 public class HomeFragment extends Fragment implements
-  OnMapReadyCallback , GoogleMap.OnMarkerClickListener {
+        OnMapReadyCallback , GoogleMap.OnMarkerClickListener {
 
   private MapView mMap;
   private GoogleMap mMap1;
@@ -115,7 +115,7 @@ public class HomeFragment extends Fragment implements
       initData();
     }
   }
-  //获取房源数据
+  //獲取房源數據
   private void initData(){
 
     String url = "hotel/list";
@@ -149,10 +149,10 @@ public class HomeFragment extends Fragment implements
       e.printStackTrace();
     }
     int errorCode = GooglePlayServicesUtil
-      .isGooglePlayServicesAvailable(this.getActivity());
+            .isGooglePlayServicesAvailable(this.getActivity());
     if (ConnectionResult.SUCCESS != errorCode) {
       GooglePlayServicesUtil.getErrorDialog(errorCode,
-        this.getActivity(), 0).show();
+              this.getActivity(), 0).show();
     } else {
       mMap.getMapAsync(this);
     }
@@ -179,8 +179,8 @@ public class HomeFragment extends Fragment implements
     settings.setMyLocationButtonEnabled(false);
     settings.setMapToolbarEnabled(false);
     if (ContextCompat.checkSelfPermission(getContext(),
-      Manifest.permission.ACCESS_FINE_LOCATION)
-      == PackageManager.PERMISSION_GRANTED) {
+            Manifest.permission.ACCESS_FINE_LOCATION)
+            == PackageManager.PERMISSION_GRANTED) {
       //Location Permission already granted
       mMap1.setOnMarkerClickListener(this);
       mMap1.setMyLocationEnabled(true);
@@ -269,10 +269,10 @@ public class HomeFragment extends Fragment implements
     Resources resources = gContext.getResources();
     float scale = resources.getDisplayMetrics().density;
     Bitmap bitmap =
-      BitmapFactory.decodeResource(resources, R.drawable.marker);
+            BitmapFactory.decodeResource(resources, R.drawable.marker);
 
     android.graphics.Bitmap.Config bitmapConfig =
-      bitmap.getConfig();
+            bitmap.getConfig();
     // set default bitmap config if none
     if (bitmapConfig == null) {
       bitmapConfig = android.graphics.Bitmap.Config.ARGB_8888;

@@ -519,7 +519,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="熨斗"
+            android:text="熨鬥"
             android:buttonTint="#000000"
             />
         <CheckBox

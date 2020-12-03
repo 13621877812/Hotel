@@ -56,12 +56,12 @@ public class MineFragment extends Fragment {
   }
 
   private void initView() {
-    //0 租客 1 房东 2管理员
+    //0 租客 1 房東 2管理員
     final String type = ACache.get(getActivity()).getAsString("type");
-    //管理员
-    String[] datas = new String[]{"房屋管理", "举报管理", "登出"};
+    //管理員
+    String[] datas = new String[]{"房屋管理", "舉報管理", "登出"};
     if ("1".equals(type)){
-      datas = new String[]{"历史订单", "房屋管理", "客服", "登出", "评论"};
+      datas = new String[]{"歷史訂單", "房屋管理", "客服", "登出", "評論"};
     }
     if ("0".equals(type)){
       return;
@@ -73,25 +73,25 @@ public class MineFragment extends Fragment {
       meumList.add(map);
     }
     SimpleAdapter saItem = new SimpleAdapter(getActivity(), meumList, R.layout.item_mine_layout,
-      new String[]{"ItemText"},
-      new int[]{R.id.ItemText});
+            new String[]{"ItemText"},
+            new int[]{R.id.ItemText});
 
     gridView.setAdapter(saItem);
     gridView.setOnItemClickListener(new OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-          if ("2".equals(type)){
-              startPage(position);
-          }else {
-              startPage1(position);
-          }
+        if ("2".equals(type)){
+          startPage(position);
+        }else {
+          startPage1(position);
+        }
 
       }
     });
 
   }
 
-  //跳转对应的页面(管理员)
+  //跳轉對應的頁面(管理員)
   private void startPage(int index) {
     switch (index) {
       case 0:
@@ -111,7 +111,7 @@ public class MineFragment extends Fragment {
 
 
   }
-  //跳转对应的页面(房东)
+  //跳轉對應的頁面(房東)
   private void startPage1(int index) {
     switch (index) {
       case 0:

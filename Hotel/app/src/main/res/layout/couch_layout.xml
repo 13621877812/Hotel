@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical"
-  android:divider="@color/colorGray">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@color/colorGray">
  <ImageView
-   android:layout_width="40dp"
-   android:layout_height="40dp"
-   android:src="@mipmap/logo"/>
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="卧室1"/>
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="1张1.4米宽度人床"/>
+     android:layout_width="40dp"
+     android:layout_height="40dp"
+     android:src="@mipmap/logo"/>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="臥室1"/>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="1張1.4米寬雙人床"/>
 
 </LinearLayout>

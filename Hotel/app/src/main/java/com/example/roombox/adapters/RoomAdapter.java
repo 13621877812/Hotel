@@ -43,8 +43,8 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder> {
   public void onBindViewHolder(ViewHolder viewHolder, int i) {
     final RoomBean bean = datas.get(i);
     Integer total = bean.getBed1num()+bean.getBed2num() + bean.getBed3num();
-    viewHolder.roomName.setText("卧室" + (i+1));
-    viewHolder.bednum.setText(total+"张床");
+    viewHolder.roomName.setText("臥室" + (i+1));
+    viewHolder.bednum.setText(total+"張床");
     viewHolder.setBean(bean);
   }
 

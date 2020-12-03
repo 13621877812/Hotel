@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:orientation="horizontal">
-
-
-  <com.example.roombox.views.MenuItem
-    android:id="@+id/navigation_home"
     android:layout_width="match_parent"
-    android:layout_weight="1"
     android:layout_height="match_parent"
-    app:title_text="@string/title_home"
-    app:iconImgUri="@drawable/home"
-    app:selectedIconImgUri="@drawable/home_s"
-    app:isSelect="true"/>
-
-  <com.example.roombox.views.MenuItem
-    android:id="@+id/navigation_mine"
-    android:layout_width="match_parent"
-    android:layout_weight="1"
-    android:layout_height="match_parent"
-    app:title_text="@string/title_mine"
-    app:iconImgUri="@drawable/mine"
-    app:selectedIconImgUri="@drawable/mine_s"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
 
 
   <com.example.roombox.views.MenuItem
-    android:id="@+id/navigation_search"
-    android:layout_width="match_parent"
-    android:layout_weight="1"
-    android:layout_height="match_parent"
-    app:title_text="@string/title_search"
-    app:iconImgUri="@drawable/search"
-    app:selectedIconImgUri="@drawable/search_s"/>
+      android:id="@+id/navigation_home"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="match_parent"
+      app:title_text="@string/title_home"
+      app:iconImgUri="@drawable/home"
+      app:selectedIconImgUri="@drawable/home_s"
+      app:isSelect="true"/>
+
+  <com.example.roombox.views.MenuItem
+      android:id="@+id/navigation_mine"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="match_parent"
+      app:title_text="@string/title_mine"
+      app:iconImgUri="@drawable/mine"
+      app:selectedIconImgUri="@drawable/mine_s"/>
 
 
   <com.example.roombox.views.MenuItem
-  android:id="@+id/navigation_pay"
-  android:layout_width="match_parent"
-  android:layout_weight="1"
-  android:layout_height="match_parent"
-    app:title_text="@string/title_pay"
-    app:iconImgUri="@drawable/chat"
-    app:selectedIconImgUri="@drawable/chat_s"/>
+      android:id="@+id/navigation_search"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="match_parent"
+      app:title_text="@string/title_search"
+      app:iconImgUri="@drawable/search"
+      app:selectedIconImgUri="@drawable/search_s"/>
+
 
   <com.example.roombox.views.MenuItem
-    android:id="@+id/navigation_comment"
-    android:layout_width="match_parent"
-    android:layout_weight="1"
-    android:layout_height="match_parent"
-    app:title_text="@string/title_comment"
-    app:iconImgUri="@drawable/collection"
-    app:selectedIconImgUri="@drawable/collection_s"/>
+      android:id="@+id/navigation_pay"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="match_parent"
+      app:title_text="@string/title_pay"
+      app:iconImgUri="@drawable/chat"
+      app:selectedIconImgUri="@drawable/chat_s"/>
+
+  <com.example.roombox.views.MenuItem
+      android:id="@+id/navigation_comment"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="match_parent"
+      app:title_text="@string/title_comment"
+      app:iconImgUri="@drawable/collection"
+      app:selectedIconImgUri="@drawable/collection_s"/>
 
 
 </LinearLayout>

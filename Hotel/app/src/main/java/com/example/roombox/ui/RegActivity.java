@@ -40,11 +40,11 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
     et_pwd = (EditText) findViewById(R.id.et_pwd);
     et_pwd_once = (EditText) findViewById(R.id.et_pwd_once);
     bt_Login = (Button) findViewById(R.id.bt_Login);
-    radioGroup = (RadioGroup) findViewById(R.id.typeGroup);//获取单选按钮组
+    radioGroup = (RadioGroup) findViewById(R.id.typeGroup);//獲取單選按鈕組
     radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(RadioGroup radioGroup, int i) {
-        RadioButton radioButton = (RadioButton) findViewById(i);//获取被选择的单选按钮
+        RadioButton radioButton = (RadioButton) findViewById(i);//獲取被選擇的單選按鈕
         type = radioButton.getText().equals("owner") ? 1 : 0;
       }
     });

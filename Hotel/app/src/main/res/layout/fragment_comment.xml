@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
   <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="15dp">
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="15dp">
 
     <TextView
-      android:id="@+id/totalText"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentLeft="true"
-      android:text="2间房源"
-      android:textColor="@color/black" />
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="2間房源"
+        android:textColor="@color/black" />
 
 
     <TextView
-      android:id="@+id/editBtn"
-      android:layout_alignParentRight="true"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="编辑"
-      android:textColor="@color/itemS" />
+        android:id="@+id/editBtn"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="編輯"
+        android:textColor="@color/itemS" />
 
 
   </RelativeLayout>
 
   <android.support.v7.widget.RecyclerView
-    android:id="@+id/listView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="60dp" />
+      android:id="@+id/listView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="60dp" />
 
 
 </LinearLayout>

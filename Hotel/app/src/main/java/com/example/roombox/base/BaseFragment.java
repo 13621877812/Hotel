@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 
 public abstract class BaseFragment extends Fragment {
 
-  //这个activity就是MainActivity
+  //這個activity就是MainActivity
   public Activity mActivity;
 
-  // Fragment被创建
+  // Fragment被創建
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    mActivity = getActivity();// 获取所在的activity对象
+    mActivity = getActivity();// 獲取所在的activity對象
   }
 
   // 初始化Fragment布局
@@ -27,7 +27,7 @@ public abstract class BaseFragment extends Fragment {
     return view;
   }
 
-  // activity创建结束
+  // activity創建結束
   @Override
   public void onActivityCreated(Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
@@ -35,12 +35,12 @@ public abstract class BaseFragment extends Fragment {
   }
 
   /**
-   * 初始化布局, 子类必须实现
+   * 初始化布局, 子類必須實現
    */
   public abstract View initView();
 
   /**
-   * 初始化数据, 子类可以不实现
+   * 初始化數據, 子類可以不實現
    */
   public void initData() {
 

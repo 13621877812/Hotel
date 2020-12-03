@@ -69,7 +69,7 @@ public class ColloectionFragment extends Fragment {
     });
   }
   private void initData() {
-    //从网络获取
+    //從網絡獲取
     String account = ACache.get(getActivity()).getAsString("account");
     String url = "collection/list?account=" + account;
     HttpUtil.httpGet(url, getActivity(), new HttpUtil.HttpCallBack() {
@@ -80,7 +80,7 @@ public class ColloectionFragment extends Fragment {
         Type type = new TypeToken<ArrayList<HotelBean>>() {
         }.getType();
         ArrayList<HotelBean> datas = gson.fromJson(data, type);
-        totalText.setText(datas.size() + "间房源");
+        totalText.setText(datas.size() + "間房源");
         collectionAdapter.setDatas(datas);
         collectionAdapter.notifyDataSetChanged();
       }

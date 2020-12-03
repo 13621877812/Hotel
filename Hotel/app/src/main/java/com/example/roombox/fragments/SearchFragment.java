@@ -72,7 +72,7 @@ public class SearchFragment extends Fragment {
 
   }
 
-  //获取房源数据
+  //獲取房源數據
   private void initData(){
 
     String url = "hotel/list";
@@ -98,8 +98,8 @@ public class SearchFragment extends Fragment {
 
   @OnClick(R.id.searchBtn)
   public void onViewClicked() {
-   String keyWord = searchView.getQuery().toString();
-   ArrayList<HotelBean> data1 = new ArrayList<>();
+    String keyWord = searchView.getQuery().toString();
+    ArrayList<HotelBean> data1 = new ArrayList<>();
     for (HotelBean bean:datas){
       String name = bean.getName();
       if (name.contains(keyWord)){

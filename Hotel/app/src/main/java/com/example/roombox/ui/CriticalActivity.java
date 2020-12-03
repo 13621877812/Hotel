@@ -60,22 +60,22 @@ public class CriticalActivity extends AppCompatActivity implements View.OnClickL
     String username = ACache.get(CriticalActivity.this).getAsString("account");
     String url = Contans.URL + "comment/add";
     OkHttpClient okHttpClient = new OkHttpClient.Builder()
-      .connectTimeout(10, TimeUnit.SECONDS)
-      .writeTimeout(10, TimeUnit.SECONDS)
-      .readTimeout(20, TimeUnit.SECONDS)
-      .build();
+            .connectTimeout(10, TimeUnit.SECONDS)
+            .writeTimeout(10, TimeUnit.SECONDS)
+            .readTimeout(20, TimeUnit.SECONDS)
+            .build();
 
     FormBody formBody = new FormBody.Builder()
-      .add("hotel_id", hotel_id)
+            .add("hotel_id", hotel_id)
 //                .add("userID", userID)
-      .add("user_id", username)
-      .add("comment", comment)
-      .add("grade", String.valueOf(ratingBar.getRating()))
-      .build();
+            .add("user_id", username)
+            .add("comment", comment)
+            .add("grade", String.valueOf(ratingBar.getRating()))
+            .build();
     final Request request = new Request.Builder()
-      .url(url)
-      .post(formBody)
-      .build();
+            .url(url)
+            .post(formBody)
+            .build();
 
     Call call = okHttpClient.newCall(request);
     call.enqueue(new Callback() {

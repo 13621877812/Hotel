@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-  android:background="@color/backColor">
+    android:background="@color/backColor">
 
     <ImageView
         android:layout_marginTop="50dp"
@@ -19,11 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
-<!--        <ImageView-->
-<!--            android:src="@mipmap/account"-->
-<!--            android:id="@+id/iv"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" />-->
+        <!--        <ImageView-->
+        <!--            android:src="@mipmap/account"-->
+        <!--            android:id="@+id/iv"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content" />-->
 
         <EditText
 
@@ -43,11 +43,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
-<!--        <ImageView-->
-<!--            android:src="@mipmap/pwd"-->
+        <!--        <ImageView-->
+        <!--            android:src="@mipmap/pwd"-->
 
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" />-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content" />-->
 
         <EditText
             android:inputType="textPassword"
@@ -67,11 +67,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
-<!--        <ImageView-->
-<!--            android:src="@mipmap/pwd"-->
+        <!--        <ImageView-->
+        <!--            android:src="@mipmap/pwd"-->
 
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" />-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content" />-->
 
         <EditText
             android:inputType="textPassword"

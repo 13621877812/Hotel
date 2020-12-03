@@ -60,7 +60,7 @@ public class ChatActivity extends AppCompatActivity {
   private void initView() {
 
 
-      titleView.setText(otherId);
+    titleView.setText(otherId);
     LinearLayoutManager manager = new LinearLayoutManager(ChatActivity.this);
     chatList.setLayoutManager(manager);
     chatAdapter = new ChatAdapter(this);
@@ -79,16 +79,16 @@ public class ChatActivity extends AppCompatActivity {
   public void onViewClicked() {
     String content1 = content.getText().toString();
     if (content1.length() == 0) {
-      Toast.makeText(this, "内容不能为空!", Toast.LENGTH_LONG).show();
+      Toast.makeText(this, "內容不能為空!", Toast.LENGTH_LONG).show();
       return;
     }
 
 
     HashMap params = new HashMap();
 
-    params.put("sendId", account);//当前用户id
-    params.put("receiveId", otherId);//接收用户
-    params.put("content", content1);//聊天内
+    params.put("sendId", account);//當前用戶id
+    params.put("receiveId", otherId);//接收用戶
+    params.put("content", content1);//聊天內
     HttpUtil.httpPost("chat/add", params, ChatActivity.this, new HttpUtil.HttpCallBack() {
 
       @Override
@@ -121,7 +121,7 @@ public class ChatActivity extends AppCompatActivity {
     }, 0, 1000);
   }
 
-  //获取聊天列表内容
+  //獲取聊天列表內容
   private void getContents() {//返回信息
 
     String url = "chat/list?sendId=" + otherId + "&receiveId=" + account;

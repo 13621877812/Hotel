@@ -10,20 +10,17 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2166fbe-ad75-43bb-be26-efc2d8ef9a56" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/MineFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/roombox/fragments/MineFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dbo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../dbo.sql" afterDir="false" />
-    </list>
+    <list default="true" id="f2166fbe-ad75-43bb-be26-efc2d8ef9a56" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ce0517150af1c8c20c]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -54,7 +51,6 @@
   <component name="ProjectId" id="1kgPABoaecuRft1yN0iZeOqoGIl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
@@ -62,6 +58,8 @@
     <property name="DEBUGGABLE_DEVICE" value="xiaomi-redmi_note_8-21998caa" />
     <property name="DEBUGGABLE_PROCESS" value="com.example.roombox" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="ce0517150af1c8c20c" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-03T05:38:49.053Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
@@ -70,7 +68,7 @@
     <property name="device.picker.selection" value="21998caa" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1606971948931" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -114,12 +112,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="Hotel.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -155,11 +154,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -194,6 +198,11 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="895" y="190" key="#com.intellij.ide.util.MemberChooser" timestamp="1606876452054">
       <screen x="0" y="23" width="1920" height="973" />
@@ -215,33 +224,39 @@
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state width="494" height="466" key="DebuggerActiveHint/0.23.1920.973@0.23.1920.973" timestamp="1606878206690" />
-    <state width="2132" height="239" key="GridCell.Tab.0.bottom" timestamp="1606898230090">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="2517" height="400" key="GridCell.Tab.0.bottom" timestamp="1606973828410">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606973828410" />
     <state width="2132" height="239" key="GridCell.Tab.0.bottom/0.23.1920.973@0.23.1920.973" timestamp="1606898230090" />
-    <state width="2132" height="239" key="GridCell.Tab.0.center" timestamp="1606898230089">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="2517" height="400" key="GridCell.Tab.0.center" timestamp="1606973828409">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606973828409" />
     <state width="2132" height="239" key="GridCell.Tab.0.center/0.23.1920.973@0.23.1920.973" timestamp="1606898230089" />
-    <state width="2132" height="239" key="GridCell.Tab.0.left" timestamp="1606898230089">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="2517" height="400" key="GridCell.Tab.0.left" timestamp="1606973828409">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606973828409" />
     <state width="2132" height="239" key="GridCell.Tab.0.left/0.23.1920.973@0.23.1920.973" timestamp="1606898230089" />
-    <state width="2132" height="239" key="GridCell.Tab.0.right" timestamp="1606898230090">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state width="2517" height="400" key="GridCell.Tab.0.right" timestamp="1606973828410">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606973828410" />
     <state width="2132" height="239" key="GridCell.Tab.0.right/0.23.1920.973@0.23.1920.973" timestamp="1606898230090" />
-    <state x="796" y="135" key="SettingsEditor" timestamp="1606881155468">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state x="1061" y="161" key="SettingsEditor" timestamp="1606972772888">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1061" y="161" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1606972772888" />
     <state x="796" y="135" key="SettingsEditor/0.23.1920.973@0.23.1920.973" timestamp="1606881155468" />
     <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1606971883219">
       <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.23.1920.973@0.23.1920.973" timestamp="1606971883219" />
-    <state x="807" y="238" width="812" height="488" key="find.popup" timestamp="1606899004341">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state x="1076" y="309" width="1083" height="703" key="find.popup" timestamp="1606972829050">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1076" y="309" width="1083" height="703" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1606972829050" />
     <state x="807" y="238" width="812" height="488" key="find.popup/0.23.1920.973@0.23.1920.973" timestamp="1606899004341" />
     <state x="773" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1606875559701">
       <screen x="0" y="23" width="1920" height="973" />

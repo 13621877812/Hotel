@@ -20,35 +20,35 @@
         <item>小屋</item>
         <item>小木屋</item>
     </string-array>
-    <string name="bed1">1.4米双人床</string>
-    <string name="bed2">1.5米双人床</string>
-    <string name="bed3">1米双人床</string>
+    <string name="bed1">1.4米雙人床</string>
+    <string name="bed2">1.5米雙人床</string>
+    <string name="bed3">1米雙人床</string>
 
-  <string-array name="serviceType">
-    <item>空調</item>
-    <item>無線網路</item>
-    <item>電視</item>
-    <item>暖氣</item>
-    <item>日用品</item>
-    <item>洗衣機</item>
-    <item>熨斗</item>
-    <item>熱水</item>
-    <item>早餐</item>
-    <item>咖啡</item>
-    <item>茶</item>
-    <item>廚房</item>
-    <item>冰箱</item>
-    <item>餐具</item>
-    <item>爐子</item>
-    <item>廚具</item>
-    <item>衣架</item>
-    <item>洗髮露</item>
-    <item>沐浴乳</item>
-    <item>吹風機</item>
-    <item>急救包</item>
-    <item>滅火器</item>
-    <item>煙霧警報器</item>
-  </string-array>
+    <string-array name="serviceType">
+        <item>空調</item>
+        <item>無線網路</item>
+        <item>電視</item>
+        <item>暖氣</item>
+        <item>日用品</item>
+        <item>洗衣機</item>
+        <item>熨鬥</item>
+        <item>熱水</item>
+        <item>早餐</item>
+        <item>咖啡</item>
+        <item>茶</item>
+        <item>廚房</item>
+        <item>冰箱</item>
+        <item>餐具</item>
+        <item>爐子</item>
+        <item>廚具</item>
+        <item>衣架</item>
+        <item>洗髮露</item>
+        <item>沐浴乳</item>
+        <item>吹風機</item>
+        <item>急救包</item>
+        <item>滅火器</item>
+        <item>煙霧警報器</item>
+    </string-array>
 
 
 </resources>

@@ -184,33 +184,33 @@ public class AddHotelActivity extends AppCompatActivity {
     }
 
     private void initListener(){
-      bedroom.setOnFocusChangeListener(new android.view.View.
-        OnFocusChangeListener() {
-        @Override
-        public void onFocusChange(View v, boolean hasFocus) {
-          if (hasFocus) {
+        bedroom.setOnFocusChangeListener(new android.view.View.
+                OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
 
-          } else {
-            if (!TextUtils.isEmpty(bedroom.getText().toString())){
-              Integer num = Integer.parseInt(bedroom.getText().toString());
-              rooms.clear();
-              for (int i = 0; i < num; i++) {
-                RoomBean roomBean = new RoomBean();
-                rooms.add(roomBean);
-              }
-              roomAdapter.setDatas(rooms);
-              roomAdapter.notifyDataSetChanged();
+                } else {
+                    if (!TextUtils.isEmpty(bedroom.getText().toString())){
+                        Integer num = Integer.parseInt(bedroom.getText().toString());
+                        rooms.clear();
+                        for (int i = 0; i < num; i++) {
+                            RoomBean roomBean = new RoomBean();
+                            rooms.add(roomBean);
+                        }
+                        roomAdapter.setDatas(rooms);
+                        roomAdapter.notifyDataSetChanged();
+                    }
+
+                }
             }
-
-          }
-        }
-      });
+        });
     }
     private void initListView(){
-      LinearLayoutManager manager = new LinearLayoutManager(this);
-      listView.setLayoutManager(manager);
-      roomAdapter = new RoomAdapter(this);
-      listView.setAdapter(roomAdapter);
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        listView.setLayoutManager(manager);
+        roomAdapter = new RoomAdapter(this);
+        listView.setAdapter(roomAdapter);
     }
     @OnClick({R.id.roomimg_up, R.id.room_sub})
     public void onClick(View view) {
@@ -226,39 +226,39 @@ public class AddHotelActivity extends AppCompatActivity {
 
     private void addImage() {
         Phoenix.with()
-                .theme(PhoenixOption.THEME_DEFAULT)// 主题
-                .fileType(MimeType.ofImage())//显示的文件类型图片、视频、图片和视频
-                .maxPickNumber(1)// 最大选择数量
-                .minPickNumber(0)// 最小选择数量
-                .spanCount(4)// 每行显示个数
-                .enablePreview(true)// 是否开启预览
-                .enableCamera(true)// 是否开启拍照
-                .enableAnimation(true)// 选择界面图片点击效果
-                .enableCompress(true)// 是否开启压缩
-                .compressPictureFilterSize(1024)//多少kb以下的图片不压缩
-                .compressVideoFilterSize(2018)//多少kb以下的视频不压缩
-                .thumbnailHeight(160)// 选择界面图片高度
-                .thumbnailWidth(160)// 选择界面图片宽度
-                .enableClickSound(false)// 是否开启点击声音
+                .theme(PhoenixOption.THEME_DEFAULT)// 主題
+                .fileType(MimeType.ofImage())//顯示的文件類型圖片、視頻、圖片和視頻
+                .maxPickNumber(1)// 最大選擇數量
+                .minPickNumber(0)// 最小選擇數量
+                .spanCount(4)// 每行顯示個數
+                .enablePreview(true)// 是否開啟預覽
+                .enableCamera(true)// 是否開啟拍照
+                .enableAnimation(true)// 選擇界面圖片點擊效果
+                .enableCompress(true)// 是否開啟壓縮
+                .compressPictureFilterSize(1024)//多少kb以下的圖片不壓縮
+                .compressVideoFilterSize(2018)//多少kb以下的視頻不壓縮
+                .thumbnailHeight(160)// 選擇界面圖片高度
+                .thumbnailWidth(160)// 選擇界面圖片寬度
+                .enableClickSound(false)// 是否開啟點擊聲音
 
-                .mediaFilterSize(10000)//显示多少kb以下的图片/视频，默认为0，表示不限制
-                //如果是在Activity里使用就传Activity，如果是在Fragment里使用就传Fragment
+                .mediaFilterSize(10000)//顯示多少kb以下的圖片/視頻，默認為0，表示不限制
+                //如果是在Activity里使用就傳Activity，如果是在Fragment里使用就傳Fragment
                 .start(AddHotelActivity.this, PhoenixOption.TYPE_PICK_MEDIA, 100);
 
     }
 
     private void addHotel() {
-        String userId = t1.getText().toString(); //房东id
+        String userId = t1.getText().toString(); //房東id
         String name = housename.getText().toString();
         String price = perprice.getText().toString();
         String area = zone.getText().toString();
         String place = address.getText().toString();
         String intro1 = intro.getText().toString();
         String type1 = type.getSelectedItemPosition() + "";
-        String spaceType = spacetype.getCheckedRadioButtonId() == R.id.whole ? "0" : "1";//空间类型
-        String num = roomnum.getText().toString(); //房源房数
-        String max = mannum.getText().toString(); //可容纳客户数
-        String roommax = bedroom.getText().toString();//可容纳卧室数
+        String spaceType = spacetype.getCheckedRadioButtonId() == R.id.whole ? "0" : "1";//空間類型
+        String num = roomnum.getText().toString(); //房源房數
+        String max = mannum.getText().toString(); //可容納客戶數
+        String roommax = bedroom.getText().toString();//可容納臥室數
         String beds = bednum.getText().toString();//床
 
         Gson gson = new Gson();
@@ -267,16 +267,16 @@ public class AddHotelActivity extends AppCompatActivity {
 
 
         String bathnum1 = bathnum.getText().toString();
-        ;//沐浴数
+        ;//沐浴數
         StringBuffer services = new StringBuffer();;
         CheckBox[] boxes = new CheckBox[]{c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c10,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23 };
         String service = "";
         for (int i = 0; i < boxes.length; i++) {
             CheckBox box = boxes[i];
             if(box.isChecked()){
-              if (service.length() != 0){
-                  services.append(service+";");
-              }
+                if (service.length() != 0){
+                    services.append(service+";");
+                }
                 service = i + "";
             }
         }
