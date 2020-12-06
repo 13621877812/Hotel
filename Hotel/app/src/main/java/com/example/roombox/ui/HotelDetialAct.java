@@ -220,7 +220,7 @@ public class HotelDetialAct extends BaseActivity {
     }
 
 
-    @OnClick({R.id.criticalBtn, R.id.commentBtn, R.id.orderBtn, R.id.collectionBtn, R.id.back})
+    @OnClick({R.id.criticalBtn, R.id.commentBtn, R.id.orderBtn, R.id.collectionBtn, R.id.back, R.id.chatBtn})
     public void onViewClicked(View view) {
         Bundle bundle = new Bundle();
         bundle.putSerializable("hotel", bean);
@@ -243,6 +243,11 @@ public class HotelDetialAct extends BaseActivity {
                 break;
             case R.id.collectionBtn:
                 collection();
+                break;
+            case R.id.chatBtn:
+                Intent intent3 = new Intent(this, ChatActivity.class);
+                intent3.putExtra("sendId",bean.getUserId());
+                startActivity(intent3);
                 break;
             case R.id.back:
                 finish();

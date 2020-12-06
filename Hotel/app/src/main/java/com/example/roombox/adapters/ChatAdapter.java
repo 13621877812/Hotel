@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.roombox.R;
 import com.example.roombox.bean.ChatBean;
 import com.example.roombox.bean.CollectionBean;
+import com.example.roombox.utils.TimeUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +48,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     viewHolder.userImage.setImageResource(R.drawable.logo);
     final ChatBean bean = datas.get(i);
     viewHolder.name.setText(bean.getSendId());
-    viewHolder.time.setText(bean.getCreateTime());
+    viewHolder.time.setText(TimeUtil.date2TimeStamp(bean.getCreateTime(),"HH:mm yyyy/MM/dd"));
     viewHolder.content.setText(bean.getContent());
     viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
       @Override

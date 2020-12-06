@@ -31,7 +31,7 @@
 
     <select id="selectAll" parameterType="java.lang.String" resultType="java.util.HashMap" useCache="true">
 
-     select hotel.*,order1.startTime,order1.endTime,order1.price orderPrice
+     select hotel.*,order1.startTime,order1.endTime,order1.account,order1.price orderPrice
       from order1 join hotel on order1.hotel_id = hotel.hotel_id where  order1.account=#{account}  order by id
     </select>
 

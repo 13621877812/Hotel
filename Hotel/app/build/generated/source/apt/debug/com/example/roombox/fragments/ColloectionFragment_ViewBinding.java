@@ -16,7 +16,7 @@ import java.lang.Override;
 public class ColloectionFragment_ViewBinding implements Unbinder {
   private ColloectionFragment target;
 
-  private View view2131296391;
+  private View view2131296392;
 
   @UiThread
   public ColloectionFragment_ViewBinding(final ColloectionFragment target, View source) {
@@ -26,7 +26,7 @@ public class ColloectionFragment_ViewBinding implements Unbinder {
     target.listView = Utils.findRequiredViewAsType(source, R.id.listView, "field 'listView'", RecyclerView.class);
     target.totalText = Utils.findRequiredViewAsType(source, R.id.totalText, "field 'totalText'", TextView.class);
     view = Utils.findRequiredView(source, R.id.editBtn, "method 'onViewClicked'");
-    view2131296391 = view;
+    view2131296392 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class ColloectionFragment_ViewBinding implements Unbinder {
     target.listView = null;
     target.totalText = null;
 
-    view2131296391.setOnClickListener(null);
-    view2131296391 = null;
+    view2131296392.setOnClickListener(null);
+    view2131296392 = null;
   }
 }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="15dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
+
+      <ImageView
+          android:id="@+id/topImage"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@color/colorWhite"
+          android:src="@mipmap/logo"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/name"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:text="EAST DISTRICT.整套房子" />
+
+      <TextView
+          android:id="@+id/desc"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:text="南方舟/2～7人大套房/大東夜市" />
+
+      <TextView
+          android:id="@+id/eval"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:text="86人評價" />
+
+      <TextView
+          android:id="@+id/price"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:text="$866/每晚" />
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/ownerText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/orderText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+
+
+
+</LinearLayout>

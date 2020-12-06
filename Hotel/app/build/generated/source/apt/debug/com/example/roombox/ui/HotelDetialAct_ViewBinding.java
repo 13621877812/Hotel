@@ -17,15 +17,17 @@ import java.lang.Override;
 public class HotelDetialAct_ViewBinding implements Unbinder {
   private HotelDetialAct target;
 
-  private View view2131296363;
+  private View view2131296364;
 
-  private View view2131296531;
+  private View view2131296533;
 
-  private View view2131296374;
+  private View view2131296375;
 
-  private View view2131296367;
+  private View view2131296368;
 
   private View view2131296298;
+
+  private View view2131296356;
 
   @UiThread
   public HotelDetialAct_ViewBinding(HotelDetialAct target) {
@@ -47,7 +49,7 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
     target.bedListView = Utils.findRequiredViewAsType(source, R.id.bedListView, "field 'bedListView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.collectionBtn, "field 'collectionBtn' and method 'onViewClicked'");
     target.collectionBtn = Utils.castView(view, R.id.collectionBtn, "field 'collectionBtn'", TextView.class);
-    view2131296363 = view;
+    view2131296364 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +58,7 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.orderBtn, "field 'orderBtn' and method 'onViewClicked'");
     target.orderBtn = Utils.castView(view, R.id.orderBtn, "field 'orderBtn'", TextView.class);
-    view2131296531 = view;
+    view2131296533 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,7 +66,7 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.criticalBtn, "method 'onViewClicked'");
-    view2131296374 = view;
+    view2131296375 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,7 +74,7 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.commentBtn, "method 'onViewClicked'");
-    view2131296367 = view;
+    view2131296368 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,6 +83,14 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.back, "method 'onViewClicked'");
     view2131296298 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.chatBtn, "method 'onViewClicked'");
+    view2131296356 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -107,15 +117,17 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
     target.collectionBtn = null;
     target.orderBtn = null;
 
-    view2131296363.setOnClickListener(null);
-    view2131296363 = null;
-    view2131296531.setOnClickListener(null);
-    view2131296531 = null;
-    view2131296374.setOnClickListener(null);
-    view2131296374 = null;
-    view2131296367.setOnClickListener(null);
-    view2131296367 = null;
+    view2131296364.setOnClickListener(null);
+    view2131296364 = null;
+    view2131296533.setOnClickListener(null);
+    view2131296533 = null;
+    view2131296375.setOnClickListener(null);
+    view2131296375 = null;
+    view2131296368.setOnClickListener(null);
+    view2131296368 = null;
     view2131296298.setOnClickListener(null);
     view2131296298 = null;
+    view2131296356.setOnClickListener(null);
+    view2131296356 = null;
   }
 }

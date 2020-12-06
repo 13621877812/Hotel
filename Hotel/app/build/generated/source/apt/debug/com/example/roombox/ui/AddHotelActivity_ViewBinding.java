@@ -22,9 +22,9 @@ import java.lang.Override;
 public class AddHotelActivity_ViewBinding implements Unbinder {
   private AddHotelActivity target;
 
-  private View view2131296601;
+  private View view2131296604;
 
-  private View view2131296599;
+  private View view2131296602;
 
   @UiThread
   public AddHotelActivity_ViewBinding(AddHotelActivity target) {
@@ -76,7 +76,7 @@ public class AddHotelActivity_ViewBinding implements Unbinder {
     target.c23 = Utils.findRequiredViewAsType(source, R.id.c23, "field 'c23'", CheckBox.class);
     view = Utils.findRequiredView(source, R.id.roomimg_up, "field 'roomimgUp' and method 'onClick'");
     target.roomimgUp = Utils.castView(view, R.id.roomimg_up, "field 'roomimgUp'", ImageButton.class);
-    view2131296601 = view;
+    view2131296604 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -85,7 +85,7 @@ public class AddHotelActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.room_sub, "field 'roomSub' and method 'onClick'");
     target.roomSub = Utils.castView(view, R.id.room_sub, "field 'roomSub'", Button.class);
-    view2131296599 = view;
+    view2131296602 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -142,9 +142,9 @@ public class AddHotelActivity_ViewBinding implements Unbinder {
     target.roomimgUp = null;
     target.roomSub = null;
 
-    view2131296601.setOnClickListener(null);
-    view2131296601 = null;
-    view2131296599.setOnClickListener(null);
-    view2131296599 = null;
+    view2131296604.setOnClickListener(null);
+    view2131296604 = null;
+    view2131296602.setOnClickListener(null);
+    view2131296602 = null;
   }
 }

@@ -25,8 +25,8 @@ import butterknife.OnClick;
 public class AddOrderActivity extends AppCompatActivity {
 
   Calendar calendar= Calendar.getInstance(Locale.CHINA);
-  Date startTime;
-  Date endTime;
+  Calendar startTime;
+  Calendar endTime;
   HotelBean hotelBean;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -58,14 +58,17 @@ public class AddOrderActivity extends AppCompatActivity {
       @Override
       public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
         Date date = new Date();
-        date.setYear(year);
-        date.setMonth(monthOfYear);
-        date.setDate(dayOfMonth);
+        Calendar calendar1 = Calendar.getInstance();
+        calendar1.set(Calendar.YEAR,2020);
+        calendar1.set(Calendar.MONTH,monthOfYear);
+        calendar1.set(Calendar.DAY_OF_MONTH,dayOfMonth);
         if (tv.getId() == R.id.startTime){
-          startTime = date;
+          startTime = calendar1;
         }else {
-          endTime = date;
+          endTime = calendar1;
         }
+        Log.i("tine", "addOrder: "+ calendar1.getTimeInMillis());
+        Log.i("tine", "addOrder: "+ (new  Date()).getTime());
         tv.setText(year + "年" + (monthOfYear + 1) + "月" + dayOfMonth + "日");
       }
     }
@@ -78,8 +81,9 @@ public class AddOrderActivity extends AppCompatActivity {
     Double hotel_id = Double.parseDouble(hotelBean.getHotel_id()) ;
     String url = "/order/add";
     HashMap params = new HashMap();
-    params.put("startTime1",startTime.getTime());
-    params.put("endTime1",endTime.getTime());
+    params.put("startTime1",startTime.getTimeInMillis());
+
+    params.put("endTime1",endTime.getTimeInMillis());
     params.put("account",account);
     params.put("hotel_id",hotel_id.intValue() + "");
     params.put("price",hotelBean.getPrice());

@@ -20,24 +20,24 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f156.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_phoenix_video_pause.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-ldpi-v4/phoenix_video_pause.png"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_phoenix_clear_white.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxxhdpi-v4/phoenix_clear_white.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
@@ -68,16 +68,16 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f104.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f104.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_phoenix_settings_white.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxhdpi-v4/phoenix_settings_white.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/layout/select_dialog_multichoice_material.xml"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f104.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f104.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_phoenix_done_white.png.flat",
@@ -88,12 +88,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/phoenix_buy.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_design_password_eye.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/drawable/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f20.png.flat",
@@ -108,12 +108,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/phoenix_emoji_f59.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay.kml.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/2455e1ad34f2f9ffb856133fdb33a420/res/raw/amu_ground_overlay.kml"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay.kml.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/2455e1ad34f2f9ffb856133fdb33a420/res/raw/amu_ground_overlay.kml"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -160,20 +160,16 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/anim/phoenix_up_in.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f113.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f113.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a313a72579584bb4f3728c65ecbe8a9a/res/drawable/common_google_signin_btn_text_disabled.xml"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f113.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f113.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_point_item.xml.flat",
-        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/layout/point_item.xml"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a313a72579584bb4f3728c65ecbe8a9a/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
@@ -192,12 +188,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_phoenix_clear_white.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-hdpi-v4/phoenix_clear_white.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/color_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_phoenix_clear_white.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-hdpi-v4/phoenix_clear_white.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_abc_tooltip.xml.flat",
@@ -212,16 +208,16 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/color_mtrl_btn_ripple_color.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/color/mtrl_btn_ripple_color.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_chat_item.xml.flat",
@@ -240,12 +236,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/interpolator/mtrl_linear.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f147.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f147.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_phoenix_edit_crop_btn_select.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/phoenix_edit_crop_btn_select.png"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f147.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f147.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_phoenix_video_pause.png.flat",
@@ -332,12 +328,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_item_mine_layout.xml.flat",
         "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/layout/item_mine_layout.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -520,20 +516,20 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxhdpi-v4/phoenix_clear_white.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_phoenix_photo_camera_white.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxhdpi-v4/phoenix_photo_camera_white.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_home_black_24dp.png.flat",
         "source": "/Users/eden/Desktop/台湾/Hotel/app/build/generated/res/pngs/debug/drawable-ldpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f117.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f117.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_phoenix_photo_camera_white.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxhdpi-v4/phoenix_photo_camera_white.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay_color.kml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/2455e1ad34f2f9ffb856133fdb33a420/res/raw/amu_ground_overlay_color.kml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f117.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f117.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -588,6 +584,10 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_order_item.xml.flat",
+        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/layout/order_item.xml"
+    },
+    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_phoenix_flash_auto_white.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxhdpi-v4/phoenix_flash_auto_white.png"
     },
@@ -600,36 +600,36 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/layout/item_edit_sticker_details.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a313a72579584bb4f3728c65ecbe8a9a/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_phoenix_edit_mosaic_tool_btn.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/phoenix_edit_mosaic_tool_btn.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/mipmap-xhdpi_dw.png.flat",
-        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/mipmap-xhdpi/dw.png"
-    },
-    {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_locate.png.flat",
-        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/drawable/locate.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a313a72579584bb4f3728c65ecbe8a9a/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_locate.png.flat",
+        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/drawable/locate.png"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/mipmap-xhdpi_dw.png.flat",
+        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/mipmap-xhdpi/dw.png"
+    },
+    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_home_black_24dp.png.flat",
         "source": "/Users/eden/Desktop/台湾/Hotel/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_home_black_24dp.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f24.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f24.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f24.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f24.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -660,28 +660,28 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_phoenix_settings_white.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-mdpi-v4/phoenix_settings_white.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_design_layout_snackbar.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_phoenix_settings_white.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-mdpi-v4/phoenix_settings_white.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-v21_abc_edit_text_material.xml.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_dw.png.flat",
+        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/drawable/dw.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_dw.png.flat",
-        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/drawable/dw.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_phoenix_circle_frame_background_dark.xml.flat",
@@ -748,16 +748,16 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xxxhdpi-v4/phoenix_camera_front_white.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_phoenix_videocam_white.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-mdpi-v4/phoenix_videocam_white.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/45c80aec6c352e2d38702c6992294e2b/res/drawable/notification_icon_background.xml"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_f131.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-xhdpi-v4/f131.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/45c80aec6c352e2d38702c6992294e2b/res/drawable/notification_icon_background.xml"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_phoenix_videocam_white.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-mdpi-v4/phoenix_videocam_white.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -780,16 +780,16 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_phoenix_content_cut_white.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-mdpi-v4/phoenix_content_cut_white.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_phoenix_content_cut_white.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-1.0.15.aar/92fddb94f5f68d20bfda78af6a17e305/res/drawable-mdpi-v4/phoenix_content_cut_white.png"
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_item_edit_sticker.xml.flat",
@@ -828,12 +828,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/anim/design_snackbar_out.xml"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/45c80aec6c352e2d38702c6992294e2b/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/5537ae3ee4470981715737c8d382fda2/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_fragment_comment.xml.flat",
@@ -1000,12 +1000,12 @@
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/a313a72579584bb4f3728c65ecbe8a9a/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
-        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-nodpi_example_appwidget_preview.png.flat",
         "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/drawable-nodpi/example_appwidget_preview.png"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b509f9c44151a5464a744d8643424496/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_white_radius.xml.flat",
@@ -2238,6 +2238,10 @@
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable_phoenix_arrow_left.png.flat",
         "source": "/Users/eden/.gradle/caches/transforms-1/files-1.1/phoenix-core-1.0.15.aar/42dd1be8afe99c354759c3a4119863e4/res/drawable/phoenix_arrow_left.png"
+    },
+    {
+        "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/layout_hotel_item.xml.flat",
+        "source": "/Users/eden/Desktop/台湾/Hotel/app/src/main/res/layout/hotel_item.xml"
     },
     {
         "merged": "/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",

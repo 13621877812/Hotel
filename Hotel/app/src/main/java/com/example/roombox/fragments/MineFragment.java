@@ -60,7 +60,8 @@ public class MineFragment extends Fragment {
     //0 租客 1 房東 2管理員
     final String type = ACache.get(getActivity()).getAsString("type");
     //管理員
-    String[] datas = new String[]{"房屋管理", "舉報管理", "登出"};
+//     "舉報管理",
+    String[] datas = new String[]{"房屋管理", "登出"};
     if ("1".equals(type)){
       datas = new String[]{"歷史訂單", "房屋管理", "客服", "登出", "評論"};
     }
@@ -101,8 +102,13 @@ public class MineFragment extends Fragment {
         startActivity(new Intent(getActivity(), AddHotelActivity.class));
         break;
       case 1:
-        startActivity(new Intent(getActivity(), FeedBackActivity.class));
+//        startActivity(new Intent(getActivity(), FeedBackActivity.class));
+        ACache.get(getActivity()).put("account", "");
+        ACache.get(getActivity()).put("type", "");
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+
         break;
+
       case 2:
         ACache.get(getActivity()).put("account", "");
         ACache.get(getActivity()).put("type", "");
@@ -124,7 +130,9 @@ public class MineFragment extends Fragment {
         startActivity(new Intent(getActivity(), HotelManagerActivity.class));
         break;
       case 2:
-        startActivity(new Intent(getActivity(), ChatActivity.class));
+        Intent intent = new Intent(getActivity(), ChatActivity.class);
+        intent.putExtra("sendId","admin");
+        startActivity(intent);
         break;
       case 3://退出
         ACache.get(getActivity()).put("account", "");
@@ -150,7 +158,9 @@ public class MineFragment extends Fragment {
         startActivity(new Intent(getActivity(), LockActivity.class));
         break;
       case 2:
-        startActivity(new Intent(getActivity(), ChatActivity.class));
+        Intent intent = new Intent(getActivity(), ChatActivity.class);
+        intent.putExtra("sendId","admin");
+        startActivity(intent);
         break;
       case 3://退出
         ACache.get(getActivity()).put("account", "");

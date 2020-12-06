@@ -14,11 +14,11 @@ import java.lang.Override;
 public class AddOrderActivity_ViewBinding implements Unbinder {
   private AddOrderActivity target;
 
-  private View view2131296654;
+  private View view2131296657;
 
-  private View view2131296396;
+  private View view2131296397;
 
-  private View view2131296531;
+  private View view2131296533;
 
   @UiThread
   public AddOrderActivity_ViewBinding(AddOrderActivity target) {
@@ -31,7 +31,7 @@ public class AddOrderActivity_ViewBinding implements Unbinder {
 
     View view;
     view = Utils.findRequiredView(source, R.id.startTime, "method 'onViewClicked'");
-    view2131296654 = view;
+    view2131296657 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class AddOrderActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.endTime, "method 'onViewClicked'");
-    view2131296396 = view;
+    view2131296397 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class AddOrderActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.orderBtn, "method 'onViewClicked'");
-    view2131296531 = view;
+    view2131296533 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,11 +63,11 @@ public class AddOrderActivity_ViewBinding implements Unbinder {
     target = null;
 
 
-    view2131296654.setOnClickListener(null);
-    view2131296654 = null;
-    view2131296396.setOnClickListener(null);
-    view2131296396 = null;
-    view2131296531.setOnClickListener(null);
-    view2131296531 = null;
+    view2131296657.setOnClickListener(null);
+    view2131296657 = null;
+    view2131296397.setOnClickListener(null);
+    view2131296397 = null;
+    view2131296533.setOnClickListener(null);
+    view2131296533 = null;
   }
 }

@@ -38,7 +38,7 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.Vi
   @NonNull
   @Override
   public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-    View view = LayoutInflater.from(mContext).inflate(R.layout.point_item, viewGroup, false);
+    View view = LayoutInflater.from(mContext).inflate(R.layout.hotel_item, viewGroup, false);
     ViewHolder holder = new ViewHolder(view);
     return holder;
   }

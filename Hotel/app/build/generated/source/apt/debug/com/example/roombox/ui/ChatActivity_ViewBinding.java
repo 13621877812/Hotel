@@ -17,7 +17,7 @@ import java.lang.Override;
 public class ChatActivity_ViewBinding implements Unbinder {
   private ChatActivity target;
 
-  private View view2131296629;
+  private View view2131296632;
 
   @UiThread
   public ChatActivity_ViewBinding(ChatActivity target) {
@@ -34,7 +34,7 @@ public class ChatActivity_ViewBinding implements Unbinder {
     target.back = Utils.findRequiredViewAsType(source, R.id.back, "field 'back'", TextView.class);
     target.titleView = Utils.findRequiredViewAsType(source, R.id.titleView, "field 'titleView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.sendBtn, "method 'onViewClicked'");
-    view2131296629 = view;
+    view2131296632 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class ChatActivity_ViewBinding implements Unbinder {
     target.back = null;
     target.titleView = null;
 
-    view2131296629.setOnClickListener(null);
-    view2131296629 = null;
+    view2131296632.setOnClickListener(null);
+    view2131296632 = null;
   }
 }

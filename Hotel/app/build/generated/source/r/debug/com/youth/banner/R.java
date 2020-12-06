@@ -41,16 +41,16 @@ public final class R {
         public static final int center = 0x7f09005e;
         public static final int center_crop = 0x7f09005f;
         public static final int center_inside = 0x7f090061;
-        public static final int circleIndicator = 0x7f090067;
-        public static final int fit_center = 0x7f09009e;
-        public static final int fit_end = 0x7f09009f;
-        public static final int fit_start = 0x7f0900a0;
-        public static final int fit_xy = 0x7f0900a1;
-        public static final int indicatorInside = 0x7f0900bf;
-        public static final int matrix = 0x7f0900fa;
-        public static final int numIndicator = 0x7f090111;
-        public static final int numIndicatorInside = 0x7f090112;
-        public static final int titleView = 0x7f0901be;
+        public static final int circleIndicator = 0x7f090068;
+        public static final int fit_center = 0x7f0900a0;
+        public static final int fit_end = 0x7f0900a1;
+        public static final int fit_start = 0x7f0900a2;
+        public static final int fit_xy = 0x7f0900a3;
+        public static final int indicatorInside = 0x7f0900c1;
+        public static final int matrix = 0x7f0900fc;
+        public static final int numIndicator = 0x7f090113;
+        public static final int numIndicatorInside = 0x7f090114;
+        public static final int titleView = 0x7f0901c2;
     }
     public static final class layout {
         public static final int banner = 0x7f0c003a;
