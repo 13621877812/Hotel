@@ -12,7 +12,7 @@
  Target Server Version : 14003048
  File Encoding         : utf-8
 
- Date: 12/06/2020 13:50:00 PM
+ Date: 12/06/2020 18:29:20 PM
 */
 
 -- ----------------------------
@@ -48,6 +48,10 @@ SET IDENTITY_INSERT [dbo].[chat] ON
 GO
 INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('4', N'你今晚有空吗？', '3', '2', '2020-11-26 19:41:31.000', null, N'张三');
 INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('5', N'没空', '2', '3', '2020-11-26 19:41:49.000', null, N'李四');
+INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('24', 'ryy', '1', 'admin', '2020-12-06 16:43:11.480', null, null);
+INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('25', 'fgh', '1', 'admin', '2020-12-06 16:43:14.010', null, null);
+INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('26', 'Google', '1', 'admin', '2020-12-06 16:43:19.327', null, null);
+INSERT INTO [dbo].[chat] ([id], [content], [sendId], [receiveId], [createTime], [sendUrl], [sendName]) VALUES ('27', 'ggh', '1', '1', '2020-12-06 17:54:37.347', null, null);
 GO
 SET IDENTITY_INSERT [dbo].[chat] OFF
 GO
@@ -180,7 +184,7 @@ CREATE TABLE [dbo].[order1] (
 	[id] int IDENTITY(1,1) NOT NULL,
 	[hotel_id] int NOT NULL,
 	[startTime] datetime NOT NULL,
-	[account] int NOT NULL,
+	[account] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[endTime] datetime NOT NULL,
 	[price] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
 )
@@ -196,10 +200,7 @@ BEGIN TRANSACTION
 GO
 SET IDENTITY_INSERT [dbo].[order1] ON
 GO
-INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('1', '2', '2020-12-01 17:17:37.000', '1', '2020-12-25 17:17:41.000', '88');
-INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('4', '5', '3920-12-05 19:49:36.317', '1', '3920-12-26 19:49:42.113', '33');
-INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('5', '5', '3920-12-05 19:49:36.317', '1', '3920-12-26 19:49:42.113', '33');
-INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('6', '5', '3920-12-05 19:50:41.147', '3', '3920-12-30 19:50:43.413', '33');
+INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('1006', '4', '2020-12-06 18:25:42.330', '1', '2020-12-16 18:25:44.813', '22');
 GO
 SET IDENTITY_INSERT [dbo].[order1] OFF
 GO
@@ -233,6 +234,7 @@ GO
 INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('7', '1', '1', '0');
 INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('8', 'admin', 'admin', '2');
 INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('9', '2', '2', '1');
+INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('10', 'qwer', '1', '0');
 GO
 SET IDENTITY_INSERT [dbo].[user1] OFF
 GO
@@ -293,7 +295,7 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[chat] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[chat]', RESEED, 23)
+DBCC CHECKIDENT ('[dbo].[chat]', RESEED, 27)
 GO
 
 -- ----------------------------
@@ -325,7 +327,7 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[order1] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[order1]', RESEED, 1001)
+DBCC CHECKIDENT ('[dbo].[order1]', RESEED, 1006)
 GO
 
 -- ----------------------------
@@ -333,6 +335,6 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[user1] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[user1]', RESEED, 9)
+DBCC CHECKIDENT ('[dbo].[user1]', RESEED, 10)
 GO
 

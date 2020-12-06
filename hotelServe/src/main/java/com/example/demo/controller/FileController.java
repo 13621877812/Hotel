@@ -42,7 +42,7 @@ public class FileController {
             log.info("文件的后缀名为：" + suffixName);
             // 设置文件存储路径
             //
-            String filePath = "/Users/eden/Desktop/台湾/Task/hotelServe/src/main/resources/static/head/";
+            String filePath = "/Users/eden/Desktop/台湾/hotelServe/src/main/resources/static/head/";
             //String filePath = "/Users/Administrator/Desktop/res/";
             String path = filePath + fileName;
             File dest = new File(path);
