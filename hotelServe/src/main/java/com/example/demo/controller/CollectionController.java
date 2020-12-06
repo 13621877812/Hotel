@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -29,10 +30,12 @@ public class CollectionController {
 
     //list
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public ResultEntity getData(@RequestParam(value = "account") String account){
+    public ResultEntity getData(CollectionEntity entity){
 
         ResultEntity result = new ResultEntity();
-        List<HotelEntity> datas = collectionMapper.selectAll(account);
+        System.out.println(entity.getAccount());
+        System.out.println(entity.getHotel_id());
+        List<HashMap> datas = collectionMapper.selectAll(entity);
         result.setCode(0);
         result.setData(datas);
         return  result;
@@ -41,15 +44,20 @@ public class CollectionController {
 
     //add
     @RequestMapping(value = "/add",method = RequestMethod.POST)
-    public ResultEntity addComment(int hotel_id,String account) throws Exception{
+    public ResultEntity addComment(int hotel_id,String account,boolean isCollection,int collectionId) throws Exception{
 
         ResultEntity result = new ResultEntity();
         CollectionEntity collectionEntity = new CollectionEntity();
-        collectionEntity.setAccount(account);
-        collectionEntity.setHotel_id(hotel_id);
 
-        int addId = collectionMapper.insert(collectionEntity);
+        if (isCollection){
+            collectionEntity.setAccount(account);
+            collectionEntity.setHotel_id(hotel_id);
+            int addId = collectionMapper.insert(collectionEntity);
+        }else {
+            collectionMapper.deleteByPrimaryKey(collectionId);
+        }
         result.setCode(0);
+        result.setData(isCollection?"收藏成功！":"已取消收藏！");
         result.setMsg("add comment success!");
         return  result;
     }

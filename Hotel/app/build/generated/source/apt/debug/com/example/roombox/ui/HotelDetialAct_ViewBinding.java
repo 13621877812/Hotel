@@ -3,6 +3,7 @@ package com.example.roombox.ui;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,13 +17,15 @@ import java.lang.Override;
 public class HotelDetialAct_ViewBinding implements Unbinder {
   private HotelDetialAct target;
 
-  private View view2131296372;
+  private View view2131296363;
 
-  private View view2131296366;
+  private View view2131296531;
 
-  private View view2131296529;
+  private View view2131296374;
 
-  private View view2131296362;
+  private View view2131296367;
+
+  private View view2131296298;
 
   @UiThread
   public HotelDetialAct_ViewBinding(HotelDetialAct target) {
@@ -41,8 +44,27 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
     target.hotelImage = Utils.findRequiredViewAsType(source, R.id.hotelImage, "field 'hotelImage'", ImageView.class);
     target.location = Utils.findRequiredViewAsType(source, R.id.location, "field 'location'", TextView.class);
     target.priceText = Utils.findRequiredViewAsType(source, R.id.priceText, "field 'priceText'", TextView.class);
+    target.bedListView = Utils.findRequiredViewAsType(source, R.id.bedListView, "field 'bedListView'", RecyclerView.class);
+    view = Utils.findRequiredView(source, R.id.collectionBtn, "field 'collectionBtn' and method 'onViewClicked'");
+    target.collectionBtn = Utils.castView(view, R.id.collectionBtn, "field 'collectionBtn'", TextView.class);
+    view2131296363 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.orderBtn, "field 'orderBtn' and method 'onViewClicked'");
+    target.orderBtn = Utils.castView(view, R.id.orderBtn, "field 'orderBtn'", TextView.class);
+    view2131296531 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
     view = Utils.findRequiredView(source, R.id.criticalBtn, "method 'onViewClicked'");
-    view2131296372 = view;
+    view2131296374 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,23 +72,15 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.commentBtn, "method 'onViewClicked'");
-    view2131296366 = view;
+    view2131296367 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onViewClicked(p0);
       }
     });
-    view = Utils.findRequiredView(source, R.id.orderBtn, "method 'onViewClicked'");
-    view2131296529 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onViewClicked(p0);
-      }
-    });
-    view = Utils.findRequiredView(source, R.id.collectionBtn, "method 'onViewClicked'");
-    view2131296362 = view;
+    view = Utils.findRequiredView(source, R.id.back, "method 'onViewClicked'");
+    view2131296298 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,14 +103,19 @@ public class HotelDetialAct_ViewBinding implements Unbinder {
     target.hotelImage = null;
     target.location = null;
     target.priceText = null;
+    target.bedListView = null;
+    target.collectionBtn = null;
+    target.orderBtn = null;
 
-    view2131296372.setOnClickListener(null);
-    view2131296372 = null;
-    view2131296366.setOnClickListener(null);
-    view2131296366 = null;
-    view2131296529.setOnClickListener(null);
-    view2131296529 = null;
-    view2131296362.setOnClickListener(null);
-    view2131296362 = null;
+    view2131296363.setOnClickListener(null);
+    view2131296363 = null;
+    view2131296531.setOnClickListener(null);
+    view2131296531 = null;
+    view2131296374.setOnClickListener(null);
+    view2131296374 = null;
+    view2131296367.setOnClickListener(null);
+    view2131296367 = null;
+    view2131296298.setOnClickListener(null);
+    view2131296298 = null;
   }
 }

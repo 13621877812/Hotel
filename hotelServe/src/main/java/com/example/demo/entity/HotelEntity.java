@@ -18,6 +18,9 @@ public class HotelEntity {
     private  String bathnum;//沐浴数
     private  String services; //服务
     private  String images;
+    private  int statu;
+    private  int commentNum;
+    private  String grade;
 
   public int getHotel_id() {
     return hotel_id;
@@ -145,5 +148,29 @@ public class HotelEntity {
 
   public void setImages(String images) {
     this.images = images;
+  }
+
+  public int getStatu() {
+    return statu;
+  }
+
+  public void setStatu(int statu) {
+    this.statu = statu;
+  }
+
+    public int getCommentNum() {
+        return commentNum;
+    }
+
+    public void setCommentNum(int commentNum) {
+        this.commentNum = commentNum;
+    }
+
+  public String getGrade() {
+    return grade;
+  }
+
+  public void setGrade(String grade) {
+    this.grade = grade;
   }
 }

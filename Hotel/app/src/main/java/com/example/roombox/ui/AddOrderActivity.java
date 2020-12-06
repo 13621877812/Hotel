@@ -4,6 +4,7 @@ package com.example.roombox.ui;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -60,7 +61,7 @@ public class AddOrderActivity extends AppCompatActivity {
         date.setYear(year);
         date.setMonth(monthOfYear);
         date.setDate(dayOfMonth);
-        if (view.getId() == R.id.startTime){
+        if (tv.getId() == R.id.startTime){
           startTime = date;
         }else {
           endTime = date;
@@ -74,17 +75,23 @@ public class AddOrderActivity extends AppCompatActivity {
   }
   private void addOrder(){
     String account = ACache.get(this).getAsString("account");
+    Double hotel_id = Double.parseDouble(hotelBean.getHotel_id()) ;
     String url = "/order/add";
     HashMap params = new HashMap();
-    params.put("startTime",startTime);
-    params.put("endTime",endTime);
+    params.put("startTime1",startTime.getTime());
+    params.put("endTime1",endTime.getTime());
     params.put("account",account);
-    params.put("hotel_id",hotelBean.getHotel_id());
+    params.put("hotel_id",hotel_id.intValue() + "");
     params.put("price",hotelBean.getPrice());
-    HttpUtil.httpPost(url, params, this, new HttpUtil.HttpCallBack() {
+
+    Log.i("tTAG", "addOrder: " + params.toString());
+
+
+    HttpUtil.httpPost(url, params, AddOrderActivity.this, new HttpUtil.HttpCallBack() {
       @Override
       public void success(String data) {
         Contans.makeToast("預定成功！",AddOrderActivity.this);
+        finish();
       }
     });
   }

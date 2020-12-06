@@ -42,10 +42,10 @@ public final class R {
     }
     public static final class id {
         public static final int auto = 0x7f090029;
-        public static final int custom = 0x7f090075;
-        public static final int ivStepperMinus = 0x7f0900cb;
-        public static final int ivStepperPlus = 0x7f0900cc;
-        public static final int tvStepperContent = 0x7f0901d0;
+        public static final int custom = 0x7f090077;
+        public static final int ivStepperMinus = 0x7f0900cd;
+        public static final int ivStepperPlus = 0x7f0900ce;
+        public static final int tvStepperContent = 0x7f0901d2;
     }
     public static final class layout {
         public static final int view_snappingstepper = 0x7f0c0087;

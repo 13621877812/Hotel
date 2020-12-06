@@ -7,26 +7,33 @@
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="60dp"
+      android:layout_marginBottom="20dp"
       android:orientation="horizontal"
-      android:gravity="center_vertical">
+      android:gravity="center_vertical"
+      android:background="@color/colorPrimary">
     <TextView
+        android:id="@+id/back"
+        android:layout_marginLeft="20dp"
         android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="返回"/>
 
     <TextView
         android:id="@+id/titleText"
         android:layout_width="match_parent"
         android:layout_weight="1"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         android:text="房源詳情"/>
 
 
     <TextView
         android:id="@+id/collectionBtn"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
         android:gravity="center_horizontal"
         android:text="收藏"/>
 
@@ -125,9 +132,18 @@
           android:textSize="25sp"
           android:textStyle="bold" />
 
-      <com.example.roombox.views.CouchView
-          android:layout_width="150dp"
-          android:layout_height="wrap_content" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:descendantFocusability="blocksDescendants">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bedListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      </RelativeLayout>
+
+
 
 
       <View

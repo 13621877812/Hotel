@@ -5,7 +5,7 @@ public class CommentBean {
   String hotel_id;
   String user_id;
   String content;
-  String grade;
+  Integer grade;
   String addtime;
   String name;
   String account;
@@ -44,11 +44,11 @@ public class CommentBean {
     this.content = content;
   }
 
-  public String getGrade() {
+  public Integer getGrade() {
     return grade;
   }
 
-  public void setGrade(String grade) {
+  public void setGrade(Integer grade) {
     this.grade = grade;
   }
 

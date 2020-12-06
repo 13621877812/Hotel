@@ -5,6 +5,7 @@ import com.example.demo.entity.CommentEntity;
 import com.example.demo.entity.HotelEntity;
 
 
+import java.util.HashMap;
 import java.util.List;
 
 public interface CollectionMapper {
@@ -40,7 +41,7 @@ public interface CollectionMapper {
      *
      * @mbg.generated
      */
-    List<HotelEntity> selectAll(String account);
+    List<HashMap> selectAll(CollectionEntity entity);
 
 
 

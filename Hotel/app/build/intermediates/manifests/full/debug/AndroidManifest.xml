@@ -41,7 +41,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.roombox.ui.WelcomAct" />
+        <activity android:name="com.example.roombox.ui.AddOrderActivity" />
         <activity android:name="com.example.roombox.ui.OrderActivity" />
         <activity
             android:name="com.example.roombox.ui.ChatActivity"
@@ -59,7 +59,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.roombox.MainActivity" />
         <activity
-            android:name="com.example.roombox.ui.AddOrderActivity"
+            android:name="com.example.roombox.ui.WelcomAct"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

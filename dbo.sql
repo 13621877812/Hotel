@@ -12,7 +12,7 @@
  Target Server Version : 14003048
  File Encoding         : utf-8
 
- Date: 12/03/2020 12:45:49 PM
+ Date: 12/06/2020 13:50:00 PM
 */
 
 -- ----------------------------
@@ -75,7 +75,8 @@ BEGIN TRANSACTION
 GO
 SET IDENTITY_INSERT [dbo].[collection] ON
 GO
-INSERT INTO [dbo].[collection] ([id], [hotel_id], [account]) VALUES ('1', '2', '3');
+INSERT INTO [dbo].[collection] ([id], [hotel_id], [account]) VALUES ('7', '4', '3');
+INSERT INTO [dbo].[collection] ([id], [hotel_id], [account]) VALUES ('8', '5', '3');
 GO
 SET IDENTITY_INSERT [dbo].[collection] OFF
 GO
@@ -89,12 +90,12 @@ IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[com
 	DROP TABLE [dbo].[comment]
 GO
 CREATE TABLE [dbo].[comment] (
-	[comment_id] int NOT NULL,
-	[content] varchar(1000) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS NULL,
-	[hotel_id] int NULL,
-	[user_id] int NULL,
+	[comment_id] int IDENTITY(1,1) NOT NULL,
+	[hotel_id] int NOT NULL,
+	[account] varchar(10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[grade] int NULL,
-	[addtime] datetime NULL
+	[addtime] datetime NOT NULL,
+	[content] varchar(1000) COLLATE Chinese_PRC_90_CS_AI_KS_SC NOT NULL
 )
 ON [PRIMARY]
 GO
@@ -104,7 +105,20 @@ GO
 -- ----------------------------
 BEGIN TRANSACTION
 GO
-INSERT INTO [dbo].[comment] VALUES ('12', N'很好', '1', '1', '1', '2020-11-18 13:38:32.000');
+SET IDENTITY_INSERT [dbo].[comment] ON
+GO
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('6', '4', '2', '2', '2020-12-05 17:33:35.653', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('7', '4', '2', '2', '2020-12-05 17:33:58.610', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('8', '4', '2', '2', '2020-12-05 17:34:56.617', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('9', '4', '2', '2', '2020-12-05 17:44:38.973', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('10', '4', '2', '2', '2020-12-05 17:44:45.317', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('11', '4', '2', '2', '2020-12-05 17:46:16.923', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('12', '4', '2', '2', '2020-12-05 17:46:45.397', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('13', '4', '2', '2', '2020-12-05 17:57:02.587', N'小黑人這次要與大家分享的是');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('14', '5', '3', '5', '2020-12-05 18:51:25.247', N'很好恐龙妹太懒');
+INSERT INTO [dbo].[comment] ([comment_id], [hotel_id], [account], [grade], [addtime], [content]) VALUES ('15', '5', '3', '5', '2020-12-05 19:50:34.550', N'接口');
+GO
+SET IDENTITY_INSERT [dbo].[comment] OFF
 GO
 COMMIT
 GO
@@ -134,7 +148,9 @@ CREATE TABLE [dbo].[hotel] (
 	[roommax] int NOT NULL,
 	[beds] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[images] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-	[bathnum] int NOT NULL
+	[bathnum] int NOT NULL,
+	[statu] int NOT NULL DEFAULT ((0)),
+	[commentNum] int NOT NULL DEFAULT ((0))
 )
 ON [PRIMARY]
 GO
@@ -146,8 +162,8 @@ BEGIN TRANSACTION
 GO
 SET IDENTITY_INSERT [dbo].[hotel] ON
 GO
-INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum]) VALUES ('1', '1', '23456', '2', null, '7890-33', '2345', null, '2345', null, '1234', '23456', '23456', '2', '234', '2', '23456', '123456', '12');
-INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum]) VALUES ('2', N'绿水家园', '0', '88', null, N'莘庄', N'上海闵行区', null, 'a,b,c', null, '1', '23456', '0', '2', '9', '3', '2', 'Screenshot_2020-11-22-13-22-58-419_com.tencent.mm.jpg', '5');
+INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum], [statu], [commentNum]) VALUES ('4', N'绿水家园', '0', '22', null, N'上海', N'闵行', '0', '0;1;2;3', null, '1', N'挺好的', '0', '2', '3', '2', '[{"bed1num":4,"bed2num":2,"bed3num":1},{"bed1num":3,"bed2num":3,"bed3num":1}]', 'JH.png', '9', '0', '8');
+INSERT INTO [dbo].[hotel] ([hotel_id], [name], [type], [price], [tel], [place], [area], [grade], [services], [latlng], [userId], [intro], [spaceType], [num], [max], [roommax], [beds], [images], [bathnum], [statu], [commentNum]) VALUES ('5', N'金水世纪城', '0', '33', null, N'郑州', N'郑州', null, '1;3;4;5;7', null, '2', '10', '1', '1', '3', '2', '[{"bed1num":6,"bed2num":3,"bed3num":1},{"bed1num":3,"bed2num":1,"bed3num":1}]', 'purple_back.png', '4', '0', '2');
 GO
 SET IDENTITY_INSERT [dbo].[hotel] OFF
 GO
@@ -180,52 +196,12 @@ BEGIN TRANSACTION
 GO
 SET IDENTITY_INSERT [dbo].[order1] ON
 GO
-INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('1', '2', '2020-12-01 17:17:37.000', '3', '2020-12-25 17:17:41.000', '88');
+INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('1', '2', '2020-12-01 17:17:37.000', '1', '2020-12-25 17:17:41.000', '88');
+INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('4', '5', '3920-12-05 19:49:36.317', '1', '3920-12-26 19:49:42.113', '33');
+INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('5', '5', '3920-12-05 19:49:36.317', '1', '3920-12-26 19:49:42.113', '33');
+INSERT INTO [dbo].[order1] ([id], [hotel_id], [startTime], [account], [endTime], [price]) VALUES ('6', '5', '3920-12-05 19:50:41.147', '3', '3920-12-30 19:50:43.413', '33');
 GO
 SET IDENTITY_INSERT [dbo].[order1] OFF
-GO
-COMMIT
-GO
-
--- ----------------------------
---  Table structure for service
--- ----------------------------
-IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID('[dbo].[service]') AND type IN ('U'))
-	DROP TABLE [dbo].[service]
-GO
-CREATE TABLE [dbo].[service] (
-	[id] int NOT NULL,
-	[name] varchar(20) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL,
-	[image1] varchar(20) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL,
-	[image2] varchar(20) COLLATE Chinese_PRC_Stroke_90_CS_AI_KS_SC NOT NULL
-)
-ON [PRIMARY]
-GO
-
--- ----------------------------
---  Records of service
--- ----------------------------
-BEGIN TRANSACTION
-GO
-INSERT INTO [dbo].[service] VALUES ('1', N'空調', '1.png', '2.png');
-INSERT INTO [dbo].[service] VALUES ('2', N'日用品', '1', '2');
-INSERT INTO [dbo].[service] VALUES ('3', N'暖氣', '2', '2');
-INSERT INTO [dbo].[service] VALUES ('4', N'洗衣機', '2', '1');
-INSERT INTO [dbo].[service] VALUES ('5', N'熱水', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('6', N'廚房', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('7', N'冰箱', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('8', N'餐具', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('9', N'爐子', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('10', N'廚具', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('11', N'衣架', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('12', N'洗髮露', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('13', N'吹風機', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('14', N'沐浴乳', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('15', N'急救包', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('16', N'滅火器', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('17', N'煙霧警報器', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('18', N'無線網路', '1', '1');
-INSERT INTO [dbo].[service] VALUES ('19', N'電視', '1', '1');
 GO
 COMMIT
 GO
@@ -255,7 +231,7 @@ GO
 SET IDENTITY_INSERT [dbo].[user1] ON
 GO
 INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('7', '1', '1', '0');
-INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('8', '3', '3', '2');
+INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('8', 'admin', 'admin', '2');
 INSERT INTO [dbo].[user1] ([id], [account], [password], [type]) VALUES ('9', '2', '2', '1');
 GO
 SET IDENTITY_INSERT [dbo].[user1] OFF
@@ -280,7 +256,7 @@ GO
 --  Primary key structure for table comment
 -- ----------------------------
 ALTER TABLE [dbo].[comment] ADD
-	CONSTRAINT [PK__comment__E7957687995422FF] PRIMARY KEY CLUSTERED ([comment_id]) 
+	CONSTRAINT [PK__comment__E7957687A48324A9] PRIMARY KEY CLUSTERED ([comment_id]) 
 	WITH (PAD_INDEX = OFF,
 		IGNORE_DUP_KEY = OFF,
 		ALLOW_ROW_LOCKS = ON,
@@ -293,30 +269,6 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[hotel] ADD
 	CONSTRAINT [PK__hotel1__45FE7E264664C825] PRIMARY KEY CLUSTERED ([hotel_id]) 
-	WITH (PAD_INDEX = OFF,
-		IGNORE_DUP_KEY = OFF,
-		ALLOW_ROW_LOCKS = ON,
-		ALLOW_PAGE_LOCKS = ON)
-	ON [default]
-GO
-
--- ----------------------------
---  Primary key structure for table order1
--- ----------------------------
-ALTER TABLE [dbo].[order1] ADD
-	CONSTRAINT [PK__order__3213E83F6A6F0BE6] PRIMARY KEY CLUSTERED ([id]) 
-	WITH (PAD_INDEX = OFF,
-		IGNORE_DUP_KEY = OFF,
-		ALLOW_ROW_LOCKS = ON,
-		ALLOW_PAGE_LOCKS = ON)
-	ON [default]
-GO
-
--- ----------------------------
---  Primary key structure for table service
--- ----------------------------
-ALTER TABLE [dbo].[service] ADD
-	CONSTRAINT [PK__service__3213E83F23ED8708] PRIMARY KEY CLUSTERED ([id]) 
 	WITH (PAD_INDEX = OFF,
 		IGNORE_DUP_KEY = OFF,
 		ALLOW_ROW_LOCKS = ON,
@@ -349,7 +301,7 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[collection] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[collection]', RESEED, 1)
+DBCC CHECKIDENT ('[dbo].[collection]', RESEED, 8)
 GO
 
 -- ----------------------------
@@ -357,13 +309,15 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[comment] SET (LOCK_ESCALATION = TABLE)
 GO
+DBCC CHECKIDENT ('[dbo].[comment]', RESEED, 1013)
+GO
 
 -- ----------------------------
 --  Options for table hotel
 -- ----------------------------
 ALTER TABLE [dbo].[hotel] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[hotel]', RESEED, 2)
+DBCC CHECKIDENT ('[dbo].[hotel]', RESEED, 5)
 GO
 
 -- ----------------------------
@@ -371,13 +325,7 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo].[order1] SET (LOCK_ESCALATION = TABLE)
 GO
-DBCC CHECKIDENT ('[dbo].[order1]', RESEED, 1)
-GO
-
--- ----------------------------
---  Options for table service
--- ----------------------------
-ALTER TABLE [dbo].[service] SET (LOCK_ESCALATION = TABLE)
+DBCC CHECKIDENT ('[dbo].[order1]', RESEED, 1001)
 GO
 
 -- ----------------------------

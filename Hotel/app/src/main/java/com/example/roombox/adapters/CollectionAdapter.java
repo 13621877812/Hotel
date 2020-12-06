@@ -14,6 +14,7 @@ import com.example.roombox.R;
 import com.example.roombox.bean.HotelBean;
 import com.example.roombox.utils.Contans;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -27,7 +28,7 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.Vi
   }
 
   private Context mContext;
-  private List<HotelBean> datas;
+  private List<HotelBean> datas = new ArrayList<>();
   private ItemClickListener listener;
 
   public CollectionAdapter(Context mContext) {
@@ -47,6 +48,10 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.Vi
     final HotelBean bean = datas.get(i);
     viewHolder.name.setText(bean.getName());
     Glide.with(mContext).load(Contans.HEADIMGURL+bean.getImages()).into(viewHolder.topImage);
+    String desInfo = bean.getArea() + "/" + bean.getMax() + "人大套房/" + bean.getPlace();
+    viewHolder.desc.setText(desInfo);
+    viewHolder.price.setText("$"+bean.getPrice()+"/每晚");
+
     viewHolder.parentView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {

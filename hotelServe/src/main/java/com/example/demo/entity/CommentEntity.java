@@ -5,7 +5,6 @@ import java.util.Date;
 public class CommentEntity {
     private int comment_id;
     private  int hotel_id;
-    private  int user_id;
     private  String account;
     private  String name;
     private  String userImg;
@@ -29,13 +28,6 @@ public class CommentEntity {
         this.hotel_id = hotel_id;
     }
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
 
     public String getContent() {
         return content;

@@ -96,7 +96,7 @@ public class RegActivity extends BaseActivity implements View.OnClickListener {
 
   private void reg(final String name, final String pwd) {
     String url = "user/regist";
-    HashMap<String, String> params = new HashMap<>();
+    HashMap<String, Object> params = new HashMap<>();
     params.put("account", name);
     params.put("password", pwd);
     params.put("type", type.toString());

@@ -2,6 +2,7 @@ package com.example.roombox.fragments;
 
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -28,9 +29,11 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import android.content.Context;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.roombox.bean.ChatBean;
@@ -76,16 +79,15 @@ public class HomeFragment extends Fragment implements
   private ImageView imgMyLocation;
   ArrayList<HotelBean> hotelDatas;
   java.text.DecimalFormat   df=new   java.text.DecimalFormat("#.#");
-
-
-
-
+  int markerc=0;
+  ArrayList<Marker> markers = new ArrayList<>();
   LocationManager lm;
 
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
                            Bundle savedInstanceState) {
+
     mView = inflater.inflate(R.layout.fragment_home, container, false);
     initMapView(savedInstanceState);
 
@@ -95,12 +97,14 @@ public class HomeFragment extends Fragment implements
         HotelBean bean = hotelDatas.get(0);
         Bundle bundle = new Bundle();
         bundle.putSerializable("hotel",bean);
+        bundle.putBoolean("isOrder",true);
         Intent intent = new Intent(getActivity(), HotelDetialAct.class);
         intent.putExtras(bundle);
         startActivity(intent);
 
       }
     });
+
     initData();
 
     return mView;
@@ -109,10 +113,12 @@ public class HomeFragment extends Fragment implements
   public void onHiddenChanged(boolean hidden) {
     super.onHiddenChanged(hidden);
     if (this != null && !hidden) {
+
       if (mMap1 != null){
         mMap1.clear();
       }
       initData();
+
     }
   }
   //獲取房源數據
@@ -125,12 +131,14 @@ public class HomeFragment extends Fragment implements
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<HotelBean>>() {
         }.getType();
+        markerc=0;
         hotelDatas = gson.fromJson(data, type);
-
         for (HotelBean bean : hotelDatas){
-          addresstoMarker(bean.getPlace(),bean.getName(),bean.getPrice(),bean.getHotel_id());
+
+          addresstoMarker(bean.getPlace(),bean.getName(),bean.getPrice(),bean.getHotel_id(),String.valueOf(bean.getStatu()));
 
         }
+
 
 
       }
@@ -184,9 +192,11 @@ public class HomeFragment extends Fragment implements
       //Location Permission already granted
       mMap1.setOnMarkerClickListener(this);
       mMap1.setMyLocationEnabled(true);
+
       LatLng latLng = new LatLng((lm.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude()), (lm.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude()));
       CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 14);
       mMap1.moveCamera(cameraUpdate);
+
     }
 
 
@@ -217,10 +227,10 @@ public class HomeFragment extends Fragment implements
 
   public boolean onMarkerClick(final Marker marker) {
     //轉至訂房頁面
+    mMap1.clear();
 
-
-    String id= marker.getId().replaceAll("[A-Za-z]+","");
-
+    String id= marker.getTitle();
+    initData();
 
 
 
@@ -230,21 +240,31 @@ public class HomeFragment extends Fragment implements
     bundle.putSerializable("hotel",bean);
     Intent intent = new Intent(getActivity(), HotelDetialAct.class);
     intent.putExtras(bundle);
-    startActivity(intent);
-
+    startActivityForResult(intent,1);
 
     return false;
   }
 
+  private void startActivityForResult(Intent intent) {
+    mMap1.clear();
+    initData();
+  }
+
+  @Override
+  public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    mMap1.clear();
+    initData();
+  }
 
   public void onLocationChanged(Location location, GoogleMap googleMap) {
 
 
   }
-  public void addresstoMarker(String address,String name,String price,String id){
-    double i=Integer.valueOf(price)*0.001;
-    price=df.format(i)+"K";
-    BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap( drawTextToBitmap(getContext(),price));
+  public void addresstoMarker(String address,String name,String price,String id,String statu) {
+    double i = Integer.valueOf(price) * 0.001;
+    price = df.format(i) + "K";
+    BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(drawTextToBitmap(getContext(), price));
 
     Geocoder geoCoder = new Geocoder(getContext(), Locale.getDefault());
     List<Address> addressLocation = null;
@@ -253,14 +273,49 @@ public class HomeFragment extends Fragment implements
     } catch (IOException e) {
       e.printStackTrace();
     }
+    if (addressLocation == null || addressLocation.size() == 0){
+      return;
+    }
     double latitude = addressLocation.get(0).getLatitude();
     double longitude = addressLocation.get(0).getLongitude();
 
 
-    mMap1.addMarker(new MarkerOptions().position(new LatLng(latitude,longitude)).icon(icon));
+    int h = Integer.valueOf(statu);
+    if (h == 0) {
+      if (markers.contains(address)) {
+
+        markers.get(markerc).setIcon(icon);
+
+        markers.get(markerc).setVisible(true);
+      }
+      else {
 
 
+        markers.add((mMap1.addMarker(new MarkerOptions().position(new LatLng(latitude, longitude)).icon(icon).visible(true).title(String.valueOf(markerc)))));
+      }
 
+
+    }
+
+    else {
+
+      if (markers.contains(address)) {
+
+
+        markers.get(markerc).setIcon(icon);
+        markers.get(markerc).setVisible(false);
+      }
+
+
+      else {
+        markers.add((mMap1.addMarker(new MarkerOptions().position(new LatLng(latitude, longitude)).icon(icon).visible(false).title(String.valueOf(markerc)))));
+
+
+      }
+
+
+    }
+    markerc++;
   }
 
   public static Bitmap drawTextToBitmap(Context gContext, String gText) {
@@ -306,6 +361,8 @@ public class HomeFragment extends Fragment implements
 
 
   }
+
+
 }
 
 

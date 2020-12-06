@@ -6,10 +6,12 @@ import java.util.Date;
 public class OrderEntity {
   private String id;
   private String hotel_id;
-  private Date startTime;
-  private String userId;
-  private Date endTime;
+  private long startTime1;
+  private String account;
+  private long endTime1;
   private String price;
+  private Date startTime;
+  private Date endTime;
 
   public String getId() {
     return id;
@@ -27,28 +29,28 @@ public class OrderEntity {
     this.hotel_id = hotel_id;
   }
 
-  public Date getStartTime() {
-    return startTime;
+  public long getStartTime1() {
+    return startTime1;
   }
 
-  public void setStartTime(Date startTime) {
-    this.startTime = startTime;
+  public void setStartTime1(long startTime1) {
+    this.startTime1 = startTime1;
   }
 
-  public String getUserId() {
-    return userId;
+  public String getAccount() {
+    return account;
   }
 
-  public void setUserId(String userId) {
-    this.userId = userId;
+  public void setAccount(String account) {
+    this.account = account;
   }
 
-  public Date getEndTime() {
-    return endTime;
+  public long getEndTime1() {
+    return endTime1;
   }
 
-  public void setEndTime(Date endTime) {
-    this.endTime = endTime;
+  public void setEndTime1(long endTime1) {
+    this.endTime1 = endTime1;
   }
 
   public String getPrice() {
@@ -57,5 +59,21 @@ public class OrderEntity {
 
   public void setPrice(String price) {
     this.price = price;
+  }
+
+  public Date getStartTime() {
+    return startTime;
+  }
+
+  public void setStartTime(Date startTime) {
+    this.startTime = startTime;
+  }
+
+  public Date getEndTime() {
+    return endTime;
+  }
+
+  public void setEndTime(Date endTime) {
+    this.endTime = endTime;
   }
 }

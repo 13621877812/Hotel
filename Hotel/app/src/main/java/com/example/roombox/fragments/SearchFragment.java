@@ -63,6 +63,7 @@ public class SearchFragment extends Fragment {
       public void itemClick(HotelBean bean) {
         Bundle bundle = new Bundle();
         bundle.putSerializable("hotel",bean);
+        bundle.putBoolean("isOrder",true);
         Intent intent = new Intent(getActivity(), HotelDetialAct.class);
         intent.putExtras(bundle);
         startActivity(intent);

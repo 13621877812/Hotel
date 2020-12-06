@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -41,12 +42,13 @@ public class CommentController {
 
     //add
     @RequestMapping(value = "/add",method = RequestMethod.POST)
-    public ResultEntity addComment(int hotel_id,int user_id,String comment,String grade) throws Exception{
+    public ResultEntity addComment(String hotel_id,String account,String comment,String grade) throws Exception{
 
+        System.out.println("/add");
         ResultEntity result = new ResultEntity();
         CommentEntity commentEntity = new CommentEntity();
-        commentEntity.setHotel_id(hotel_id);
-        commentEntity.setUser_id(user_id);
+        commentEntity.setHotel_id(Integer.parseInt(hotel_id));
+        commentEntity.setAccount(account);
         commentEntity.setContent(comment);
         commentEntity.setGrade(Float.valueOf(grade));
         commentEntity.setAddtime(new Date());
@@ -55,10 +57,11 @@ public class CommentController {
 
 
        //grade
-        Integer avgGrade = commentMapper.avgGrade(hotel_id);
+
+        List<CommentEntity> datas = commentMapper.selectAll(Integer.parseInt(hotel_id));
         HotelEntity hotelEntity = new HotelEntity();
-//        hotelEntity.setGrade(avgGrade + "");
-        hotelEntity.setHotel_id(hotel_id);
+        hotelEntity.setCommentNum(datas.size());
+        hotelEntity.setHotel_id(Integer.parseInt(hotel_id));
         hotelMapper.updateByPrimaryKey(hotelEntity);
 
 

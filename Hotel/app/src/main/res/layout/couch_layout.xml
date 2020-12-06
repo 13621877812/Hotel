@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:divider="@color/colorGray">
  <ImageView
@@ -9,10 +9,12 @@
      android:layout_height="40dp"
      android:src="@mipmap/logo"/>
  <TextView
+     android:id="@+id/room"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:text="臥室1"/>
  <TextView
+     android:id="@+id/couch"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:text="1張1.4米寬雙人床"/>

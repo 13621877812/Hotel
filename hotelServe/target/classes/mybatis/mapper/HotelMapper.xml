@@ -22,7 +22,9 @@
         <result column="bathnum" jdbcType="INTEGER" property="bathnum" />
         <result column="services" jdbcType="VARCHAR" property="services" />
         <result column="images" jdbcType="VARCHAR" property="images" />
-
+       <result column="statu" jdbcType="INTEGER" property="statu" />
+        <result column="commentNum" jdbcType="INTEGER" property="commentNum" />
+        <result column="grade" jdbcType="VARCHAR" property="grade" />
     </resultMap>
 
   <insert id="insert" parameterType="com.example.demo.entity.HotelEntity">
@@ -37,19 +39,6 @@
 
   </insert>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <update id="updateByPrimaryKey" parameterType="com.example.demo.entity.HotelEntity">
 
         update hotel set
@@ -58,8 +47,9 @@
             grade = #{grade,jdbcType=VARCHAR},
         </if>
 
-
-        hotel_id = #{hotel_id,jdbcType=INTEGER}
+        <if test="commentNum!= null" >
+            commentNum = #{commentNum,jdbcType=INTEGER}
+        </if>
 
         where hotel_id = #{hotel_id,jdbcType=INTEGER}
     </update>

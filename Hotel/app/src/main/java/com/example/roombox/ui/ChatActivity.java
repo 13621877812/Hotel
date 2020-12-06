@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -51,6 +52,9 @@ public class ChatActivity extends AppCompatActivity {
     setContentView(R.layout.activity_chat);
     ButterKnife.bind(this);
     otherId = getIntent().getStringExtra("sendId");
+    if (TextUtils.isEmpty(otherId)){
+      otherId = "admin";
+    }
     account = ACache.get(this).getAsString("account");
     initView();
     openTime();

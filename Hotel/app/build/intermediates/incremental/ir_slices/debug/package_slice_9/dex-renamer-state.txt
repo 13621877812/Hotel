@@ -1,0 +1,4 @@
+#Sat Dec 05 15:24:05 CST 2020
+base.0=/Users/eden/Desktop/台湾/Hotel/app/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex

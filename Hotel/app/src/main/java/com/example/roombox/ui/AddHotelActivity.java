@@ -95,8 +95,8 @@ public class AddHotelActivity extends AppCompatActivity {
     @BindView(R.id.bedroom)
     EditText bedroom;
 
-    @BindView(R.id.bednum)
-    EditText bednum;
+//    @BindView(R.id.bednum)
+//    EditText bednum;
 
     @BindView(R.id.listView)
     RecyclerView listView;
@@ -259,10 +259,10 @@ public class AddHotelActivity extends AppCompatActivity {
         String num = roomnum.getText().toString(); //房源房數
         String max = mannum.getText().toString(); //可容納客戶數
         String roommax = bedroom.getText().toString();//可容納臥室數
-        String beds = bednum.getText().toString();//床
+//        String beds = bednum.getText().toString();//床
 
         Gson gson = new Gson();
-        beds =  gson.toJson(rooms);
+        String beds =  gson.toJson(rooms);
 
 
 

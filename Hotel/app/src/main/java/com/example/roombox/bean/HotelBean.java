@@ -20,6 +20,7 @@ public class HotelBean implements Serializable {
   private String bathnum;
   private String services;
   private String images;
+  private int statu;
 
   public String getHotel_id() {
     return hotel_id;
@@ -151,5 +152,13 @@ public class HotelBean implements Serializable {
 
   public void setIntro(String intro) {
     this.intro = intro;
+  }
+
+  public int getStatu() {
+    return statu;
+  }
+
+  public void setStatu(int statu) {
+    this.statu = statu;
   }
 }

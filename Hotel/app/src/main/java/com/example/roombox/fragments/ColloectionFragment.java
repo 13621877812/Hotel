@@ -1,6 +1,7 @@
 package com.example.roombox.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import com.example.roombox.R;
 import com.example.roombox.adapters.CollectionAdapter;
 import com.example.roombox.bean.HotelBean;
+import com.example.roombox.ui.HotelDetialAct;
 import com.example.roombox.utils.ACache;
 import com.example.roombox.utils.HttpUtil;
 import com.google.gson.Gson;
@@ -65,6 +67,12 @@ public class ColloectionFragment extends Fragment {
     collectionAdapter.setListener(new CollectionAdapter.ItemClickListener() {
       @Override
       public void itemClick(HotelBean bean) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("hotel",bean);
+        bundle.putBoolean("isOrder",true);
+        Intent intent = new Intent(getActivity(), HotelDetialAct.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
       }
     });
   }
@@ -91,6 +99,7 @@ public class ColloectionFragment extends Fragment {
 
   @OnClick(R.id.editBtn)
   public void onViewClicked() {
+    initData();
   }
 
   @Override

@@ -52,10 +52,18 @@
         from collection
         where comment_id = #{comment_id,jdbcType=INTEGER}
     </select>
-    <select id="selectAll" parameterType="java.lang.String" resultMap="HotelResultMap" useCache="true">
+    <select id="selectAll" parameterType="com.example.demo.entity.CollectionEntity" resultType="java.util.HashMap" useCache="true">
 
-     select hotel.*
-      from collection join hotel  on  collection.hotel_id =  hotel.hotel_id where collection.account = #{account} order by id
+     select hotel.*,collection.id collectionId
+      from collection join hotel  on  collection.hotel_id =  hotel.hotel_id where
+        <if test="account!= null" >
+            collection.account = #{account}
+        </if>
+        <if test="hotel_id!= 0" >
+           and collection.hotel_id = #{hotel_id}
+        </if>
+
+       order by id
 
     </select>
 

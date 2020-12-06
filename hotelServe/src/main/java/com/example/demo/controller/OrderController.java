@@ -45,6 +45,8 @@ public class OrderController {
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public ResultEntity addOrder(OrderEntity orderEntity) throws Exception{
 
+        orderEntity.setStartTime(new Date(orderEntity.getStartTime1()));
+        orderEntity.setEndTime(new Date(orderEntity.getEndTime1()));
         ResultEntity result = new ResultEntity();
         int addId = orderMapper.insert(orderEntity);
         result.setCode(0);

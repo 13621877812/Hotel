@@ -5,6 +5,9 @@ import android.util.Log;
 import com.example.roombox.base.ResultBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import org.json.JSONException;
+
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -22,7 +25,7 @@ import okhttp3.Response;
 public class HttpUtil {
 
   public interface HttpCallBack {
-    public void success(String data);
+    public void success(String data) throws JSONException;
   }
 
   public static void httpGet(final String url, final Activity context, final HttpCallBack httpCallBack) {
@@ -36,7 +39,9 @@ public class HttpUtil {
       public void onResponse(Call call, Response response) throws IOException {
         if (response.body() != null) {
           final String result = response.body().string();
+          response.body().close();
           dealData(context, httpCallBack, result,url);
+
         }
       }
 
@@ -44,7 +49,7 @@ public class HttpUtil {
   }
 
   public static void httpPost(final String url,
-                              HashMap<String, String> params,
+                              HashMap<String, Object> params,
                               final Activity context, final HttpCallBack httpCallBack) {
     Call call = getHttpCall(url, params);
     call.enqueue(new Callback() {
@@ -56,7 +61,9 @@ public class HttpUtil {
       @Override
       public void onResponse(Call call, Response response) throws IOException {
         final String result = response.body().string();
+        response.body().close();
         if (response.body() != null) {
+
           dealData(context, httpCallBack, result,url);
         }
       }
@@ -76,7 +83,7 @@ public class HttpUtil {
   }
 
   private static Call getHttpCall(String url,
-                                  HashMap<String, String> params) {
+                                  HashMap<String, Object> params) {
     String httpUrl = Contans.URL + url;
     OkHttpClient okHttpClient = new OkHttpClient.Builder()
       .connectTimeout(10, TimeUnit.SECONDS)
@@ -88,8 +95,9 @@ public class HttpUtil {
       FormBody.Builder builder = new FormBody.Builder();
       Set<String> keys = params.keySet();
       for (String key : keys) {
-        String value = params.get(key);
-        builder.add(key, value);
+        Object value = params.get(key);
+        builder.add(key, value.toString());
+
       }
       requestBody = builder.build();
     }
@@ -119,7 +127,11 @@ public class HttpUtil {
         if ("0".equals(code)) { //// succes
           Object object = bean.getData();
           if (httpCallBack != null) {
-            httpCallBack.success(object == null ? "" :gson.toJson(object) );
+            try {
+              httpCallBack.success(object == null ? "" :gson.toJson(object) );
+            } catch (JSONException e) {
+              e.printStackTrace();
+            }
           }
         } else {
           Contans.makeToast(bean.getMsg(), context);

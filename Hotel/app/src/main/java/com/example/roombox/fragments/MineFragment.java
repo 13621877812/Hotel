@@ -18,6 +18,7 @@ import com.example.roombox.ui.ChatActivity;
 import com.example.roombox.ui.CommentActivity;
 import com.example.roombox.ui.FeedBackActivity;
 import com.example.roombox.ui.HotelManagerActivity;
+import com.example.roombox.ui.LockActivity;
 import com.example.roombox.ui.LoginActivity;
 import com.example.roombox.ui.OrderActivity;
 import com.example.roombox.utils.ACache;
@@ -64,7 +65,7 @@ public class MineFragment extends Fragment {
       datas = new String[]{"歷史訂單", "房屋管理", "客服", "登出", "評論"};
     }
     if ("0".equals(type)){
-      return;
+      datas = new String[]{"歷史訂單", "访客密码", "客服", "登出"};
     }
     ArrayList meumList = new ArrayList();
     for (int i = 0; i < datas.length; i++) {
@@ -82,8 +83,10 @@ public class MineFragment extends Fragment {
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if ("2".equals(type)){
           startPage(position);
-        }else {
+        }else if("1".equals(type)){
           startPage1(position);
+        }else{
+          startPage2(position);
         }
 
       }
@@ -137,7 +140,29 @@ public class MineFragment extends Fragment {
 
 
   }
+  //跳轉對應的頁面(租客)
+  private void startPage2(int index) {
+    switch (index) {
+      case 0:
+        startActivity(new Intent(getActivity(), OrderActivity.class));
+        break;
+      case 1:
+        startActivity(new Intent(getActivity(), LockActivity.class));
+        break;
+      case 2:
+        startActivity(new Intent(getActivity(), ChatActivity.class));
+        break;
+      case 3://退出
+        ACache.get(getActivity()).put("account", "");
+        ACache.get(getActivity()).put("type", "");
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+        break;
+      default:
+        break;
+    }
 
+
+  }
   @Override
   public void onHiddenChanged(boolean hidden) {
     super.onHiddenChanged(hidden);
